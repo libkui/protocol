@@ -36,6 +36,7 @@ def get_mac_address(ifname):
         if not if_id:
             return None
         else:
+            # 此处依然要提供WIN的网卡ID, 而不是名字
             return netifaces.ifaddresses(if_id)[netifaces.AF_LINK][0]['addr']
     else:
         print('操作系统不支持,本脚本只能工作在Windows或者Linux环境!')
