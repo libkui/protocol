@@ -15,9 +15,9 @@ import logging
 
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
-from part1_classic_protocols.tools.get_mac_netifaces import get_mac_address
-from ICMPv6_NS import icmpv6_ns
-from part1_classic_protocols.tools.ipv6_tools import mac_to_ipv6_linklocal
+from tools.get_mac_netifaces import get_mac_address
+from net_2_icmp.icmpv6_ns import icmpv6_ns
+from tools.ipv6_tools import mac_to_ipv6_linklocal
 
 
 def icmpv6_na(spoofhost, dsthost, ifname):  # 发送NA主要用于毒化

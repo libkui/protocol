@@ -41,7 +41,7 @@ def ping_one(dst, id_no, seq_no, ttl_no):
             # 返回数据长度, 源IP地址,序列号,TTL和用时
             return reply_data_length, reply_source_ip, reply_seq, reply_ttl, time_to_pass_ms
     except Exception as e:
-        if re.match('.*NoneType.*', str(e)):
+        if re.match(r'.*NoneType.*', str(e)):
             return None
 
 

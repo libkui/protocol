@@ -14,15 +14,14 @@ import logging
 
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
-from part1_classic_protocols.tools.get_ip_netifaces import get_ipv6_address
+from tools.get_ip_netifaces import get_ipv6_address
 
 
 def scapy_pingv6_one(host, ifname):
     # 可以省略src=get_ipv6_address(ifname)来提高效率
     packet = IPv6(src=get_ipv6_address(ifname), dst=host) / ICMPv6EchoRequest(data="Welcome to qytang!!!" * 10)  # 构造Ping数据包
     ping = sr1(packet, timeout=1, verbose=False)  # 获取响应信息，超时为2秒，关闭详细信息
-
-    #ping.show()
+    # ping.show()
     try:
         if ping.getlayer(IPv6).fields['src'] == host and ping.getlayer("ICMPv6 Echo Reply").fields['type'] == 129:
             # 如果收到目的返回的ICMP ECHO-Reply包

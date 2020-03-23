@@ -14,11 +14,9 @@ import logging
 
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
-from part1_classic_protocols.tools.get_mac_netifaces import get_mac_address
-
-from part1_classic_protocols.tools.ipv6_tools import mac_to_ipv6_linklocal
-# from part1_classic_protocols.tools.IPv6_Tools import solicited_node_multicast_address
-from part1_classic_protocols.tools.ipv6_tools_kamene import solicited_node_multicast_address
+from tools.get_mac_netifaces import get_mac_address
+from tools.ipv6_tools import mac_to_ipv6_linklocal
+from tools.ipv6_tools_kamene import solicited_node_multicast_address
 
 # Windows 查看IPv6邻居 netsh int ipv6 show neigh
 # IOS     查看IPv6邻居 show ipv6 neighbors

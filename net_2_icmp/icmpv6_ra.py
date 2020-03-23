@@ -15,8 +15,8 @@ import time
 
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
-from part1_classic_protocols.tools.get_mac_netifaces import get_mac_address
-from part1_classic_protocols.tools.ipv6_tools import mac_to_ipv6_linklocal
+from tools.get_mac_netifaces import get_mac_address
+from tools.ipv6_tools import mac_to_ipv6_linklocal
 
 
 def icmpv6_ra(ifname):

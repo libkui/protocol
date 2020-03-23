@@ -11,9 +11,9 @@ import logging
 import ipaddress
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)
 from multiprocessing.pool import ThreadPool
-from PING_ONE import scapy_ping_one
+from net_2_icmp.ping_one import scapy_ping_one
 from kamene.all import *
-from part1_classic_protocols.tools.sort_ip import sort_ip
+from tools.sort_ip import sort_ip
 
 
 def scapy_ping_scan(network):
@@ -21,7 +21,7 @@ def scapy_ping_scan(network):
     ip_list = []
     for ip in net:
         ip_list.append(str(ip))  # 把IP地址放入ip_list的清单
-    pool = ThreadPool(processes=10)  # 创建多进程的进程池（并发为10）
+    pool = ThreadPool(processes=100)  # 创建多进程的进程池（并发为10）
     # result = []
     # for i in ip_list:
     #         result.append(pool.apply_async(scapy_ping_one,args=i))
