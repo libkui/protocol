@@ -19,7 +19,10 @@ from tools.get_ip_netifaces import get_ipv6_address
 
 def scapy_pingv6_one(host, ifname):
     # 可以省略src=get_ipv6_address(ifname)来提高效率
-    packet = IPv6(src=get_ipv6_address(ifname), dst=host) / ICMPv6EchoRequest(data="Welcome to qytang!!!" * 10)  # 构造Ping数据包
+    # packet = IPv6(src=get_ipv6_address(ifname), dst=host) / ICMPv6EchoRequest(data="Welcome to qytang!!!" * 10)  # 构造Ping数据包
+
+    # 最简单包
+    packet = IPv6(dst=host) / ICMPv6EchoRequest()  # 构造Ping数据包
     ping = sr1(packet, timeout=1, verbose=False)  # 获取响应信息，超时为2秒，关闭详细信息
     # ping.show()
     try:
