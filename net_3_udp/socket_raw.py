@@ -8,69 +8,69 @@
 
 
 from socket import socket, AF_PACKET, SOCK_RAW
-from part1_classic_protocols.tools.checksum import do_checksum
-from part1_classic_protocols.tools.change_ip_to_bytes import Change_IP_To_Bytes
-from part1_classic_protocols.tools.change_mac_to_bytes import Change_MAC_To_Bytes
+from tools.checksum import do_checksum
+from tools.change_ip_to_bytes import change_ip_to_bytes
+from tools.change_mac_to_bytes import change_mac_to_bytes
 import struct
 import random
 
 
-def Ether(src, dst, ether_type="0800"):
+def ether(src, dst, ether_type="0800"):
     # 构建源MAC地址,6个字节
-    src_mac_addr = Change_MAC_To_Bytes(src)
+    src_mac_addr = change_mac_to_bytes(src)
     # 构建目的MAC地址,6个字节
-    dst_mac_addr = Change_MAC_To_Bytes(dst)
+    dst_mac_addr = change_mac_to_bytes(dst)
     # 以太网类型为2个字节
     ether_type = struct.pack('!H', int(ether_type, 16))
     # 拼接以太网头部,并返回
     return src_mac_addr + dst_mac_addr + ether_type
 
 
-def IP(version=4, header_length=5, tos=b"\x00", Total_Length=100, Identifier=random.randint(1, 65535),
-       IP_Flags_D=0, IP_Flags_M=0, Offset=0, TTL=128, Protocol=17, src="127.0.0.1", dst="127.0.0.1"):
+def ip(version=4, header_length=5, tos=b"\x00", total_length=100, identifier=random.randint(1, 65535),
+       ip_flags_d=0, ip_flags_m=0, offset=0, ttl=128, protocol=17, src="127.0.0.1", dst="127.0.0.1"):
     # 构建IP版本与IP头部长度的第一个字节
     version_headerlength = struct.pack('B', (((version << 4) + header_length) & 0xff))
 
     # TOS为以传入的内容为准, TOS为第二个字节
 
     # 构建IP总长度,第三,第四个字节
-    Total_Length = struct.pack("!H", Total_Length)
+    total_length = struct.pack("!H", total_length)
 
     # 构建IP ID,第五,第六个字节
-    Identifier = struct.pack("!H", Identifier)
+    identifier = struct.pack("!H", identifier)
 
     # 构建分片相关部分,第七,第八个字节
-    Fragment = struct.pack('!H', (((IP_Flags_D << 14) + (IP_Flags_M << 13) + Offset) & 0xffff))
+    fragment = struct.pack('!H', (((ip_flags_d << 14) + (ip_flags_m << 13) + offset) & 0xffff))
 
     # TTL,第九个字节
-    TTL = struct.pack("B", TTL)
+    ttl = struct.pack("B", ttl)
 
     # 协议,第十个字节
-    Protocol = struct.pack("B", Protocol)
+    protocol = struct.pack("B", protocol)
 
     # 初始校验和填0,第十一,第十二个字节
-    Pre_IP_CheckSUM = b"\x00\x00"
+    pre_ip_check_sum = b"\x00\x00"
 
     # 源IP地址,第十三到第十六个字节
-    src_ip_address = Change_IP_To_Bytes(src)
+    src_ip_address = change_ip_to_bytes(src)
 
     # 目的IP地址,第十七到第二十个字节
-    dst_ip_address = Change_IP_To_Bytes(dst)
+    dst_ip_address = change_ip_to_bytes(dst)
 
     # 为了计算校验和,把IP头部拼接起来
-    pre_ip_header = version_headerlength + tos + Total_Length + Identifier + Fragment + TTL + Protocol + Pre_IP_CheckSUM + src_ip_address + dst_ip_address
+    pre_ip_header = version_headerlength + tos + total_length + identifier + fragment + ttl + protocol + pre_ip_check_sum + src_ip_address + dst_ip_address
 
     # 计算校验和
     checksum = do_checksum(pre_ip_header)
 
     # 重新拼接IP头部,放入校验和字段
-    ip_hder = version_headerlength + tos + Total_Length + Identifier + Fragment + TTL + Protocol + checksum + src_ip_address + dst_ip_address
+    ip_hder = version_headerlength + tos + total_length + identifier + fragment + ttl + protocol + checksum + src_ip_address + dst_ip_address
 
     # 返回IP头部
     return ip_hder
 
 
-def UDP(src_port, dst_port, udp_length, u_data, src_ip_address, dst_ip_address, Protocol=17):
+def udp(src_port, dst_port, udp_length, u_data, src_ip_address, dst_ip_address, Protocol=17):
     # 构建源端口字段, 第一,第二个字节
     sourc_port = struct.pack("!H", src_port)
 
@@ -94,8 +94,8 @@ def UDP(src_port, dst_port, udp_length, u_data, src_ip_address, dst_ip_address, 
         pad = b"\x00"
 
     # 计算UDP校验和
-    udp_check_sum = do_checksum(Change_IP_To_Bytes(src_ip_address) +
-                                Change_IP_To_Bytes(dst_ip_address) +
+    udp_check_sum = do_checksum(change_ip_to_bytes(src_ip_address) +
+                                change_ip_to_bytes(dst_ip_address) +
                                 b"\x00" +
                                 struct.pack("B", Protocol) +
                                 udp_length +
@@ -131,12 +131,12 @@ if __name__ == "__main__":
     # 计算UDP总长度
     u_length = 8 + len(udp_data)
     # 产生以太网头部
-    ether_header = Ether("00-50-56-AB-5C-02", "00:50:56:ab:25:08", "0800")
+    ether_header = ether("00-50-56-AB-5C-02", "00:50:56:ab:25:08", "0800")
     # 产生IP头部
-    ip_header = IP(Total_Length=t_length, IP_Flags_D=0, IP_Flags_M=0, Offset=0, TTL=128, Protocol=17, src=src_ip,
+    ip_header = ip(total_length=t_length, ip_flags_d=0, ip_flags_m=0, offset=0, ttl=128, protocol=17, src=src_ip,
                    dst=dst_ip)
     # 产生UDP头部
-    udp_header = UDP(1024, 6666, udp_length=u_length, u_data=udp_data, src_ip_address=src_ip,
+    udp_header = udp(1024, 6666, udp_length=u_length, u_data=udp_data, src_ip_address=src_ip,
                      dst_ip_address=dst_ip)
     # 拼接以太网头部,IP头部,UDP头部
     packet = ether_header + ip_header + udp_header + udp_data.encode()

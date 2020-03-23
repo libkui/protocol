@@ -6,7 +6,7 @@
 # 教主技术进化论拓展你的技术新边疆
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
-from part1_classic_protocols.tools.get_ip_netifaces import get_ip_address
+from tools.get_ip_netifaces import get_ip_address
 import socket
 import sys
 
