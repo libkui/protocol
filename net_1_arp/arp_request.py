@@ -10,10 +10,10 @@ import logging
 
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
-from part1_classic_protocols.tools.get_ip_netifaces import get_ip_address  # 获取本机IP地址
-from part1_classic_protocols.tools.get_mac_netifaces import get_mac_address  # 获取本机MAC地址
-from part1_classic_protocols.tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
-from part1_classic_protocols.tools.get_ifname import get_ifname  # 获取接口唯一ID
+from tools.get_ip_netifaces import get_ip_address  # 获取本机IP地址
+from tools.get_mac_netifaces import get_mac_address  # 获取本机MAC地址
+from tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
+from tools.get_ifname import get_ifname  # 获取接口唯一ID
 
 
 def arp_request(ip_address, ifname='ens33'):
@@ -30,7 +30,7 @@ def arp_request(ip_address, ifname='ens33'):
                              # psrc=localip,
                              pdst=ip_address),
                          # iface=scapy_iface(ifname),
-                         # timeout=1,
+                         timeout=1,
                          verbose=False)
         return ip_address, result_raw.getlayer(ARP).fields.get('hwsrc')
 
@@ -41,5 +41,5 @@ def arp_request(ip_address, ifname='ens33'):
 if __name__ == "__main__":
     # Windows Linux均可使用
     # arp_result = arp_request('10.1.1.254', "Net1")
-    arp_result = arp_request('10.1.1.254', "ens33")
+    arp_result = arp_request('10.1.1.60', "ens33")
     print("IP地址:", arp_result[0], "MAC地址:", arp_result[1])

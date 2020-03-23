@@ -12,8 +12,7 @@ import logging
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)
 import ipaddress
 from multiprocessing.pool import ThreadPool
-from part1_classic_protocols.net_1_arp.arp_request import arp_request
-from part1_classic_protocols.tools.sort_ip import sort_ip
+from net_1_arp.arp_request import arp_request
 
 
 def scapy_arp_scan(network, ifname):
@@ -32,9 +31,7 @@ def scapy_arp_scan(network, ifname):
     for r in result:
         if r.get()[1] is not None:  # 如果没有获得MAC，就continue进入下一次循环
             scan_dict[r.get()[0]] = r.get()[1]
-            # scan_list.append(r.get()[0])  # 如果获得了MAC，就把IP地址放入scan_list清单
     return scan_dict
-    # return sort_ip(scan_list)  # 排序并且返回清单
 
 
 if __name__ == '__main__':

