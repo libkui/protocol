@@ -9,20 +9,20 @@
 import dns.resolver
 
 
-def dnspython(domain, Type="A"):
-    result = dns.resolver.query(domain, Type)
+def dnspython(domain, q_type="A"):
+    result = dns.resolver.query(domain, q_type)
     return_result = []
-    if Type == "A" or Type == "AAAA":
+    if q_type == "A" or q_type == "AAAA":
         # print(result.response.answer)
         for i in result.response.answer:
             # print(i.items)
             for j in i.items:
                 return_result.append(j.address)
-    elif Type == "CNAME" or Type == "NS":
+    elif q_type == "CNAME" or q_type == "NS":
         for i in result.response.answer:
             for j in i.items:
                 return_result.append(j.to_text())
-    elif Type == 'MX':
+    elif q_type == 'MX':
         for i in result:
             return_result.append({'MX preference': i.preference, 'mail exchanger': i.exchange.to_text()})
     return return_result
@@ -30,8 +30,8 @@ def dnspython(domain, Type="A"):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    print(dnspython("cisco.com", Type="A"))
-    print(dnspython("cisco.com", Type="AAAA"))
-    print(dnspython("www.cisco.com", Type="CNAME"))
-    print(dnspython("cisco.com", Type="NS"))
-    print(dnspython("cisco.com", Type="MX"))
+    print(dnspython("cisco.com", q_type="A"))
+    print(dnspython("cisco.com", q_type="AAAA"))
+    print(dnspython("www.cisco.com", q_type="CNAME"))
+    print(dnspython("cisco.com", q_type="NS"))
+    print(dnspython("cisco.com", q_type="MX"))

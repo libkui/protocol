@@ -33,7 +33,7 @@ def dns_query(dns_name):
                 dns_result_ip = dns_result.getlayer(DNS).fields['an'][layer].fields['rdata']
                 print('域名: %-18s 对应的IP地址: %s' % (dns_name, dns_result_ip))  # 找到IP地址并打印
             layer += 1
-        except:  # 如果超出范围就跳出循环
+        except Exception:  # 如果超出范围就跳出循环
             break
 
 
