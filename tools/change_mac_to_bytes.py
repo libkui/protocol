@@ -11,7 +11,7 @@ import re
 import binascii
 
 
-def Change_MAC_To_Bytes(mac):
+def change_mac_to_bytes(mac):
     # # 去除各种MAC地址的分隔符
     # mac_value = int(re.sub('[ :.-]', '', mac), 16)
     #
@@ -30,5 +30,5 @@ def Change_MAC_To_Bytes(mac):
 
 
 if __name__ == "__main__":
-    a = Change_MAC_To_Bytes("00:0c:29:8d:5c:b6")
+    a = change_mac_to_bytes("00:0c:29:8d:5c:b6")
     print(a)

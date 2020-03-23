@@ -7,7 +7,7 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 import socket
-import fcntl
+import fcntl  # Windows不存在这个模块
 import struct
 
 

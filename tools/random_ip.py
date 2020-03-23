@@ -10,15 +10,15 @@
 import random
 
 
-def Random_Section():
+def random_section():
     section = random.randint(1, 254)
     return section
 
 
-def Random_IP():
-    IP = str(Random_Section()) + '.' + str(Random_Section()) + '.' + str(Random_Section()) + '.' + str(Random_Section())
-    return IP
+def random_ip():
+    ip = str(random_section()) + '.' + str(random_section()) + '.' + str(random_section()) + '.' + str(random_section())
+    return ip
 
 
 if __name__ == '__main__':
-    print(Random_IP())
+    print(random_ip())

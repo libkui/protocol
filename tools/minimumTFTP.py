@@ -35,6 +35,7 @@ import time
 import threading
 import sys
 
+
 class Server:
     def __init__(self, dPath):
         global serverDir, serverLocalSocket, remoteDict

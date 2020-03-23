@@ -26,7 +26,7 @@ def full_ipv6(ipv6):  # 转换为完整的IPv6地址
     return ':'.join(new_ipv6)  # 使用":"连接在一起成为完整的IPv6地址
 
 
-def Solicited_node_multicast_address(ipv6):
+def solicited_node_multicast_address(ipv6):
     print(full_ipv6(ipv6)[32:])
     return "FF02::1:FF" + full_ipv6(ipv6)[-7:]  # 拼接得到Solicited_node_multicast_address
 
@@ -34,4 +34,4 @@ def Solicited_node_multicast_address(ipv6):
 if __name__ == '__main__':
     print(full_ipv6("FF02::1:FF00:200"))
     # print(full_ipv6("2001:1::200"))
-    # print(Solicited_node_multicast_address("2001:1::200"))
+    print(solicited_node_multicast_address("2001:1::200"))

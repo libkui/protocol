@@ -10,15 +10,15 @@
 import random
 
 
-def hex():
+def rhex():
     hex_mac = random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'e', 'f'])
     return str(hex_mac)
 
 
-def Random_MAC():
-    MAC = hex() + hex() + ':' + hex() + hex() + ':' + hex() + hex() + ':' + hex() + hex() + ':' + hex() + hex() + ':' + hex() + hex()
-    return MAC
+def random_mac():
+    mac = rhex() + rhex() + ':' + rhex() + rhex() + ':' + rhex() + rhex() + ':' + rhex() + rhex() + ':' + rhex() + rhex() + ':' + rhex() + rhex()
+    return mac
 
 
 if __name__ == '__main__':
-    print(Random_MAC())
+    print(random_mac())

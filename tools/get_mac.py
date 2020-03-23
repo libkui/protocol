@@ -18,7 +18,7 @@ def get_mac_address(iface):  # 定义获取MAC地址的模块，传入接口名�
     location = 0  # 搜索清单的位置记录
     index = 0  # MAC地址所在清单中的位置
     for x in words:  # 遍历整个清单
-        if re.match('\w\w:\w\w:\w\w:\w\w:\w\w:\w\w', x):  # 匹配MAC地址字段
+        if re.match(r'\w\w:\w\w:\w\w:\w\w:\w\w:\w\w', x):  # 匹配MAC地址字段
             found = 1  # MAC地址被找到
             index = location  # 记录MAC地址出现的位置
             break  # 跳出循环
@@ -32,4 +32,4 @@ def get_mac_address(iface):  # 定义获取MAC地址的模块，传入接口名�
 
 
 if __name__ == "__main__":
-    print(get_mac_address('Net1'))
+    print(get_mac_address('ens33'))  # 只适用于Linux

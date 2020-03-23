@@ -10,18 +10,18 @@
 import struct
 
 
-def Change_Chaddr_To_MAC(chaddr):  # 转换16字节chaddr为MAC地址，前6字节为MAC，后面暂时无用！！
-    MAC_ADDR_INT_List = struct.unpack('>16B', chaddr)[:6]
-    MAC_ADDR_List = []
-    for MAC_ADDR_INT in MAC_ADDR_INT_List:
-        if MAC_ADDR_INT < 16:
-            MAC_ADDR_List.append('0' + str(hex(MAC_ADDR_INT))[2:])
+def change_chaddr_to_mac(chaddr):  # 转换16字节chaddr为MAC地址，前6字节为MAC，后面暂时无用！！
+    mac_addr_int_list = struct.unpack('>16B', chaddr)[:6]
+    mac_addr_list = []
+    for mac_addr_int in mac_addr_int_list:
+        if mac_addr_int < 16:
+            mac_addr_list.append('0' + str(hex(mac_addr_int))[2:])
         else:
-            MAC_ADDR_List.append(str(hex(MAC_ADDR_INT))[2:])
-    MAC_ADDR = MAC_ADDR_List[0] + ':' + MAC_ADDR_List[1] + ':' + MAC_ADDR_List[2] + ':' + MAC_ADDR_List[3] + ':' + \
-               MAC_ADDR_List[4] + ':' + MAC_ADDR_List[5]
-    return MAC_ADDR
+            mac_addr_list.append(str(hex(mac_addr_int))[2:])
+    mac_addr = mac_addr_list[0] + ':' + mac_addr_list[1] + ':' + mac_addr_list[2] + ':' + mac_addr_list[3] + ':' + \
+               mac_addr_list[4] + ':' + mac_addr_list[5]
+    return mac_addr
 
 
 if __name__ == '__main__':
-    print(Change_Chaddr_To_MAC(b'\x00PV\xabM\x19\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'))
+    print(change_chaddr_to_mac(b'\x00PV\xabM\x19\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'))

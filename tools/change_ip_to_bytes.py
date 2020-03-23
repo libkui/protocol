@@ -12,7 +12,7 @@ import re
 import socket
 
 
-def Change_IP_To_Bytes(IP):
+def change_ip_to_bytes(IP):
     # section1 = int(IP.split('.')[0])
     # section2 = int(IP.split('.')[1])
     # section3 = int(IP.split('.')[2])
@@ -24,4 +24,4 @@ def Change_IP_To_Bytes(IP):
 
 
 if __name__ == "__main__":
-    print(Change_IP_To_Bytes("10.1.1.80"))
+    print(change_ip_to_bytes("10.1.1.80"))

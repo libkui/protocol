@@ -5,7 +5,7 @@ def get_ifname(ifname):
     if platform.system() == "Linux":
         return ifname
     elif platform.system() == "Windows":
-        from win_ifname import win_from_name_get_id
+        from tools.win_ifname import win_from_name_get_id
         return win_from_name_get_id(ifname)
     else:
         return None

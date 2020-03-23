@@ -28,7 +28,7 @@ def mac2eui64(mac, prefix=None):
             net = ipaddress.ip_network(prefix, strict=False)
             euil = int('0x{0}'.format(eui64), 16)
             return str(net[euil])
-        except:  # pylint: disable=bare-except
+        except Exception:  # pylint: disable=bare-except
             return
 
 
