@@ -1,0 +1,5 @@
+
+<189>123: *Nov 11 04:38:45.380: %LINK-5-CHANGED: Interface GigabitEthernet2, changed state to administratively down
+<189>124: *Nov 11 04:38:46.380: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to down
+<187>125: *Nov 11 04:39:06.011: %LINK-3-UPDOWN: Interface GigabitEthernet2, changed state to up
+<189>126: *Nov 11 04:39:07.011: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to up
