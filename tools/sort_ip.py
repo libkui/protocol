@@ -10,7 +10,7 @@ from socket import inet_aton
 import struct
 import ipaddress
 
-IP_LIST = ['172.16.12.123',
+ip_list = ['172.16.12.123',
            '172.16.12.3',
            '172.16.12.234',
            '172.16.12.12',
@@ -34,4 +34,4 @@ def sort_ip(ips):
 
 
 if __name__ == "__main__":
-    print(sort_ip(IP_LIST))
+    print(sort_ip(ip_list))
