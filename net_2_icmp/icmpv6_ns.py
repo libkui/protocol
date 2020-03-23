@@ -40,9 +40,12 @@ def icmpv6_ns(host, ifname):  # 请求特定IPv6地址的MAC地址
     # ----Source Link-Layer Address - ---
     # 源地址: 00:50:56:AB:25:08(本地MAC地址)
 
-    # 可以省略src=mac_to_ipv6_linklocal(ll_mac) 来提高效率
-    packet = IPv6(src=mac_to_ipv6_linklocal(ll_mac),
-                  dst=solicited_node_multicast_address(host)) / ICMPv6ND_NS(tgt=host) / ICMPv6NDOptSrcLLAddr(lladdr=ll_mac)
+    # 所有可选都填写
+    # packet = IPv6(src=mac_to_ipv6_linklocal(ll_mac),
+    #               dst=solicited_node_multicast_address(host)) / ICMPv6ND_NS(tgt=host) / ICMPv6NDOptSrcLLAddr(lladdr=ll_mac)
+
+    # 下面是最精简
+    packet = IPv6() / ICMPv6ND_NS(tgt=host)
     # packet.show()
     # 发送数据包
     result = sr1(packet, timeout=2, verbose=False)

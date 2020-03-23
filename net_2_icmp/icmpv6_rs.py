@@ -42,7 +42,11 @@ def icmpv6_rs(ifname):
     # 源地址: 00:50:56:AB:25:08(本地MAC地址)
     src_ll_addr = ICMPv6NDOptSrcLLAddr(lladdr=ll_mac)
     # 构建数据包
-    packet = base / router_solicitation / src_ll_addr
+    # packet = base / router_solicitation / src_ll_addr
+
+    # 最简单的构建方案
+    packet = IPv6() / router_solicitation
+
     # packet.show()
     # 发送数据包,接受返回数据包
     result = sr1(packet, timeout=2, verbose=False)
