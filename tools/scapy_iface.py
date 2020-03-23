@@ -9,7 +9,7 @@
 import logging
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
-from part1_classic_protocols.tools.get_ifname import get_ifname
+from tools.get_ifname import get_ifname
 import platform
 
 
