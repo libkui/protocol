@@ -45,7 +45,7 @@ def icmpv6_rs(ifname):
     # packet = base / router_solicitation / src_ll_addr
 
     # 最简单的构建方案
-    packet = IPv6() / router_solicitation
+    packet = IPv6() / ICMPv6ND_RS()
 
     # packet.show()
     # 发送数据包,接受返回数据包
