@@ -24,14 +24,18 @@ def ping_one(dst, id_no, seq_no, ttl_no):
     # 构建ICMP Echo数据包
     ping_one_reply = sr1(IP(dst=dst, ttl=ttl_no) / ICMP(id=id_no, seq=seq_no) / time_in_bytes, timeout=1, verbose=False)
     try:
-        if ping_one_reply.getlayer(ICMP).type == 0 and ping_one_reply.getlayer(
-                ICMP).code == 0 and ping_one_reply.getlayer(ICMP).id == id_no:  # 确认type,code和id是否匹配
+        if ping_one_reply.getlayer(ICMP).type == 0 \
+                and ping_one_reply.getlayer(ICMP).code == 0 \
+                and ping_one_reply.getlayer(ICMP).id == id_no:  # 确认type,code和id是否匹配
+
             # 提取源IP,序列号,TTL,计算数据长度
             reply_source_ip = ping_one_reply.getlayer(IP).src
             reply_seq = ping_one_reply.getlayer(ICMP).seq
             reply_ttl = ping_one_reply.getlayer(IP).ttl
-            # 长度 = 负载长度 + 垫片长度 + 8字节ICMP头部长度
+
+            # 长度 = 负载长度 + 垫片长度 + 8字节ICMP头部长度, 后续用于打印长度
             reply_data_length = len(ping_one_reply.getlayer(Raw).load) + len(ping_one_reply.getlayer(Padding).load) + 8
+
             # 提取返回数据,转换为时间,并与当前时间计算时间差
             reply_data = ping_one_reply.getlayer(Raw).load
             receive_time = time.time()
@@ -61,4 +65,4 @@ def qyt_ping(dst):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    qyt_ping('10.1.1.254')
+    qyt_ping('8.8.8.8')
