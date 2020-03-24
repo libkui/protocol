@@ -12,8 +12,8 @@ import logging
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
 import time
-from DHCP_Discover import chaddr
-from part1_classic_protocols.tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
+from net_6_dhcp.dhcp_discover import chaddr
+from tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
 
 # Dynamic Host Configuration Protocol (DHCP) and Bootstrap Protocol (BOOTP) Parameters
 # https://www.iana.org/assignments/bootp-dhcp-parameters/bootp-dhcp-parameters.xhtml
@@ -37,7 +37,7 @@ bytes_requested_options = struct.pack("8B",
                                       requested_option_7)
 
 
-def DHCP_Request_Sendonly(ifname, dhcp_options, param_req_list, wait_time=1):
+def dhcp_request_sendonly(ifname, dhcp_options, param_req_list, wait_time=1):
     request = Ether(dst='ff:ff:ff:ff:ff:ff',
                     src=dhcp_options['MAC'],
                     type=0x0800) / IP(src='0.0.0.0',
@@ -68,4 +68,4 @@ if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     options = {'MAC': '00:0c:29:8d:5c:b6', 'Server_IP': '10.1.1.200', 'requested_addr': '10.1.1.235',
                'client_id': b'\x00\x0c)\x8d\\\xb6'}
-    DHCP_Request_Sendonly('Net1', options, bytes_requested_options)
+    dhcp_request_sendonly('Net1', options, bytes_requested_options)

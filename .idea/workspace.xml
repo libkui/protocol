@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_network.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_2_icmp/icmpv6_rs.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_2_icmp/icmpv6_rs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_6_dhcp/DHCP_Discover.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_6_dhcp/dhcp_discover.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_6_dhcp/DHCP_Discover_DoS.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_6_dhcp/dhcp_discover_dos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_6_dhcp/DHCP_FULL.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_6_dhcp/dhcp_full.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_6_dhcp/DHCP_Monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_6_dhcp/dhcp_monitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_6_dhcp/DHCP_Request.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_6_dhcp/dhcp_request.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,94 +20,100 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_1_arp/arp_request.py">
+        <entry file="file://$PROJECT_DIR$/net_3_udp/udp_socket_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_na.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_rs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_2_icmp/ping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_2_icmp/ping_one.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_2_icmp/ping_scan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="423">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
-                <element signature="e#186#200#0" expanded="true" />
+                <element signature="e#185#234#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_ns.py">
+        <entry file="file://$PROJECT_DIR$/net_3_udp/udp_socket_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_1_arp/arp_scan_thread.py">
+        <entry file="file://$PROJECT_DIR$/net_3_udp/socket_raw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="2090">
+              <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+              <folding>
+                <element signature="e#186#232#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_1_arp/arp_spoof.py">
+        <entry file="file://$PROJECT_DIR$/net_4_dns/dns_python.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+            <state relative-caret-position="564">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/checksum.py">
+        <entry file="file://$PROJECT_DIR$/net_4_dns/scapy_dns_query.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="390">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_request.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_discover.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_discover_dos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#185#228#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_full.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="76" column="25" lean-forward="true" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_monitor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -151,6 +163,11 @@
         <option value="$PROJECT_DIR$/net_2_icmp/icmpv6_ns.py" />
         <option value="$PROJECT_DIR$/net_2_icmp/icmpv6_na.py" />
         <option value="$PROJECT_DIR$/net_2_icmp/icmpv6_rs.py" />
+        <option value="$PROJECT_DIR$/net_6_dhcp/dhcp_request.py" />
+        <option value="$PROJECT_DIR$/net_6_dhcp/dhcp_discover.py" />
+        <option value="$PROJECT_DIR$/net_6_dhcp/dhcp_discover_dos.py" />
+        <option value="$PROJECT_DIR$/net_6_dhcp/dhcp_monitor.py" />
+        <option value="$PROJECT_DIR$/net_6_dhcp/dhcp_full.py" />
       </list>
     </option>
   </component>
@@ -195,6 +212,44 @@
             <path>
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_3_udp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_4_dns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_4_dns" type="462c0819:PsiDirectoryNode" />
+              <item name="pkt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_5_tftp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_5_tftp" type="462c0819:PsiDirectoryNode" />
+              <item name="pkt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_5_tftp" type="462c0819:PsiDirectoryNode" />
+              <item name="tftp_dir" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_6_dhcp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -228,8 +283,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.icmpv6_rs">
-    <configuration name="icmpv6_na" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.dhcp_discover_dos">
+    <configuration name="dhcp_discover" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,12 +292,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_2_icmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_6_dhcp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_2_icmp/icmpv6_na.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_6_dhcp/dhcp_discover.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -251,7 +306,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="icmpv6_ns" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dhcp_discover_dos" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,12 +314,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_2_icmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_6_dhcp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_2_icmp/icmpv6_ns.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_6_dhcp/dhcp_discover_dos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,7 +328,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="icmpv6_rs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dhcp_full" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -281,12 +336,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_2_icmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_6_dhcp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_2_icmp/icmpv6_rs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_6_dhcp/dhcp_full.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -295,7 +350,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dns_python" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,12 +358,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_2_icmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_4_dns" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_2_icmp/ping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_4_dns/dns_python.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -317,7 +372,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ping_scan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="scapy_dns_query" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -325,12 +380,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_2_icmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_4_dns" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_2_icmp/ping_scan.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_4_dns/scapy_dns_query.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -341,11 +396,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.icmpv6_rs" />
-        <item itemvalue="Python.icmpv6_na" />
-        <item itemvalue="Python.icmpv6_ns" />
-        <item itemvalue="Python.ping_scan" />
-        <item itemvalue="Python.ping" />
+        <item itemvalue="Python.dhcp_discover_dos" />
+        <item itemvalue="Python.dhcp_full" />
+        <item itemvalue="Python.dhcp_discover" />
+        <item itemvalue="Python.dns_python" />
+        <item itemvalue="Python.scapy_dns_query" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +415,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584941867163</updated>
       <workItem from="1584941869274" duration="2881000" />
-      <workItem from="1584944840444" duration="21804000" />
+      <workItem from="1584944840444" duration="26237000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1584942008728</created>
@@ -516,15 +571,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585036939558</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="优化代码!">
+      <created>1585037219350</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1585037219350</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24685000" />
+    <option name="totallyTimeSpent" value="29118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1717" height="856" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2045866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -532,7 +593,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24099723" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22853185" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -577,7 +638,8 @@
     <MESSAGE value="调整格式!" />
     <MESSAGE value="调优注释!" />
     <MESSAGE value="优化参数与注释!" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化参数与注释!" />
+    <MESSAGE value="优化代码!" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化代码!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -597,20 +659,22 @@
     <SUITE FILE_PATH="coverage/python_network$ipv6_solicited_node_multicast_address.coverage" NAME="ipv6_solicited_node_multicast_address Coverage Results" MODIFIED="1584946476627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$arp_request.coverage" NAME="arp_request Coverage Results" MODIFIED="1584970006408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
     <SUITE FILE_PATH="coverage/python_network$ping_one.coverage" NAME="ping_one Coverage Results" MODIFIED="1585034728670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
-    <SUITE FILE_PATH="coverage/python_network$icmpv6_ra.coverage" NAME="icmpv6_ra Coverage Results" MODIFIED="1584959528068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
-    <SUITE FILE_PATH="coverage/python_network$udp_socket_server.coverage" NAME="udp_socket_server Coverage Results" MODIFIED="1584947401166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_3_udp" />
+    <SUITE FILE_PATH="coverage/python_network$icmpv6_ra.coverage" NAME="icmpv6_ra Coverage Results" MODIFIED="1585037533629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
+    <SUITE FILE_PATH="coverage/python_network$udp_socket_server.coverage" NAME="udp_socket_server Coverage Results" MODIFIED="1585037776368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_3_udp" />
     <SUITE FILE_PATH="coverage/python_network$ipv6_tools.coverage" NAME="ipv6_tools Coverage Results" MODIFIED="1584968300952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$icmpv6_rs.coverage" NAME="icmpv6_rs Coverage Results" MODIFIED="1585037149820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$ipv6_tools_kamene.coverage" NAME="ipv6_tools_kamene Coverage Results" MODIFIED="1584968969115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/python_network$scapy_dns_query.coverage" NAME="scapy_dns_query Coverage Results" MODIFIED="1584947763200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_4_dns" />
-    <SUITE FILE_PATH="coverage/python_network$udp_socket_client.coverage" NAME="udp_socket_client Coverage Results" MODIFIED="1584947365496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_3_udp" />
+    <SUITE FILE_PATH="coverage/python_network$scapy_dns_query.coverage" NAME="scapy_dns_query Coverage Results" MODIFIED="1585038509111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_4_dns" />
+    <SUITE FILE_PATH="coverage/python_network$udp_socket_client.coverage" NAME="udp_socket_client Coverage Results" MODIFIED="1585038061362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_3_udp" />
     <SUITE FILE_PATH="coverage/python_network$scapy_iface.coverage" NAME="scapy_iface Coverage Results" MODIFIED="1584946518857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/python_network$dhcp_discover.coverage" NAME="dhcp_discover Coverage Results" MODIFIED="1585045523953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_6_dhcp" />
+    <SUITE FILE_PATH="coverage/python_network$dhcp_full.coverage" NAME="dhcp_full Coverage Results" MODIFIED="1585046637507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_6_dhcp" />
     <SUITE FILE_PATH="coverage/python_network$get_mac_netifaces.coverage" NAME="get_mac_netifaces Coverage Results" MODIFIED="1584960934579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$sort_ip.coverage" NAME="sort_ip Coverage Results" MODIFIED="1584966076858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$ping.coverage" NAME="ping Coverage Results" MODIFIED="1585034927767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$checksum.coverage" NAME="checksum Coverage Results" MODIFIED="1584945977322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/python_network$pingv6.coverage" NAME="pingv6 Coverage Results" MODIFIED="1584959911424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
-    <SUITE FILE_PATH="coverage/python_network$dns_python.coverage" NAME="dns_python Coverage Results" MODIFIED="1584947738837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_4_dns" />
+    <SUITE FILE_PATH="coverage/python_network$pingv6.coverage" NAME="pingv6 Coverage Results" MODIFIED="1585037643024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
+    <SUITE FILE_PATH="coverage/python_network$dns_python.coverage" NAME="dns_python Coverage Results" MODIFIED="1585038738606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_4_dns" />
     <SUITE FILE_PATH="coverage/python_network$arp_scan.coverage" NAME="arp_scan Coverage Results" MODIFIED="1584943104653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
     <SUITE FILE_PATH="coverage/python_network$arp_scan_thread.coverage" NAME="arp_scan_thread Coverage Results" MODIFIED="1585032425809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
     <SUITE FILE_PATH="coverage/python_network$get_mac.coverage" NAME="get_mac Coverage Results" MODIFIED="1584960875435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
@@ -618,9 +682,10 @@
     <SUITE FILE_PATH="coverage/python_network$icmpv6_na.coverage" NAME="icmpv6_na Coverage Results" MODIFIED="1585036905582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$arp_spoof.coverage" NAME="arp_spoof Coverage Results" MODIFIED="1584970887668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
     <SUITE FILE_PATH="coverage/python_network$arp_scan_coroutine.coverage" NAME="arp_scan_coroutine Coverage Results" MODIFIED="1584944188735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
+    <SUITE FILE_PATH="coverage/python_network$dhcp_discover_dos.coverage" NAME="dhcp_discover_dos Coverage Results" MODIFIED="1585046709530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_6_dhcp" />
     <SUITE FILE_PATH="coverage/python_network$icmpv6_ns.coverage" NAME="icmpv6_ns Coverage Results" MODIFIED="1585035971380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$win_ifname.coverage" NAME="win_ifname Coverage Results" MODIFIED="1584967339345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/python_network$socket_raw.coverage" NAME="socket_raw Coverage Results" MODIFIED="1584947624270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_3_udp" />
+    <SUITE FILE_PATH="coverage/python_network$socket_raw.coverage" NAME="socket_raw Coverage Results" MODIFIED="1585038053872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_3_udp" />
     <SUITE FILE_PATH="coverage/python_network$tftp_server.coverage" NAME="tftp_server Coverage Results" MODIFIED="1584948256613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_5_tftp" />
     <SUITE FILE_PATH="coverage/python_network$get_ip_ifconfig.coverage" NAME="get_ip_ifconfig Coverage Results" MODIFIED="1584946271881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$get_ifname.coverage" NAME="get_ifname Coverage Results" MODIFIED="1584946018315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
@@ -695,47 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net_3_udp/udp_socket_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_3_udp/udp_socket_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="e#185#258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_3_udp/socket_raw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-          <folding>
-            <element signature="e#186#232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_4_dns/dns_python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_4_dns/scapy_dns_query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net_5_tftp/download_dir/testupload.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -763,20 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/pingv6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_ra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -927,14 +937,107 @@
     <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_na.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_rs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_ra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_2_icmp/pingv6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_3_udp/udp_socket_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#185#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_3_udp/udp_socket_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_3_udp/socket_raw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+          <folding>
+            <element signature="e#186#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_4_dns/dns_python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_4_dns/scapy_dns_query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_discover.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_discover_dos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#185#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_full.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="76" column="25" lean-forward="true" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_6_dhcp/dhcp_monitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
         </state>
       </provider>
     </entry>

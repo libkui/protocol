@@ -11,9 +11,9 @@ import logging
 
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
-from part1_classic_protocols.tools.get_mac_netifaces import get_mac_address
-from part1_classic_protocols.tools.change_mac_to_bytes import Change_MAC_To_Bytes
-from part1_classic_protocols.tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
+from tools.get_mac_netifaces import get_mac_address
+from tools.change_mac_to_bytes import change_mac_to_bytes
+from tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
 import time
 import struct
 # Dynamic Host Configuration Protocol (DHCP) and Bootstrap Protocol (BOOTP) Parameters
@@ -44,17 +44,17 @@ def chaddr(info):
     return info + b'\x00' * (16 - len(info))
 
 
-def DHCP_Discover_Sendonly(ifname, MAC, wait_time=1):
-    Bytes_MAC = Change_MAC_To_Bytes(MAC)  # 把MAC地址转换为二进制格式
+def dhcp_discover_sendonly(ifname, mac_address, wait_time=1):
+    bytes_mac = change_mac_to_bytes(mac_address)  # 把MAC地址转换为二进制格式
     # param_req_list为请求的参数，没有这个部分服务器只会回送IP地址，什么参数都不给
     discover = Ether(dst='ff:ff:ff:ff:ff:ff',
-                     src=MAC,
+                     src=mac_address,
                      type=0x0800) / IP(src='0.0.0.0',
                                        dst='255.255.255.255') \
                                   / UDP(dport=67,
                                         sport=68) \
                                   / BOOTP(op=1,
-                                          chaddr=chaddr(Bytes_MAC)) \
+                                          chaddr=chaddr(bytes_mac)) \
                                   / DHCP(options=[('message-type', 'discover'),
                                                   ('param_req_list', bytes_requested_options),
                                                   'end'])
@@ -72,5 +72,5 @@ def DHCP_Discover_Sendonly(ifname, MAC, wait_time=1):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    Local_MAC = get_mac_address('Net1')
-    DHCP_Discover_Sendonly('Net1', Local_MAC)
+    local_mac = get_mac_address('Net1')
+    dhcp_discover_sendonly('Net1', local_mac)

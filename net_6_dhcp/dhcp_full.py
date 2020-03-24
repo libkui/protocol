@@ -13,27 +13,27 @@ logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
 
 from multiprocessing.pool import ThreadPool
-from part1_classic_protocols.tools.change_mac_to_bytes import Change_MAC_To_Bytes
-from part1_classic_protocols.tools.get_mac_netifaces import get_mac_address
-from part1_classic_protocols.tools.change_chaddr_to_mac import Change_Chaddr_To_MAC
-from part1_classic_protocols.tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
-from DHCP_Discover import DHCP_Discover_Sendonly
-from DHCP_Request import DHCP_Request_Sendonly
+from tools.change_mac_to_bytes import change_mac_to_bytes
+from tools.get_mac_netifaces import get_mac_address
+from tools.change_chaddr_to_mac import change_chaddr_to_mac
+from tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
+from net_6_dhcp.dhcp_discover import dhcp_discover_sendonly
+from net_6_dhcp.dhcp_request import dhcp_request_sendonly
 
 pool = ThreadPool(processes=10)
 
 
-def DHCP_Monitor_Control(pkt):
+def dhcp_monitor_control(pkt):
     print(pkt.getlayer(DHCP).fields)
     print(pkt.getlayer(BOOTP).fields)
     try:
         if pkt.getlayer(DHCP).fields['options'][0][1] == 1:  # 发现并且打印DHCP Discover
             print('发现DHCP Discover包，MAC地址为:', end='')
-            MAC_Bytes = pkt.getlayer(BOOTP).fields['chaddr']  # 提取Discover中的Client Hardware Addr
-            print(len(MAC_Bytes))
+            mac_bytes = pkt.getlayer(BOOTP).fields['chaddr']  # 提取Discover中的Client Hardware Addr
+            print(len(mac_bytes))
 
-            MAC_ADDR = Change_Chaddr_To_MAC(MAC_Bytes)  # 把Client Hardware Addr转换为MAC地址
-            print(MAC_ADDR)  # 打印MAC地址
+            mac_addr = change_chaddr_to_mac(mac_bytes)  # 把Client Hardware Addr转换为MAC地址
+            print(mac_addr)  # 打印MAC地址
             print('Request包中发现如下Options:')
             # 如下For循环,提取DHCP的选项信息,并且打印,param_req_list没有做解码字节打印
             print(pkt.getlayer(DHCP).fields['options'])
@@ -49,12 +49,12 @@ def DHCP_Monitor_Control(pkt):
         elif pkt.getlayer(DHCP).fields['options'][0][1] == 2:  # 发现并且打印DHCP OFFER
             options = {}
             # 提取OFFER中的Client Hardware Addr
-            MAC_Bytes = pkt.getlayer(BOOTP).fields['chaddr']
+            mac_bytes = pkt.getlayer(BOOTP).fields['chaddr']
             # 把Client Hardware Addr转换为MAC地址
-            MAC_ADDR = Change_Chaddr_To_MAC(MAC_Bytes)
+            mac_addr = change_chaddr_to_mac(mac_bytes)
             # 把从OFFER得到的信息读取并且写入options字典
-            options['MAC'] = MAC_ADDR
-            options['client_id'] = Change_MAC_To_Bytes(MAC_ADDR)
+            options['MAC'] = mac_addr
+            options['client_id'] = change_mac_to_bytes(mac_addr)
             options['requested_addr'] = pkt.getlayer(BOOTP).fields['yiaddr']
             print('发现DHCP OFFER包，请求者得到的IP为:' + pkt.getlayer(BOOTP).fields['yiaddr'])
             print('OFFER包中发现如下Options:')
@@ -67,7 +67,7 @@ def DHCP_Monitor_Control(pkt):
                 # 打印所有选项
                 print('%-15s ==> %s' % (str(option[0]), str(option[1])))
             # 发送DHCP Request,把从OFFER提取的选项和param_req_list信息,发送给制造DHCP Request的函数
-            pool.apply_async(DHCP_Request_Sendonly, args=(Global_IF, options, param_req_list))
+            pool.apply_async(dhcp_request_sendonly, args=(global_if, options, param_req_list))
 
         elif pkt.getlayer(DHCP).fields['options'][0][1] == 3:  # 发现并且打印DHCP Request
             print('发现DHCP Request包，请求的IP为:' + pkt.getlayer(BOOTP).fields['yiaddr'])
@@ -78,7 +78,7 @@ def DHCP_Monitor_Control(pkt):
                 elif str(option[0]) == "client_id":
                     # 在打印client_id时,转换为MAC地址,便于客户查看
                     print('%-15s ==> %s' % (str(option[0]), str(option[1])
-                                            + " 转换为MAC:" + Change_Chaddr_To_MAC(option[1][1:] + b"\x00" * (16 - len(option[1][1:])))
+                                            + " 转换为MAC:" + change_chaddr_to_mac(option[1][1:] + b"\x00" * (16 - len(option[1][1:])))
                                             )
                          )
                 else:
@@ -97,19 +97,19 @@ def DHCP_Monitor_Control(pkt):
         pass
 
 
-def DHCP_FULL(ifname, MAC, timeout=3):
-    global Global_IF
-    Global_IF = ifname
+def dhcp_full(ifname, mac_address, timeout=3):
+    global global_if
+    global_if = ifname
     # 发送DHCP Discover数据包
-    pool.apply_async(DHCP_Discover_Sendonly, args=(Global_IF, MAC))
+    pool.apply_async(dhcp_discover_sendonly, args=(global_if, mac_address))
     # 侦听数据包,使用过滤器filter="port 68 and port 67"进行过滤,把捕获的数据包发送给DHCP_Monitor_Control函数进行处理
-    sniff(prn=DHCP_Monitor_Control,
+    sniff(prn=dhcp_monitor_control,
           filter="port 68 and port 67",
           store=0,
-          iface=scapy_iface(Global_IF),
+          iface=scapy_iface(global_if),
           timeout=timeout)
 
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    DHCP_FULL('Net1', get_mac_address('Net1'))
+    dhcp_full('Net1', get_mac_address('Net1'))
