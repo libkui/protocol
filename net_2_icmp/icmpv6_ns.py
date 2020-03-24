@@ -52,7 +52,7 @@ def icmpv6_ns(host, ifname):  # 请求特定IPv6地址的MAC地址
 
     # 发送数据包
     result = sr1(packet, timeout=2, verbose=False)
-    
+
     # 提取返回的MAC地址
     # result.show()
     return result.getlayer("ICMPv6 Neighbor Discovery Option - Destination Link-Layer Address").fields['lladdr']
