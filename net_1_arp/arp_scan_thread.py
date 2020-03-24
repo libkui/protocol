@@ -16,20 +16,15 @@ from net_1_arp.arp_request import arp_request
 
 
 def scapy_arp_scan(network, ifname):
-    net = ipaddress.ip_network(network)
-    ip_list = []
-    for ip_add in net:
-        ip_list.append(str(ip_add))  # 把IP地址放入ip_list的清单
+    net = ipaddress.ip_network(network)  # 产生网络对象
+    ip_list = [str(ip_add) for ip_add in net]  # 把网络中的IP放入ip_list
     pool = ThreadPool(processes=100)  # 创建多进程的进程池（并发为100）
-    result = []
-    for i in ip_list:
-        result.append(pool.apply_async(arp_request, args=(i, ifname)))  # 关联函数与参数，并且添加结果到result
-    pool.close()  # 关闭pool，不在加入新的进程
-    pool.join()  # 等待每一个进程结束
-    scan_dict = {}  # 扫描结果IP地址的清单
-    # print(result)
+    result = [pool.apply_async(arp_request, args=(i, ifname)) for i in ip_list]  # 把线程放入result清单
+    pool.close()  # 关闭pool，不再加入新的线程
+    pool.join()  # 等待每一个线程结束
+    scan_dict = {}  # ARP扫描结果的字典, 键为IP, 值为MAC
     for r in result:
-        if r.get()[1] is not None:  # 如果没有获得MAC，就continue进入下一次循环
+        if r.get()[1]:  # 如果没有获得MAC，就continue进入下一次循环
             scan_dict[r.get()[0]] = r.get()[1]
     return scan_dict
 
