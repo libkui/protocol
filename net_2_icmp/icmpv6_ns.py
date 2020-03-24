@@ -45,10 +45,14 @@ def icmpv6_ns(host, ifname):  # 请求特定IPv6地址的MAC地址
     #               dst=solicited_node_multicast_address(host)) / ICMPv6ND_NS(tgt=host) / ICMPv6NDOptSrcLLAddr(lladdr=ll_mac)
 
     # 下面是最精简
+    # 系统自动产生, IPv6头部(linklocal地址, 请求节点组播地址(并且转换到组播MAC))
+    # 没有ICMPv6NDOptSrcLLAddr头部一样正常工作
     packet = IPv6() / ICMPv6ND_NS(tgt=host)
     # packet.show()
+
     # 发送数据包
     result = sr1(packet, timeout=2, verbose=False)
+    
     # 提取返回的MAC地址
     # result.show()
     return result.getlayer("ICMPv6 Neighbor Discovery Option - Destination Link-Layer Address").fields['lladdr']
