@@ -14,7 +14,7 @@ from kamene.all import *
 
 
 def scapy_ping_one(host):
-    packet = IP(dst=host, ttl=1) / ICMP() / b'Welcome to qytang'  # 构造Ping数据包
+    packet = IP(dst=host) / ICMP() / b'Welcome to qytang'  # 构造Ping数据包
     ping = sr1(packet, timeout=1, verbose=False)  # 获取响应信息，超时为2秒，关闭详细信息
 
     try:
@@ -29,5 +29,5 @@ def scapy_ping_one(host):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    print(scapy_ping_one("10.1.1.254"))
+    print(scapy_ping_one("8.8.8.8"))
     # print(scapy_ping_one(sys.argv[1]))
