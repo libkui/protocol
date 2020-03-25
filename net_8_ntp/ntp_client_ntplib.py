@@ -11,9 +11,9 @@ import ntplib
 from time import ctime
 
 
-def ntp_client(NTP_SERVER):
+def ntp_client(ntp_server):
     c = ntplib.NTPClient()
-    response = c.request(NTP_SERVER, version=3)
+    response = c.request(ntp_server, version=3)
     print('\t' + ctime(response.tx_time))
 
 

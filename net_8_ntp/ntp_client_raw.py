@@ -10,13 +10,13 @@
 import socket
 import struct
 import time
-TIME_1970 = 2208988800
+time_1970 = 2208988800
 
 
-def ntp_client(NTP_SERVER):
+def ntp_client(ntp_server):
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # socket.AF_INET为IP，socket.SOCK_DGRAM为UDP
     data = b'\x1b' + 47 * b'\0'  # \x1b(00 011(版本3) 011(客户模式)) + 47个\0凑齐48个字节的头部
-    client.sendto(data, (NTP_SERVER, 123))  # 数据，IP地址和端口号
+    client.sendto(data, (ntp_server, 123))  # 数据，IP地址和端口号
     data, address = client.recvfrom(1024)  # 接收缓存为1024
     if data:
         print('Response received from:', address)  # 如果收到数据，打印地址信息
@@ -24,7 +24,7 @@ def ntp_client(NTP_SERVER):
     # print (s)
     t = struct.unpack('!12I', data)[10]  # 倒数第二个为时间
     print(t)
-    t -= TIME_1970  # Linux 自己的系統時間，由 1970/01/01 開始記錄的時間參數
+    t -= time_1970  # Linux 自己的系統時間，由 1970/01/01 開始記錄的時間參數
     print(t)
     print('\tTime=%s' % time.ctime(t))
 
