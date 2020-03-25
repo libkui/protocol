@@ -7,7 +7,7 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 import os
 import sqlite3
-from GET import snmpv2_get
+from net_7_snmp.snmp_v2.snmpv2_get import snmpv2_get
 import datetime
 import time
 
@@ -32,7 +32,7 @@ def get_info_writedb(ip, rocommunity, dbname, seconds):
         # 记录当前时间
         time_info = datetime.datetime.now()
         # 把数据写入数据库
-        cursor.execute("insert into routerdb (time, cpu, memu, memf) values ('%s', %d, '%d', '%d')" % (time_info, int(cpu_info), int(memu_info), int(memf_info)))
+        cursor.execute("insert into routerdb (time, cpu, memu, memf) values ('%s', %d, %d, %d)" % (time_info, int(cpu_info), int(memu_info), int(memf_info)))
         # 每五秒采集一次数据
         time.sleep(5)
         seconds -= 5

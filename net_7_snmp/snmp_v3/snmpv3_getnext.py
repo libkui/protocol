@@ -7,8 +7,6 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 from pysnmp.entity.rfc3413.oneliner import cmdgen
-import sys
-from io import StringIO
 
 cmdGen = cmdgen.CommandGenerator()
 
@@ -66,7 +64,7 @@ def snmpv3_getnext(ip='', user='', hash_meth=None, hash_key=None, cry_meth=None,
         print('三种USM: NoAuthNoPriv, AuthNoPriv, AuthPriv.。请选择其中一种。')
         return
     # ========================判断安全模型结束==========================
-    errorIndication, errorStatus, errorIndex, varBindTable = cmdGen.nextCmd(
+    error_indication, error_status, error_index, var_bind_table = cmdGen.nextCmd(
         cmdgen.UsmUserData(user, hash_key, cry_key,
                            authProtocol=hashval,
                            privProtocol=cryval),  # 添加用户，散列密钥，加密密钥，散列协议，加密协议
@@ -75,18 +73,18 @@ def snmpv3_getnext(ip='', user='', hash_meth=None, hash_key=None, cry_meth=None,
         lexicographicMode=True, maxRows=num, ignoreMonIncreasingOid=True  # 指定最大行数
     )
 
-    if errorIndication:  # 打印错误
-        print(errorIndication)
+    oid_list = []
+    if error_indication:  # 打印错误
+        print(error_indication)
     else:
-        if errorStatus:  # 打印错误
+        if error_status:  # 打印错误
             print('%s at %s' % (
-                errorStatus.prettyPrint(),
-                errorIndex and varBindTable[-1][int(errorIndex) - 1] or '?'
+                error_status.prettyPrint(),
+                error_index and var_bind_table[-1][int(error_index) - 1] or '?'
             )
                   )
         else:
-            oid_list = []
-            for varBindTableRow in varBindTable:
+            for varBindTableRow in var_bind_table:
                 for oid, val in varBindTableRow:
                     oid_list.append((oid.prettyPrint(), val.prettyPrint()))  # 添加oid和对应值的信息到oid_list
 
@@ -96,18 +94,42 @@ def snmpv3_getnext(ip='', user='', hash_meth=None, hash_key=None, cry_meth=None,
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     # 接口信息
-    for item in snmpv3_getnext('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.2.2.1.2',
+    for item in snmpv3_getnext('10.1.1.253',
+                               'qytanguser',
+                               'sha',
+                               'Cisc0123',
+                               'des',
+                               'Cisc0123',
+                               '1.3.6.1.2.1.2.2.1.2',
                                5):
         print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
     # 接口速率
-    for item in snmpv3_getnext('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.2.2.1.5',
+    for item in snmpv3_getnext('10.1.1.253',
+                               'qytanguser',
+                               'sha',
+                               'Cisc0123',
+                               'des',
+                               'Cisc0123',
+                               '1.3.6.1.2.1.2.2.1.5',
                                5):
         print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
     # 进接口字节数
-    for item in snmpv3_getnext('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.2.2.1.10',
+    for item in snmpv3_getnext('10.1.1.253',
+                               'qytanguser',
+                               'sha',
+                               'Cisc0123',
+                               'des',
+                               'Cisc0123',
+                               '1.3.6.1.2.1.2.2.1.10',
                                5):
         print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
     # 出接口字节数
-    for item in snmpv3_getnext('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.2.2.1.10',
+    for item in snmpv3_getnext('10.1.1.253',
+                               'qytanguser',
+                               'sha',
+                               'Cisc0123',
+                               'des',
+                               'Cisc0123',
+                               '1.3.6.1.2.1.2.2.1.10',
                                5):
         print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息

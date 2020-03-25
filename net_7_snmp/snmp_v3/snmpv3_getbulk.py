@@ -9,7 +9,6 @@
 from pysnmp.entity import engine, config
 from pysnmp.entity.rfc3413 import cmdgen
 from pysnmp.carrier.asynsock.dgram import udp
-import sys
 
 
 oid_list = []
@@ -24,20 +23,20 @@ config.addSocketTransport(snmpEngine, udp.domainName, udp.UdpSocketTransport().o
 
 
 # Error/response reciever
-def cbFun(sendRequesthandle, errorIndication, errorStatus, errorIndex, varBindTable, cbCtx):
+def cb_fun(send_request_handle, error_indication, error_status, error_index, var_bind_table, cb_ctx):
     global oid_list
     global maxRepetitions
-    if errorIndication:
-        print(errorIndication)
+    if error_indication:
+        print(error_indication)
         return  # stop on error
-    if errorStatus:
-        print('%s at %s' % (errorStatus.prettyPrint(), errorIndex and varBindTable[-1][int(errorIndex) - 1] or '?'))
+    if error_status:
+        print('%s at %s' % (error_status.prettyPrint(), error_index and var_bind_table[-1][int(error_index) - 1] or '?'))
         return  # stop on error
-    for varBindRow in varBindTable:
+    for var_bind_row in var_bind_table:
         if maxRepetitions == 0:  # 如果为0
             return  # 停止，并且返回
         else:
-            for oid, val in varBindTable[0]:
+            for oid, val in var_bind_table[0]:
                 oid_list.append((oid.prettyPrint(), val.prettyPrint()))  # 把oid和val的对添加到全局清单oid_list
         maxRepetitions -= 1  # 数量减一
 
@@ -113,7 +112,7 @@ def snmpv3_getbulk(ip='', user='', hash_meth=None, hash_key=None, cry_meth=None,
 
     # Prepare initial request to be sent
     # 创建'yourDevice'，有OID和处理方法cbFun
-    cmdgen.BulkCommandGenerator().sendReq(snmpEngine, 'yourDevice', 0, 1, ((oid, None),), cbFun)
+    cmdgen.BulkCommandGenerator().sendReq(snmpEngine, 'yourDevice', 0, 1, ((oid, None),), cb_fun)
 
     # Run I/O dispatcher which would send pending queries and process responses
     snmpEngine.transportDispatcher.runDispatcher()  # 运行实例
@@ -122,7 +121,7 @@ def snmpv3_getbulk(ip='', user='', hash_meth=None, hash_key=None, cry_meth=None,
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    # 接口信息
+    # # 接口信息
     # for item in snmpv3_getbulk('10.1.1.253',
     #                            'qytanguser',
     #                            'sha',
@@ -133,7 +132,7 @@ if __name__ == '__main__':
     #                            5):
     #     print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
 
-    # 接口速率
+    # # 接口速率
     # for item in snmpv3_getbulk('10.1.1.253',
     #                            'qytanguser',
     #                            'sha',
@@ -143,8 +142,8 @@ if __name__ == '__main__':
     #                            '1.3.6.1.2.1.2.2.1.5',
     #                            5):
     #     print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
-
-    # 进接口字节数
+    #
+    # # 进接口字节数
     # for item in snmpv3_getbulk('10.1.1.253',
     #                            'qytanguser',
     #                            'sha',
@@ -154,7 +153,7 @@ if __name__ == '__main__':
     #                            '1.3.6.1.2.1.2.2.1.10',
     #                            5):
     #     print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
-
+    #
     # 出接口字节数
     for item in snmpv3_getbulk('10.1.1.253',
                                'qytanguser',

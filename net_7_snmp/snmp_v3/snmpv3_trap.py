@@ -47,10 +47,10 @@ def analysis(info):
     pprint(info)
 
 
-def cbFun(snmpEngine, stateReference, contextEngineId, contextName, varBinds, cbCtx):
+def cb_fun(snmp_engine, state_reference, context_engine_id, context_name, var_binds, cb_ctx):
     # Callback function for receiving notifications
     result_dict = {}
-    for name, val in varBinds:
+    for name, val in var_binds:
         result_dict[name.prettyPrint()] = val.prettyPrint()
     analysis(result_dict)
     # # print('%s = %s' % (name.prettyPrint(), val.prettyPrint()))
@@ -92,10 +92,10 @@ def cbFun(snmpEngine, stateReference, contextEngineId, contextName, varBinds, cb
 def snmpv3_trap(user='', hash_meth=None, hash_key=None, cry_meth=None, cry_key=None, engineid='', ip='127.0.0.1',
                 port=162):
     # Create SNMP engine with autogenernated engineID and pre-bound
-    snmpEngine = engine.SnmpEngine()
+    snmp_engine = engine.SnmpEngine()
 
     config.addSocketTransport(
-        snmpEngine,
+        snmp_engine,
         udp.domainName,
         udp.UdpTransport().openServerMode((ip, port))
     )
@@ -152,22 +152,22 @@ def snmpv3_trap(user='', hash_meth=None, hash_key=None, cry_meth=None, cry_key=N
         return
 
     config.addV3User(
-        snmpEngine, user,
+        snmp_engine, user,
         hashval, hash_key,
         cryval, cry_key,
         contextEngineId=v2c.OctetString(hexValue=engineid)
     )
 
     # Register SNMP Application at the SNMP engine
-    ntfrcv.NotificationReceiver(snmpEngine, cbFun)
+    ntfrcv.NotificationReceiver(snmp_engine, cb_fun)
 
-    snmpEngine.transportDispatcher.jobStarted(1)  # this job would never finish
+    snmp_engine.transportDispatcher.jobStarted(1)  # this job would never finish
 
     # Run I/O dispatcher which would receive queries and send confirmations
     try:
-        snmpEngine.transportDispatcher.runDispatcher()
-    except:
-        snmpEngine.transportDispatcher.closeDispatcher()
+        snmp_engine.transportDispatcher.runDispatcher()
+    except Exception:
+        snmp_engine.transportDispatcher.closeDispatcher()
         raise
 
 

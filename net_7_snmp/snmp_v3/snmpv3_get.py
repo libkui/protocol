@@ -9,11 +9,11 @@
 from pysnmp.entity import engine, config
 from pysnmp.carrier.asynsock.dgram import udp
 from pysnmp.entity.rfc3413 import cmdgen
-from pysnmp.proto import rfc1902
 import sys
+from io import StringIO
 
 # Create SNMP engine instance
-snmpEngine = engine.SnmpEngine()
+snmpEngine = engine.SnmpEngine()  # 添加SNMP引擎实例
 
 # Setup transport endpoint and bind it with security settings yielding
 # a target name (choose one entry depending of the transport needed).
@@ -22,20 +22,22 @@ config.addSocketTransport(snmpEngine, udp.domainName, udp.UdpSocketTransport().o
 
 
 # Error/response reciever
-def cbFun(sendRequestHandle, errorIndication, errorStatus, errorIndex, varBindTable, cbCtx):
-    if errorIndication:
-        print("写入失败!!!")
-        print(errorIndication)
-    elif errorStatus:
-        print("写入失败!!!")
-        print('%s at %s' % (errorStatus.prettyPrint(), errorIndex and varBindTable[-1][int(errorIndex) - 1] or '?'))
+def cb_fun(send_request_handle, error_indication, error_status, error_index, var_bind_table, cb_ctx):  # 接收信息并处理
+    global oid_list  # 全局清单
+    oid_list = []  # 创建oid_list全局清单
+    if error_indication:  # 错误打印
+        print(error_indication)
+    elif error_status:  # 错误打印
+        print('%s at %s' % (error_status.prettyPrint(), error_index and var_bind_table[-1][int(error_index) - 1] or '?'))
     else:
-        print("写入成功!!!")
-        for oid, val in varBindTable:
-            print('%s = %s' % (oid.prettyPrint(), val))
+        for oid, val in var_bind_table:
+            try:
+                oid_list.append((oid.prettyPrint(), val.__bytes__()))  # 把oid和val的对添加到全局清单oid_list
+            except Exception:
+                oid_list.append((oid.prettyPrint(), val))  # 把oid和val的对添加到全局清单oid_list
 
 
-def snmpv3_set(ip='', user='', hash_meth=None, hash_key=None, cry_meth=None, cry_key=None, oid='', customerString=''):
+def snmpv3_get(ip='', user='', hash_meth=None, hash_key=None, cry_meth=None, cry_key=None, oid=''):
     # usmHMACMD5AuthProtocol - MD5 hashing
     # usmHMACSHAAuthProtocol - SHA hashing
     # usmNoAuthProtocol - no authentication
@@ -102,20 +104,30 @@ def snmpv3_set(ip='', user='', hash_meth=None, hash_key=None, cry_meth=None, cry
 
     # Prepare and send a request message
     # 创建'yourDevice'，有OID和处理方法cbFun
-    if isinstance(customerString, str):
-        set_value = rfc1902.OctetString(customerString)
-    elif isinstance(customerString, int):
-        set_value = rfc1902.Integer(customerString)
-
-    cmdgen.SetCommandGenerator().sendReq(snmpEngine, 'yourDevice', ((oid, set_value),), cbFun)
+    cmdgen.GetCommandGenerator().sendReq(snmpEngine, 'yourDevice', ((oid, None),), cb_fun)
 
     # Run I/O dispatcher which would send pending queries and process responses
     snmpEngine.transportDispatcher.runDispatcher()  # 运行实例
+    return oid_list  # 返回oid_list
 
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    # 配置主机名
-    snmpv3_set('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.1.5.0', 'QYTR10')
-    # shutdown G2
-    snmpv3_set('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.2.2.1.7.2', 2)
+    # 系统描述
+    for item in snmpv3_get('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.1.1.0'):
+        print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
+    # 主机名
+    for item in snmpv3_get('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.1.5.0'):
+        print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
+    # 地点
+    for item in snmpv3_get('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.2.1.1.6.0'):
+        print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
+    # cpmCPUTotal5sec
+    for item in snmpv3_get('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.4.1.9.9.109.1.1.1.1.3.7'):
+        print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
+    # cpmCPUMemoryUsed
+    for item in snmpv3_get('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.4.1.9.9.109.1.1.1.1.12.7'):
+        print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
+    # cpmCPUMemoryFree
+    for item in snmpv3_get('10.1.1.253', 'qytanguser', 'sha', 'Cisc0123', 'des', 'Cisc0123', '1.3.6.1.4.1.9.9.109.1.1.1.1.13.7'):
+        print('OID: ', item[0], 'VALUE: ', item[1])  # 从oid_list读取并且打印信息
