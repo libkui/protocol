@@ -12,7 +12,7 @@ logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 import re
 from kamene.all import *
 import hexdump
-from part1_classic_protocols.tools.scapy_iface import scapy_iface
+from tools.scapy_iface import scapy_iface
 
 qyt_string = b''
 
@@ -27,19 +27,19 @@ def telnet_monitor_callback(pkt):
     global qyt_string
     try:
         qyt_string = qyt_string + pkt.getlayer(Raw).fields['load']  # 提取Telnet中的数据，并且把他们拼在一起
-    except Exception as e:
+    except Exception:
         pass
 
 
 def telnet_monitor(user_filter, ifname):
     # 捕获过滤器匹配的流量, 对流量进行解码
-    PTKS = sniff(prn=telnet_monitor_callback,
+    ptks = sniff(prn=telnet_monitor_callback,
                  filter=user_filter,
                  store=1,
                  iface=scapy_iface(ifname),
                  timeout=10)
 
-    wrpcap("telnet.cap", PTKS)  # 保持捕获的数据包到文件
+    wrpcap("telnet.cap", ptks)  # 保持捕获的数据包到文件
     qythexdump(qyt_string)  # 解码展示
 
 

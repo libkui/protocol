@@ -11,6 +11,7 @@ import logging
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 from kamene.all import *
 import re
+from net_17_traffic_analysis.scapy_traffic_analysis.scapy_0_pcap_dir import pcap_dir
 
 
 def pcap_parser(filename, keyword):
@@ -24,7 +25,7 @@ def pcap_parser(filename, keyword):
             # 如果负载内容匹配，并且源端口为23，把数据包添加到return_pkts_list
             if re.match(re_keyword, pkt_load) and packet.getlayer('TCP').fields['sport'] == 23:
                 return_pkts_list.append(packet)
-        except:
+        except Exception:
             pass
     return return_pkts_list  # 返回匹配数据包的清单！
 
@@ -32,7 +33,7 @@ def pcap_parser(filename, keyword):
 if __name__ == "__main__":
     # 使用Linux解释器 & WIN解释器
     # 搜索PCAP文件"login_invalid.pcap"中,出现invalid关键字的数据包
-    pkts = pcap_parser("login_invalid.pcap", 'invalid')
+    pkts = pcap_parser(pcap_dir + "login_invalid.pcap", 'invalid')
     i = 1
     for pkt in pkts:
         print('==================第' + str(i) + "个包==================")
