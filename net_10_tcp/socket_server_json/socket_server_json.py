@@ -10,10 +10,10 @@
 import json
 from socket import *
 
-return_data = {'data_recieved': True, 'data': 'Python'*2048}
+# return_data = {'data_recieved': True, 'data': 'Python'*2048}
 
 
-def Server_JSON(ip, port):
+def server_json(ip, port):
     # 创建TCP Socket, AF_INET为IPv4，SOCK_STREAM为TCP
     sockobj = socket(AF_INET, SOCK_STREAM)
     # 绑定套接字到地址，地址为（host，port）的元组
@@ -30,10 +30,10 @@ def Server_JSON(ip, port):
         recieved_message = b''  # 预先定义接收信息变量
         recieved_message_fragment = connection.recv(1024)  # 读取接收到的信息，写入到接收到信息分片
         if len(recieved_message_fragment) < 1024:  # 如果长度小于1024!表示客户发的数据小于1024!
-            connection.send(json.dumps(return_data).encode())  # 返回确认信息
             recieved_message = recieved_message_fragment
             obj = json.loads(recieved_message.decode())  # 把接收到信息json.loads回正常的obj
             print(obj)  # 打印obj，当然也可以选择写入文件或者数据库
+            connection.send(json.dumps(obj).encode())  # 返回确认信息
         else:
             while len(recieved_message_fragment) == 1024:  # 等于1024表示还有后续数据!
                 recieved_message = recieved_message + recieved_message_fragment  # 把接收到信息分片重组装
@@ -42,12 +42,12 @@ def Server_JSON(ip, port):
                 recieved_message = recieved_message + recieved_message_fragment  # 如果数据小于1024!拼接最后数据
             obj = json.loads(recieved_message.decode())  # 把接收到信息json.loads回正常的obj
             print(obj)  # 打印obj，当然也可以选择写入文件或者数据库
-            connection.send(json.dumps(return_data).encode())
+            connection.send(json.dumps(obj).encode())
         connection.close()
 
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    Server_IP = '0.0.0.0'
-    Server_Port = 6666
-    Server_JSON(Server_IP, Server_Port)
+    server_ip = '0.0.0.0'
+    server_port = 6666
+    server_json(server_ip, server_port)

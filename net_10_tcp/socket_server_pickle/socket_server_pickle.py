@@ -12,7 +12,7 @@ from io import BytesIO
 from socket import *
 
 
-def Server_PIC(ip, port):
+def server_pickle(ip, port):
     # 创建TCP Socket, AF_INET为IPv4，SOCK_STREAM为TCP
     sockobj = socket(AF_INET, SOCK_STREAM)
     # 绑定套接字到地址，地址为（host，port）的元组
@@ -35,7 +35,7 @@ def Server_PIC(ip, port):
             print("收到字典数据!!!")
             print(obj)  # 打印obj，当然也可以选择写入文件或者数据库
         elif isinstance(obj, bytes):
-            myfile = open('NewLogo.jpg', 'wb')
+            myfile = open('./file_dir/NewLogo.jpg', 'wb')
             myfile.write(obj)
             myfile.close()
             print("收到二进制数据,并写入到文件!!!")
@@ -44,6 +44,6 @@ def Server_PIC(ip, port):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    Server_IP = '0.0.0.0'
-    Server_Port = 6666
-    Server_PIC(Server_IP, Server_Port)
+    server_ip = '0.0.0.0'
+    server_port = 8888
+    server_pickle(server_ip, server_port)

@@ -12,7 +12,7 @@ from io import BytesIO
 from socket import *
 
 
-def Client_PIC(ip, port, obj):
+def client_pickle(ip, port, obj):
     msg = pickle.dumps(obj)  # 把obj pickle到一个二进制字串
     sockobj = socket(AF_INET, SOCK_STREAM)
     sockobj.connect((ip, port))
@@ -27,7 +27,7 @@ def Client_PIC(ip, port, obj):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    dict = {'key1': 'welcome to qytang', 'key2': [1, 2, 3, 4, 5], 'key3': ([3, 4], 'python')}
-    myfile = open('Logo.jpg', 'rb').read()
-    Client_PIC('10.1.1.100', 6666, dict)
-    Client_PIC('10.1.1.100', 6666, myfile)
+    send_dict = {'key1': 'welcome to qytang', 'key2': [1, 2, 3, 4, 5], 'key3': ([3, 4], 'python')}
+    myfile = open('./file_dir/Logo.jpg', 'rb').read()
+    client_pickle('10.1.1.100', 8888, send_dict)
+    client_pickle('10.1.1.100', 8888, myfile)
