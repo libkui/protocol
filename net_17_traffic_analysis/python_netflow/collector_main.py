@@ -9,7 +9,7 @@
 import logging
 import sys
 import socketserver
-from collector_v9 import ExportPacket, createdb
+from net_17_traffic_analysis.python_netflow.collector_v9_module import ExportPacket, createdb
 
 logging.getLogger().setLevel(logging.INFO)
 ch = logging.StreamHandler(sys.stdout)

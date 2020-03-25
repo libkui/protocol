@@ -8,7 +8,7 @@
 
 import sqlite3
 from matplotlib import pyplot as plt
-
+from net_17_traffic_analysis.python_netflow.collector_v9_module import db_dir
 # 协议名称映射表
 protocol_map = {'6/22': 'SSH',
                 '6/23': 'Telnet',
@@ -22,7 +22,7 @@ protocol_map = {'6/22': 'SSH',
                 '17/5355': 'LLMNR'}
 
 # 连接数据库
-conn = sqlite3.connect('netflow.sqlite')
+conn = sqlite3.connect(db_dir + 'netflow.sqlite')
 cursor = conn.cursor()
 
 # 找到唯一的目的端口和协议

@@ -10,6 +10,8 @@ import struct
 import os
 import sqlite3
 
+db_dir = './db_dir/'
+
 
 field_types = {
     0: 'UNKNOWN_FIELD_TYPE',  # fallback for unknown field types
@@ -155,11 +157,11 @@ def createdb():
     创建数据库表,推荐未来改进为MongoDB
     """
     # 判断是否存在数据库,如果存在就删除
-    if os.path.exists('netflow.sqlite'):
-        os.remove('netflow.sqlite')
+    if os.path.exists(db_dir + 'netflow.sqlite'):
+        os.remove(db_dir + 'netflow.sqlite')
 
     # 连接SQLite数据库
-    conn = sqlite3.connect('netflow.sqlite')
+    conn = sqlite3.connect(db_dir + 'netflow.sqlite')
     cursor = conn.cursor()
 
     # 执行创建表的任务
@@ -173,7 +175,7 @@ def netflowdb(netflow_dict):
     写入数据库,推荐未来改进为MongoDB
     """
     # 连接SQLite数据库
-    conn = sqlite3.connect('netflow.sqlite')
+    conn = sqlite3.connect(db_dir + 'netflow.sqlite')
     cursor = conn.cursor()
 
     # 读取Python字典数据，并逐条写入SQLite数据库
