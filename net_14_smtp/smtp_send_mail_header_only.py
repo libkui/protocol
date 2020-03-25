@@ -7,21 +7,22 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 
-import smtplib, sys, email.utils
+import smtplib
+import email.utils
 
 
-def qyt_smtp_sendmail(mailserver, username, password, From, To, Subj):
+def qyt_smtp_sendmail(mailserver, username, password, from_mail, to_mail, subj):
     # 使用SSL加密SMTP发送邮件, 此函数发送的邮件仅仅只有主题,并没有正文部分,用于简单告警的目的
     # 更加准确的描述为,这个代码发送的邮件只有头部,没有内容部分
-    Tos = To.split(';')  # 把多个邮件接受者通过';'分开
-    Date = email.utils.formatdate()  # 格式化邮件时间
+    tos = to_mail.split(';')  # 把多个邮件接受者通过';'分开
+    date = email.utils.formatdate()  # 格式化邮件时间
 
     # 构建头部信息,与HTTP头部相似,需要使用换行分隔
-    text = f'From: {From}\nTo: {To}\nData: {Date}\nSubject: {Subj}\n\n{Subj}'
+    text = f'From: {from_mail}\nTo: {to_mail}\nData: {date}\nSubject: {subj}\n\n{subj}'
 
     server = smtplib.SMTP_SSL(mailserver, 465)  # 连接邮件服务器
     server.login(username, password)  # 通过用户名和密码登录邮件服务器
-    failed = server.sendmail(From, Tos, text)  # 发送邮件
+    failed = server.sendmail(from_mail, tos, text)  # 发送邮件
     server.quit()  # 退出会话
     if failed:
         print('Falied recipients:', failed)  # 如果出现故障，打印故障原因！

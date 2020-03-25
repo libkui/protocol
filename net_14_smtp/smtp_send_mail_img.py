@@ -12,34 +12,38 @@ import smtplib, email.utils
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
+from email.mime.image import MIMEImage
+
+attachment_dir = './attachment_dir/'
 
 
-def qyt_smtp_attachment(mailserver, username, password, From, To, Subj, Main_Body, files=None):
+def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj, main_body, images=None):
     # 使用SSL加密SMTP发送邮件, 此函数发送的邮件有主题,有正文,还可以发送附件
-    Tos = To.split(';')  # 把多个邮件接受者通过';'分开
-    Date = email.utils.formatdate()  # 格式化邮件时间
+    tos = to_mail.split(';')  # 把多个邮件接受者通过';'分开
+    date = email.utils.formatdate()  # 格式化邮件时间
     msg = MIMEMultipart()  # 产生MIME多部分的邮件信息
-    msg["Subject"] = Subj  # 主题
-    msg["From"] = From  # 发件人
-    msg["To"] = To  # 收件人
-    msg["Date"] = Date  # 发件日期
+    msg["Subject"] = subj  # 主题
+    msg["From"] = from_mail  # 发件人
+    msg["To"] = to_mail  # 收件人
+    msg["Date"] = date  # 发件日期
 
-    part = MIMEText(Main_Body)
+    part = MIMEText(main_body, 'html', 'utf-8')
     msg.attach(part)  # 添加正文
-
-    if files:  # 如果存在附件文件
-        for file in files:  # 逐个读取文件,并添加到附件
-            # MIMEXXX决定了什么类型 MIMEApplication为二进制文件
-            # 添加二进制文件
-            part = MIMEApplication(open(file, 'rb').read())
-            # 添加头部信息, 说明此文件为附件,并且添加文件名
-            part.add_header('Content-Disposition', 'attachment', filename=file)
+    if images:
+        for img in images:
+            fp = open(attachment_dir + img, 'rb')
+            # MIMEXXX决定了什么类型 MIMEImage为图片文件
+            # 添加图片
+            images_mime_part = MIMEImage(fp.read())
+            fp.close()
+            # 添加头部! Content-ID的名字会在HTML中调用!
+            images_mime_part.add_header('Content-ID', img.split('.')[0])  # 这个部分就是cid: xxx的名字!
             # 把这个部分内容添加到MIMEMultipart()中
-            msg.attach(part)
+            msg.attach(images_mime_part)
 
     server = smtplib.SMTP_SSL(mailserver, 465)  # 连接邮件服务器
     server.login(username, password)  # 通过用户名和密码登录邮件服务器
-    failed = server.sendmail(From, Tos, msg.as_string())  # 发送邮件
+    failed = server.sendmail(from_mail, tos, msg.as_string())  # 发送邮件
     server.quit()  # 退出会话
     if failed:
         print('Falied recipients:', failed)  # 如果出现故障，打印故障原因！
@@ -49,11 +53,20 @@ def qyt_smtp_attachment(mailserver, username, password, From, To, Subj, Main_Bod
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
+    # 注意cid:Logo 对应头部里边的Content-ID的名称
+    main_body_txt = """
+    <h3>图片测试</h3>
+    <p>这是乾颐堂公司LOGO图片。</p>
+    <p>
+    <br><img src="cid:Logo"></br> 
+    </p>
+    <p>
+    """
     qyt_smtp_attachment('smtp.qq.com',
                         '3348326959@qq.com',
                         'dmyymagcazklcjie',
                         '3348326959@qq.com',
                         '3348326959@qq.com;collinsctk@qytang.com',
-                        '附件测试_主题',
-                        '附件测试_正文',
+                        '图片测试',
+                        main_body_txt,
                         ['Logo.jpg'])
