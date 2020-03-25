@@ -18,8 +18,10 @@
 
 import pyshark
 import pprint
-#####################最原始操作,信息过量#####################
-# cap = pyshark.FileCapture('dos.pcap')
+from net_17_traffic_analysis.pyshark_traffic_analysis.pyshark_0_pcap_dir import pcap_data_dir
+
+# ####################最原始操作,信息过量#####################
+# cap = pyshark.FileCapture(pcap_data_dir + 'dos.pcap')
 #
 # for pkt in cap:
 #     pkt_dict = {}
@@ -30,8 +32,8 @@ import pprint
 #
 #     print(pkt.highest_layer)
 
-#####################传一个函数,对pkt进行处理#####################
-cap = pyshark.FileCapture('dos.pcap', keep_packets=False)  # 读取pcap文件,数据包被读取后,不在内存中保存!节约内存!
+# ####################传一个函数,对pkt进行处理#####################
+cap = pyshark.FileCapture(pcap_data_dir + 'dos.pcap', keep_packets=False)  # 读取pcap文件,数据包被读取后,不在内存中保存!节约内存!
 
 
 # 所有显示字段一览

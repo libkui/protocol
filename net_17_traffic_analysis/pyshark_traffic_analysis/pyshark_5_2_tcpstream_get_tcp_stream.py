@@ -17,6 +17,7 @@
 # 不能保存分析后的数据包到PCAP
 
 import pyshark
+from net_17_traffic_analysis.pyshark_traffic_analysis.pyshark_0_pcap_dir import pcap_data_dir
 
 
 def get_tcp_stream(pcapfile, sid):
@@ -29,7 +30,7 @@ def get_tcp_stream(pcapfile, sid):
 if __name__ == '__main__':
     all_telnet_data = ''
     i = 1
-    for pkt in get_tcp_stream('telnet_session.pcap', 3):
+    for pkt in get_tcp_stream(pcap_data_dir + 'telnet_session.pcap', 3):
         try:
             # 提取Telnet数据部分的字段
             for x in pkt.telnet.data.fields:

@@ -17,12 +17,11 @@
 # 不能保存分析后的数据包到PCAP
 
 import pyshark
-
-
+from net_17_traffic_analysis.pyshark_traffic_analysis.pyshark_0_pcap_dir import pcap_data_dir
 pkt_list = []
 
 # 分析现象级数据包,"tcp重传的数据包"
-cap = pyshark.FileCapture('dos.pcap', keep_packets=False, display_filter='tcp.analysis.retransmission')
+cap = pyshark.FileCapture(pcap_data_dir + 'dos.pcap', keep_packets=False, display_filter='tcp.analysis.retransmission')
 
 
 def print_highest_layer(pkt):

@@ -17,6 +17,7 @@
 # 不能保存分析后的数据包到PCAP
 
 import pyshark
+from net_17_traffic_analysis.pyshark_traffic_analysis.pyshark_0_pcap_dir import pcap_data_dir
 
 
 def get_max_id(pcapfile):
@@ -28,7 +29,7 @@ def get_max_id(pcapfile):
     for pkt in cap:
         try:
             sess_index.append(pkt.tcp.stream)  # 把所有的tcp流索引ID放入清单
-        except:
+        except Exception:
             pass
 
     if len(sess_index) == 0:  # 如果没有任何索引ID就打印错误
@@ -40,4 +41,4 @@ def get_max_id(pcapfile):
 
 
 if __name__ == '__main__':
-    print(get_max_id('dos.pcap'))
+    print(get_max_id(pcap_data_dir + 'dos.pcap'))

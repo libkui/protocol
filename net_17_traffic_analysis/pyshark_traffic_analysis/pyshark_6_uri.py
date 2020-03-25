@@ -17,10 +17,10 @@
 # 不能保存分析后的数据包到PCAP
 
 import pyshark
-
+from net_17_traffic_analysis.pyshark_traffic_analysis.pyshark_0_pcap_dir import pcap_data_dir
 pkt_list = []
 
-cap = pyshark.FileCapture('dos.pcap', keep_packets=False, display_filter='http')
+cap = pyshark.FileCapture(pcap_data_dir + 'dos.pcap', keep_packets=False, display_filter='http')
 
 url_dict = {}
 
@@ -34,14 +34,14 @@ def print_highest_layer(pkt):
         elif len(host_list[-1]) == 3:  # 如果最后一段只有三位,例如'com','net'!我们就取后两个部分,例如sina.com
             host = host_list[-2] + '.' + host_list[-1]
         else:
-            next
+            pass
 
         # 字典数据结构如下
         # 键为method和host, 值为数量
         counts = url_dict.get((pkt.http.request_method, host), 0)
         counts += 1
         url_dict[(pkt.http.request_method, host)] = counts
-    except:
+    except Exception:
         pass
 
 
@@ -61,11 +61,11 @@ if __name__ == '__main__':
 
     plt.barh(url, hits, height=0.5)
 
-    ###########################添加注释###################################
+    # ##########################添加注释###################################
     plt.rcParams['font.sans-serif'] = ['SimHei']  # 设置中文
     plt.title('站点访问量统计')  # 主题
     plt.xlabel('访问数量')  # X轴注释
     plt.ylabel('站点')  # Y轴注释
-    ###########################添加注释###################################
+    # ##########################添加注释###################################
 
     plt.show()
