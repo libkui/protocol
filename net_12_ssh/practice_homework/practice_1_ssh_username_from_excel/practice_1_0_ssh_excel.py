@@ -6,8 +6,11 @@
 # 教主技术进化论拓展你的技术新边疆
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
-from Practice_1_Parser_Excel_Return_dict import excel_parser_return_dict
-from Adv_SSH_Client import QYT_SSHClient_MultiCMD
+from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_1_parser_excel_return_dict import excel_parser_return_dict
+from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_1_excel_write_openpyxl import excel_write
+from net_12_ssh.ssh_sftp.ssh_client_multi_cmd import ssh_client_multi_cmd
+from net_12_ssh.ssh_sftp.ssh_client_one_cmd import ssh_client_one_cmd
+import re
 
 
 def excel_user_to_ios(ip, username, password, excelfile):
@@ -19,17 +22,12 @@ def excel_user_to_ios(ip, username, password, excelfile):
         cmd = 'username ' + x + ' privilege ' + str(y[1]) + ' password ' + str(y[0])
         cmds.append(cmd)
     # ssh登录路由器，配置用户信息
-    QYT_SSHClient_MultiCMD(ip, username, password, cmds, verbose=False)
-
-
-from Practice_1_Excel_Write_openpyxl import excel_write
-from Simple_SSH_Client import QYT_SSHClient_SingleCMD
-import re
+    ssh_client_multi_cmd(ip, username, password, cmds, verbose=False)
 
 
 def excel_ios_user_to_excel(ip, username, password, excelfile):
     # 执行'sh run | in username'并提取结果
-    show_run = QYT_SSHClient_SingleCMD(ip, username, password, 'sh run | in username')
+    show_run = ssh_client_one_cmd(ip, username, password, 'sh run | in username')
     # 把结果通过'\r\n'分离，产生清单
     show_run_list = show_run.split('\r\n')
     user_dict = {}
@@ -48,5 +46,5 @@ def excel_ios_user_to_excel(ip, username, password, excelfile):
 
 
 if __name__ == '__main__':
-    excel_user_to_ios('10.1.1.253', 'admin', 'Cisc0123', 'Practice_1_Read_Accounts.xlsx')
-    # excel_ios_user_to_excel('10.1.1.253', 'admin', 'Cisc0123', 'Practice_1_IOSUSER.xlsx')
+    excel_user_to_ios('10.1.1.253', 'admin', 'Cisc0123', './excel_file/read_accounts.xlsx')
+    excel_ios_user_to_excel('10.1.1.253', 'admin', 'Cisc0123', './excel_file/write_iosuser.xlsx')

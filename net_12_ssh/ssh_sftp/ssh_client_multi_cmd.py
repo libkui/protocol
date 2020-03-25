@@ -12,7 +12,7 @@ import time
 import sys
 
 
-def QYT_SSHClient_MultiCMD(ip, username, password, cmd_list, verbose=True):
+def ssh_client_multi_cmd(ip, username, password, cmd_list, verbose=True):
     ssh = paramiko.SSHClient()  # 创建SSH Client
     ssh.load_system_host_keys()  # 加载系统SSH密钥
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # 添加新的SSH密钥
@@ -36,4 +36,4 @@ def QYT_SSHClient_MultiCMD(ip, username, password, cmd_list, verbose=True):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    QYT_SSHClient_MultiCMD('2001:1::253', 'admin', 'Cisc0123', ['terminal length 0', 'show ver', 'config ter', 'router ospf 1'])
+    ssh_client_multi_cmd('2001:1::253', 'admin', 'Cisc0123', ['terminal length 0', 'show ver', 'config ter', 'router ospf 1'])

@@ -7,17 +7,17 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 
-from Simple_SSH_Client import QYT_SSHClient_SingleCMD
+from net_12_ssh.ssh_sftp.ssh_client_one_cmd import ssh_client_one_cmd
 
 
 def monitor_sshd(ip):
     username = 'root'
     password = 'Cisc0123'
-    result = QYT_SSHClient_SingleCMD(ip, username, password, 'systemctl status sshd')
+    result = ssh_client_one_cmd(ip, username, password, 'systemctl status sshd')
     result_list = result.split('\n')
     for x in result_list:
         if x.split()[0] == 'Active:':
-            #print(x)
+            # print(x)
             return x.split()[1] + x.split()[2]
 
 

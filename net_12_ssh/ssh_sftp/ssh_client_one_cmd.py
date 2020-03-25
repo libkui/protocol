@@ -11,7 +11,7 @@ import paramiko
 import optparse
 
 
-def QYT_SSHClient_SingleCMD(ip, username, password, cmd):
+def ssh_client_one_cmd(ip, username, password, cmd):
     try:
         ssh = paramiko.SSHClient()  # 创建SSH Client
         ssh.load_system_host_keys()  # 加载系统SSH密钥
@@ -28,4 +28,4 @@ def QYT_SSHClient_SingleCMD(ip, username, password, cmd):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    print(QYT_SSHClient_SingleCMD('10.1.1.253', 'admin', 'Cisc0123', 'show ver'))
+    print(ssh_client_one_cmd('10.1.1.253', 'admin', 'Cisc0123', 'show ver'))
