@@ -11,13 +11,13 @@ import logging
 import socketserver
 import re
 
-LOG_FILE = 'pysyslog.log'
+log_file = './log_dir/pysyslog.log'
 
 # 配置logging.info, 记录文件到本地
 logging.basicConfig(level=logging.INFO,
                     format='%(message)s',
                     datefmt='',
-                    filename=LOG_FILE,  # log文件
+                    filename=log_file,  # log文件
                     filemode='a')  # 追加模式
 
 
