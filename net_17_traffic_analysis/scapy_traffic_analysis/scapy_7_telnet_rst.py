@@ -12,6 +12,7 @@ logging.getLogger("kamene.runtime").setLevel(logging.ERROR)  # 清除报错
 import re
 from kamene.all import *
 from tools.scapy_iface import scapy_iface
+from net_17_traffic_analysis.scapy_traffic_analysis.scapy_0_pcap_dir import pcap_dir
 
 qyt_string = b''
 
@@ -64,7 +65,7 @@ def telnet_rst(user_filter, ifname):
                  store=1,
                  iface=global_if,
                  timeout=10)
-    wrpcap("temp.cap", ptks)
+    wrpcap(pcap_dir + "temp.cap", ptks)
     print(qyt_string)
 
 

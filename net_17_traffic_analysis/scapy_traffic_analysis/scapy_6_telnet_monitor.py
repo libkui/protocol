@@ -13,6 +13,7 @@ import re
 from kamene.all import *
 import hexdump
 from tools.scapy_iface import scapy_iface
+from net_17_traffic_analysis.scapy_traffic_analysis.scapy_0_pcap_dir import pcap_dir
 
 qyt_string = b''
 
@@ -39,7 +40,7 @@ def telnet_monitor(user_filter, ifname):
                  iface=scapy_iface(ifname),
                  timeout=10)
 
-    wrpcap("telnet.cap", ptks)  # 保持捕获的数据包到文件
+    wrpcap(pcap_dir + "telnet.cap", ptks)  # 保持捕获的数据包到文件
     qythexdump(qyt_string)  # 解码展示
 
 
