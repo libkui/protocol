@@ -22,7 +22,7 @@ def ftp_find(hostname, username, password, start_dir='/', file_type='.py', verbo
         connection.login(username, password)  # 输入用户名和密码进行登录
         path = []  # 所有文件的路径都将最终放入path清单
 
-        def DirRecursive(dirpath):  # 定义目录递归查询的函数
+        def dir_recursive(dirpath):  # 定义目录递归查询的函数
             ls = []  # LIST命令执行的结果，放入ls清单
             connection.cwd(dirpath)  # 进入特定目录
             connection.retrlines('LIST', ls.append)  # 执行LIST命令，并且把结果添加到ls清单
@@ -46,11 +46,11 @@ def ftp_find(hostname, username, password, start_dir='/', file_type='.py', verbo
                         path.append(dirpath + '/' + dir_or_filename)  # 把文件路径加入path清单
                 else:  # 如果是目录
                     if dirpath == '/':  # 如果当前路径在‘/’根
-                        DirRecursive(dirpath + dir_or_filename)  # 进行递归查询
+                        dir_recursive(dirpath + dir_or_filename)  # 进行递归查询
                     else:  # 如果当前路径不在‘/’根目录
-                        DirRecursive(dirpath + '/' + dir_or_filename)  # 进行递归查询
+                        dir_recursive(dirpath + '/' + dir_or_filename)  # 进行递归查询
 
-        DirRecursive(start_dir)  # 执行函数
+        dir_recursive(start_dir)  # 执行函数
         connection.close()  # 退出FTP连接会话
         filetype_in_ftp = []  # 最终返回的，特定类型文件的清单
         for x in path:  # 遍历整个文件清单
