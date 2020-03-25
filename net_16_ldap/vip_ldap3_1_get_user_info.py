@@ -6,7 +6,7 @@
 # 教主技术进化论拓展你的技术新边疆
 # https://ke.qq.com/course/271956?tuin=24199d8a
 from ldap3 import Connection
-from vip_ldap3_0_login_info import server, ad_admin_username, ad_admin_password
+from net_16_ldap.vip_ldap3_0_login_info import server, ad_admin_username, ad_admin_password
 
 
 def get_user_info(username):
@@ -54,8 +54,8 @@ def get_user_self_info(username, password):
 
 if __name__ == '__main__':
     # 可以查詢用戶
-    print(get_user_info('qytanguser'))
-    print(get_user_self_info('qytanguser', 'Cisc0123'))
+    print(get_user_info('qyt-qinke'))
+    print(get_user_self_info('qyt-qinke', 'Cisc0123'))
     # 可以查詢組
     # print(get_user_info('vipgroup'))
     # userAccountControl

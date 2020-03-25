@@ -6,8 +6,9 @@
 # 教主技术进化论拓展你的技术新边疆
 # https://ke.qq.com/course/271956?tuin=24199d8a
 from ldap3 import Connection
-from vip_ldap3_0_login_info import server, ad_admin_username, ad_admin_password
-from vip_ldap3_1_get_user_info import get_user_info
+from net_16_ldap.vip_ldap3_0_login_info import server, ad_admin_username, ad_admin_password
+from net_16_ldap.vip_ldap3_1_get_user_info import get_user_info
+
 
 def get_group_users(group_name):
     # 返回属于组的用户
