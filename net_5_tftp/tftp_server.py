@@ -12,8 +12,8 @@ from tools.minimumTFTP import Server
 
 def qyt_tftpserver(tftp_dir):
     print("TFTP服务器准备就绪,根目录为", tftp_dir)
-    tftpServer = Server(tftp_dir)
-    tftpServer.run()
+    tftp_serverr = Server(tftp_dir)
+    tftp_serverr.run()
 
 
 if __name__ == '__main__':
