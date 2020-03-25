@@ -7,12 +7,12 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 
-import poplib, getpass, sys
+import poplib
 import re
-import os
 import email
 import base64
-from pprint import pprint
+
+attachment_dir = './attachment_dir/'
 
 
 def decode_subject_base64(need_decode_str):
@@ -39,13 +39,13 @@ def qyt_rec_mail(mailserver, mailuser, mailpasswd, save_file=False, delete_email
     try:
         print(server.getwelcome())  # 打印服务器欢迎信息
         # b'+OK QQMail POP3 Server v1.0 Service Ready(QQMail v2.0)'
-        msgCount, msgBytes = server.stat()  # 查询邮件数量与字节数
-        print('There are', msgCount, 'mail message in', msgBytes, 'bytes')  # 打印邮件数量与字节数
+        msg_count, msg_bytes = server.stat()  # 查询邮件数量与字节数
+        print('There are', msg_count, 'mail message in', msg_bytes, 'bytes')  # 打印邮件数量与字节数
         # There are 2 mail message in 153385 bytes
         print(server.list())  # 打印邮件清单
         # (b'+OK', [b'1 76634', b'2 76751'], 18)
 
-        for email_no in range(msgCount):  # 逐个读取邮件range(10) = 0 - 9
+        for email_no in range(msg_count):  # 逐个读取邮件range(10) = 0 - 9
             hdr, message, octets = server.retr(email_no + 1)  # 读取邮件
             str_message = email.message_from_bytes(b'\n'.join(message))  # 把邮件内容拼接到大字符串
             part_list = []
@@ -87,7 +87,7 @@ def qyt_rec_mail(mailserver, mailuser, mailpasswd, save_file=False, delete_email
                         mail_dict['Attachment'] = attach  # 把附件列表添加到邮件字典
                         # 下面是保存附件
                         if save_file:
-                            fp = open(attack_filename, 'wb')
+                            fp = open(attachment_dir + attack_filename, 'wb')
                             fp.write(attack_file_bit)
                             fp.close()
 
@@ -109,14 +109,14 @@ def qyt_rec_mail(mailserver, mailuser, mailpasswd, save_file=False, delete_email
                         mail_dict['Images'] = images
                         # 下面是保存附件
                         if save_file:
-                            fp = open(image_name, 'wb')
+                            fp = open(attachment_dir + image_name, 'wb')
                             fp.write(image_bit)
                             fp.close()
             # 把邮件字典,添加到邮件列表清单
             mails_list.append(mail_dict)
 
         if delete_email:
-            for msg_id in range(msgCount):
+            for msg_id in range(msg_count):
                 server.dele(msg_id + 1)
     finally:
         server.quit()  # 退出服务器
