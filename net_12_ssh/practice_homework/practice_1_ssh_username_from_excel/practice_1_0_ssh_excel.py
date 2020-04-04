@@ -8,8 +8,7 @@
 
 from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_parser_excel_return_dict import excel_parser_return_dict
 from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_write_excel_openpyxl import excel_write
-from net_12_ssh.ssh_sftp.ssh_client_multi_cmd import ssh_client_multi_cmd
-from net_12_ssh.ssh_sftp.ssh_client_one_cmd import ssh_client_one_cmd
+from net_12_ssh.ssh_sftp.ssh_client_netmiko import netmiko_show_cred, netmiko_config_cred
 import re
 
 
@@ -22,14 +21,14 @@ def excel_user_to_ios(ip, username, password, excelfile):
         cmd = 'username ' + x + ' privilege ' + str(y[1]) + ' password ' + str(y[0])
         cmds.append(cmd)
     # ssh登录路由器，配置用户信息
-    ssh_client_multi_cmd(ip, username, password, cmds, verbose=False)
+    netmiko_config_cred(ip, username, password, cmds, verbose=False)
 
 
 def excel_ios_user_to_excel(ip, username, password, excelfile):
     # 执行'sh run | in username'并提取结果
-    show_run = ssh_client_one_cmd(ip, username, password, 'sh run | in username')
+    show_run = netmiko_show_cred(ip, username, password, 'sh run | in username')
     # 把结果通过'\r\n'分离，产生清单
-    show_run_list = show_run.split('\r\n')
+    show_run_list = show_run.split('\n')
     user_dict = {}
     for x in show_run_list:
         # 如果格式为username admin privilege 15 password 0 cisco，提取用户名，密码和级别
@@ -47,4 +46,4 @@ def excel_ios_user_to_excel(ip, username, password, excelfile):
 
 if __name__ == '__main__':
     excel_user_to_ios('10.1.1.253', 'admin', 'Cisc0123', './excel_file/read_accounts.xlsx')
-    excel_ios_user_to_excel('10.1.1.253', 'admin', 'Cisc0123', './excel_file/write_iosuser.xlsx')
+    excel_ios_user_to_excel('10.1.1.253', 'admin', 'Cisc0123', './excel_file/write_iosuser_new.xlsx')
