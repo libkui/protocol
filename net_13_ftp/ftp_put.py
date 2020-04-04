@@ -28,5 +28,6 @@ def putfile(hostname, file, username='anonymous', password='1@2.net', rdir='.', 
 
 
 if __name__ == '__main__':
+    file_dir = './file_dir/'
     # 使用Linux解释器 & WIN解释器
     putfile('10.1.1.200', 'ftp_get.py', 'qytang', 'Cisc0123', rdir='/python/qytang1/')

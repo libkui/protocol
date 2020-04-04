@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_0_ssh_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_0_ssh_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_excel_write_openpyxl.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_0_write_excel_openpyxl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_parser_excel_return_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_0_parser_excel_return_dict.py" afterDir="false" />
+    <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="2020.4.4上课前优化代码!">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_network.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_13_ftp/ftp_get.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_13_ftp/ftp_get.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_one_cmd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            <state relative-caret-position="395">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#186#201#0" expanded="true" />
               </folding>
@@ -69,9 +70,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_13_ftp/ftp_find.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/net_13_ftp/ftp_get.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding>
+                <element signature="e#186#199#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_multi_cmd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
+            <state relative-caret-position="395">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
@@ -80,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/sftp_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="395">
               <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
@@ -90,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_1_get_md5_config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+              <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
               <folding>
                 <element signature="e#186#255#0" expanded="true" />
               </folding>
@@ -99,19 +117,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_0_diff_conf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_2_compare_config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="558">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="e#184#198#0" expanded="true" />
               </folding>
@@ -119,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_0_ssh_excel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="49" column="97" lean-forward="true" selection-start-line="49" selection-start-column="97" selection-end-line="49" selection-end-column="97" />
+            <state relative-caret-position="381">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#185#321#0" expanded="true" />
               </folding>
@@ -152,11 +161,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -183,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/net_16_ldap/vip_ldap3_2_get_group_users.py" />
         <option value="$PROJECT_DIR$/net_16_ldap/vip_ldap3_4_remove_user.py" />
         <option value="$PROJECT_DIR$/net_16_ldap/vip_ldap3_3_add_user.py" />
         <option value="$PROJECT_DIR$/net_16_ldap/vip_ldap3_1_get_user_info.py" />
@@ -234,6 +237,7 @@
         <option value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_2_compare_config.py" />
         <option value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_0_parser_excel_return_dict.py" />
         <option value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_0_write_excel_openpyxl.py" />
+        <option value="$PROJECT_DIR$/net_13_ftp/ftp_get.py" />
       </list>
     </option>
   </component>
@@ -463,8 +467,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.practice_1_0_ssh_excel">
-    <configuration name="practice_0_parser_excel_return_dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ftp_find">
+    <configuration name="ftp_find" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -472,12 +476,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_13_ftp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_0_parser_excel_return_dict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_13_ftp/ftp_find.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -486,7 +490,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice_0_write_excel_openpyxl" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ftp_get" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -494,12 +498,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_13_ftp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_0_write_excel_openpyxl.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_13_ftp/ftp_get.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -508,7 +512,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice_1_0_ssh_excel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ftp_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -516,12 +520,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_13_ftp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_0_ssh_excel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_13_ftp/ftp_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -530,7 +534,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice_2_1_get_md5_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ftp_put" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -538,12 +542,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_13_ftp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_1_get_md5_config.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_13_ftp/ftp_put.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -552,7 +556,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice_2_2_compare_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ssh_client_one_cmd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -560,12 +564,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_2_compare_config.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_one_cmd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -576,11 +580,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.practice_1_0_ssh_excel" />
-        <item itemvalue="Python.practice_0_write_excel_openpyxl" />
-        <item itemvalue="Python.practice_0_parser_excel_return_dict" />
-        <item itemvalue="Python.practice_2_2_compare_config" />
-        <item itemvalue="Python.practice_2_1_get_md5_config" />
+        <item itemvalue="Python.ftp_find" />
+        <item itemvalue="Python.ftp_list" />
+        <item itemvalue="Python.ftp_put" />
+        <item itemvalue="Python.ftp_get" />
+        <item itemvalue="Python.ssh_client_one_cmd" />
       </list>
     </recent_temporary>
   </component>
@@ -597,7 +601,7 @@
       <workItem from="1584941869274" duration="2881000" />
       <workItem from="1584944840444" duration="38197000" />
       <workItem from="1585097734407" duration="28475000" />
-      <workItem from="1585904757159" duration="11175000" />
+      <workItem from="1585904757159" duration="11512000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1584942008728</created>
@@ -921,11 +925,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585965616515</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="2020.4.4上课前优化代码!">
+      <created>1585966031034</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1585966031034</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80728000" />
+    <option name="totallyTimeSpent" value="81065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1717" height="856" extended-state="6" />
@@ -1034,7 +1045,7 @@
     <SUITE FILE_PATH="coverage/python_network$scapy_5_tcp_rest.coverage" NAME="scapy_5_tcp_rest Coverage Results" MODIFIED="1585125296167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$practice_syslog_server_to_db.coverage" NAME="practice_syslog_server_to_db Coverage Results" MODIFIED="1585959257571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_9_syslog/practice_homework" />
     <SUITE FILE_PATH="coverage/python_network$pyshark_6_uri.coverage" NAME="pyshark_6_uri Coverage Results" MODIFIED="1585123559706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
-    <SUITE FILE_PATH="coverage/python_network$ftp_put.coverage" NAME="ftp_put Coverage Results" MODIFIED="1585119097062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
+    <SUITE FILE_PATH="coverage/python_network$ftp_put.coverage" NAME="ftp_put Coverage Results" MODIFIED="1585966410108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_7_change_group.coverage" NAME="vip_ldap3_7_change_group Coverage Results" MODIFIED="1585121277959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$scapy_iface.coverage" NAME="scapy_iface Coverage Results" MODIFIED="1584946518857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$ssh_monitor.coverage" NAME="ssh_monitor Coverage Results" MODIFIED="1585117240906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework" />
@@ -1070,7 +1081,7 @@
     <SUITE FILE_PATH="coverage/python_network$arp_spoof.coverage" NAME="arp_spoof Coverage Results" MODIFIED="1584970887668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
     <SUITE FILE_PATH="coverage/python_network$pyshark_1_display.coverage" NAME="pyshark_1_display Coverage Results" MODIFIED="1585123244296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$snmpv3_set.coverage" NAME="snmpv3_set Coverage Results" MODIFIED="1585142357705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v3" />
-    <SUITE FILE_PATH="coverage/python_network$ftp_get.coverage" NAME="ftp_get Coverage Results" MODIFIED="1585119022817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
+    <SUITE FILE_PATH="coverage/python_network$ftp_get.coverage" NAME="ftp_get Coverage Results" MODIFIED="1585966339658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
     <SUITE FILE_PATH="coverage/python_network$win_ifname.coverage" NAME="win_ifname Coverage Results" MODIFIED="1584967339345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$collector_main.coverage" NAME="collector_main Coverage Results" MODIFIED="1585124420368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow" />
     <SUITE FILE_PATH="coverage/python_network$practice_1_0_ssh_excel.coverage" NAME="practice_1_0_ssh_excel Coverage Results" MODIFIED="1585965992653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel" />
@@ -1078,19 +1089,19 @@
     <SUITE FILE_PATH="coverage/python_network$scapy_1_pcap_dos.coverage" NAME="scapy_1_pcap_dos Coverage Results" MODIFIED="1585124767514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$show_netflow.coverage" NAME="show_netflow Coverage Results" MODIFIED="1585124482120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow" />
     <SUITE FILE_PATH="coverage/python_network$sftp_client.coverage" NAME="sftp_client Coverage Results" MODIFIED="1585962918597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
-    <SUITE FILE_PATH="coverage/python_network$ftp_find.coverage" NAME="ftp_find Coverage Results" MODIFIED="1585119103423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
+    <SUITE FILE_PATH="coverage/python_network$ftp_find.coverage" NAME="ftp_find Coverage Results" MODIFIED="1585966466758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
     <SUITE FILE_PATH="coverage/python_network$ipv6_solicited_node_multicast_address.coverage" NAME="ipv6_solicited_node_multicast_address Coverage Results" MODIFIED="1584946476627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$pcap_http.coverage" NAME="pcap_http Coverage Results" MODIFIED="1585124960848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$practice_syslog_show.coverage" NAME="practice_syslog_show Coverage Results" MODIFIED="1585959334775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_9_syslog/practice_homework" />
     <SUITE FILE_PATH="coverage/python_network$socket_server_pickle.coverage" NAME="socket_server_pickle Coverage Results" MODIFIED="1585961011507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server_pickle" />
     <SUITE FILE_PATH="coverage/python_network$icmpv6_ra.coverage" NAME="icmpv6_ra Coverage Results" MODIFIED="1585051556684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
-    <SUITE FILE_PATH="coverage/python_network$ssh_client_multi_cmd.coverage" NAME="ssh_client_multi_cmd Coverage Results" MODIFIED="1585962894538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
+    <SUITE FILE_PATH="coverage/python_network$ssh_client_multi_cmd.coverage" NAME="ssh_client_multi_cmd Coverage Results" MODIFIED="1585966058355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
     <SUITE FILE_PATH="coverage/python_network$udp_socket_server.coverage" NAME="udp_socket_server Coverage Results" MODIFIED="1585053814268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_3_udp" />
     <SUITE FILE_PATH="coverage/python_network$icmpv6_rs.coverage" NAME="icmpv6_rs Coverage Results" MODIFIED="1585051423613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$scapy_dns_query.coverage" NAME="scapy_dns_query Coverage Results" MODIFIED="1585055752499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_4_dns" />
     <SUITE FILE_PATH="coverage/python_network$udp_socket_client.coverage" NAME="udp_socket_client Coverage Results" MODIFIED="1585053827292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_3_udp" />
     <SUITE FILE_PATH="coverage/python_network$simple_telnet_client.coverage" NAME="simple_telnet_client Coverage Results" MODIFIED="1585907038668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_11_telnet" />
-    <SUITE FILE_PATH="coverage/python_network$ftp_list.coverage" NAME="ftp_list Coverage Results" MODIFIED="1585119036112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
+    <SUITE FILE_PATH="coverage/python_network$ftp_list.coverage" NAME="ftp_list Coverage Results" MODIFIED="1585966451028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
     <SUITE FILE_PATH="coverage/python_network$ping.coverage" NAME="ping Coverage Results" MODIFIED="1585049358310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_8_changepassword.coverage" NAME="vip_ldap3_8_changepassword Coverage Results" MODIFIED="1585121327213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$dns_python.coverage" NAME="dns_python Coverage Results" MODIFIED="1585055843975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_4_dns" />
@@ -1099,7 +1110,7 @@
     <SUITE FILE_PATH="coverage/python_network$syslog_server_to_file.coverage" NAME="syslog_server_to_file Coverage Results" MODIFIED="1585958929280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_9_syslog/syslog" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_6_set_account_expires.coverage" NAME="vip_ldap3_6_set_account_expires Coverage Results" MODIFIED="1585121216706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_1_get_user_info.coverage" NAME="vip_ldap3_1_get_user_info Coverage Results" MODIFIED="1585121008110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
-    <SUITE FILE_PATH="coverage/python_network$ssh_client_one_cmd.coverage" NAME="ssh_client_one_cmd Coverage Results" MODIFIED="1585962882216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
+    <SUITE FILE_PATH="coverage/python_network$ssh_client_one_cmd.coverage" NAME="ssh_client_one_cmd Coverage Results" MODIFIED="1585966082375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
     <SUITE FILE_PATH="coverage/python_network$scapy_7_telnet_rst.coverage" NAME="scapy_7_telnet_rst Coverage Results" MODIFIED="1585125565809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$pyshark_5_2_tcpstream_get_tcp_stream.coverage" NAME="pyshark_5_2_tcpstream_get_tcp_stream Coverage Results" MODIFIED="1585123545037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$snmpv3_get.coverage" NAME="snmpv3_get Coverage Results" MODIFIED="1585142296470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v3" />
@@ -1142,20 +1153,6 @@
     <SUITE FILE_PATH="coverage/python_network$get_ifname.coverage" NAME="get_ifname Coverage Results" MODIFIED="1584946018315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_6_telnet_monitor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_5_tcp_rest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="985">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_4_pcap_parser_keyword.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-212">
@@ -1452,30 +1449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_one_cmd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="e#186#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_multi_cmd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/sftp_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1489,7 +1462,7 @@
     <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_1_get_md5_config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
           <folding>
             <element signature="e#186#255#0" expanded="true" />
           </folding>
@@ -1499,7 +1472,7 @@
     <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_2_compare_config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="e#184#198#0" expanded="true" />
           </folding>
@@ -1525,10 +1498,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_0_ssh_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="49" column="97" lean-forward="true" selection-start-line="49" selection-start-column="97" selection-end-line="49" selection-end-column="97" />
+        <state relative-caret-position="381">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#185#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/sftp_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_multi_cmd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_one_cmd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#186#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_13_ftp/ftp_find.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_13_ftp/ftp_get.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#186#199#0" expanded="true" />
           </folding>
         </state>
       </provider>
