@@ -8,7 +8,6 @@
 
 
 import pickle
-from io import BytesIO
 from socket import *
 
 
@@ -35,7 +34,7 @@ def server_pickle(ip, port):
             print("收到字典数据!!!")
             print(obj)  # 打印obj，当然也可以选择写入文件或者数据库
         elif isinstance(obj, bytes):
-            myfile = open('./file_dir/NewLogo.jpg', 'wb')
+            myfile = open('./file_dir/Recieved_img.jpg', 'wb')
             myfile.write(obj)
             myfile.close()
             print("收到二进制数据,并写入到文件!!!")

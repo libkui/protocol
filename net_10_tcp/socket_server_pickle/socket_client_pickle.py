@@ -27,7 +27,7 @@ def client_pickle(ip, port, obj):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    send_dict = {'key1': 'welcome to qytang', 'key2': [1, 2, 3, 4, 5], 'key3': ([3, 4], 'python')}
+    send_dict = {'key1': 'welcome to qytang' * 2048, 'key2': [1, 2, 3, 4, 5], 'key3': ([3, 4], 'python')}
     myfile = open('./file_dir/Logo.jpg', 'rb').read()
     client_pickle('10.1.1.100', 8888, send_dict)
     client_pickle('10.1.1.100', 8888, myfile)
