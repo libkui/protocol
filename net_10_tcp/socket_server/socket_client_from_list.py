@@ -7,7 +7,6 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 
-import sys
 from socket import *
 
 # 连接的服务器地址
