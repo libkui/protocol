@@ -12,9 +12,10 @@ from netmiko import Netmiko
 CSR1 = {
         'host': '10.1.1.253',
         'username': 'admin',
+        # netmiko.ssh_exception.NetmikoAuthenticationException: Authentication failure: unable to connect cisco_ios 10.1.1.253:22
         'password': 'Cisc0123',
-        # 'device_type': 'cisco_ios_telnet', # Telnet
-        'device_type': 'cisco_ios',  # SSH
+        'device_type': 'cisco_ios_telnet',  # Telnet
+        # 'device_type': 'cisco_ios',  # SSH
         'secret': 'Cisc0123',
 }
 
@@ -22,7 +23,7 @@ CSR1 = {
 # https://github.com/ktbyers/netmiko/blob/master/netmiko/ssh_dispatcher.py
 
 # ">" 下的exec命令
-net_connect = Netmiko(**CSR1)
+net_connect = Netmiko(**CSR1)  # ** 表示使用字典映射的方式来传参数
 print(net_connect.send_command("show ip interface brief"))
 
 # "#" 下的exec命令
