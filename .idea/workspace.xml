@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_network.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_9_syslog/syslog/log_dir/pysyslog.log" beforeDir="false" afterPath="$PROJECT_DIR$/net_9_syslog/syslog/log_dir/pysyslog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_9_syslog/syslog/syslog_server_to_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_9_syslog/syslog/syslog_server_to_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_server_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_server_json.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,39 +56,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_11_telnet/netmiko_telnet_ssh.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_attachment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-312">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#186#195#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/syslog/syslog_server_to_file.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-              <folding>
-                <element signature="e#186#200#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_9_syslog/nexus_syslog_example.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
@@ -104,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_show.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+            <state relative-caret-position="190">
+              <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
               <folding>
                 <element signature="e#185#199#0" expanded="true" />
               </folding>
@@ -113,37 +76,83 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server/socket_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+            <state relative-caret-position="617">
+              <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+              <folding>
+                <element signature="e#186#206#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/syslog/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/syslog/log_dir/pysyslog.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_header_only.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_img.py">
+        <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server/socket_client_from_input.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
+            <state relative-caret-position="532">
+              <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_server_json.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
               <folding>
-                <element signature="e#186#195#0" expanded="true" />
+                <element signature="e#186#197#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_client_json.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="46" column="42" lean-forward="true" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+              <folding>
+                <element signature="e#186#197#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server_pickle/socket_client_pickle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#186#199#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server_pickle/socket_server_pickle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-331" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server/socket_client_from_list.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -174,9 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/net_12_ssh/SSH_Monitor.py" />
-        <option value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_0_ssh_excel.py" />
-        <option value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_0_2_compare_config.py" />
         <option value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare/practice_2_get_md5_config.py" />
         <option value="$PROJECT_DIR$/net_13_ftp/ftp_find.py" />
         <option value="$PROJECT_DIR$/net_13_ftp/ftp_get.py" />
@@ -225,6 +231,9 @@
         <option value="$PROJECT_DIR$/net_9_syslog/syslog/log_dir/pysyslog.log" />
         <option value="$PROJECT_DIR$/net_9_syslog/syslog/syslog_server_to_file.py" />
         <option value="$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py" />
+        <option value="$PROJECT_DIR$/net_10_tcp/socket_server/socket_server.py" />
+        <option value="$PROJECT_DIR$/net_10_tcp/socket_server/socket_client_from_list.py" />
+        <option value="$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_server_json.py" />
       </list>
     </option>
   </component>
@@ -288,7 +297,20 @@
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_network" type="462c0819:PsiDirectoryNode" />
               <item name="net_10_tcp" type="462c0819:PsiDirectoryNode" />
+              <item name="socket_server_json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_10_tcp" type="462c0819:PsiDirectoryNode" />
               <item name="socket_server_pickle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_10_tcp" type="462c0819:PsiDirectoryNode" />
+              <item name="socket_server_pickle" type="462c0819:PsiDirectoryNode" />
+              <item name="file_dir" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
@@ -418,8 +440,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.practice_syslog_show">
-    <configuration name="netmiko_telnet_ssh" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.socket_client_json">
+    <configuration name="socket_client_from_input" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -427,12 +449,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_11_telnet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_10_tcp/socket_server" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_11_telnet/netmiko_telnet_ssh.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_10_tcp/socket_server/socket_client_from_input.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -441,7 +463,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice_syslog_server_to_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="socket_client_from_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -449,12 +471,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_9_syslog/practice_homework" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_10_tcp/socket_server" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_10_tcp/socket_server/socket_client_from_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -463,7 +485,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice_syslog_show" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="socket_client_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -471,12 +493,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_9_syslog/practice_homework" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_10_tcp/socket_server_json" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_show.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_client_json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -485,7 +507,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="simple_telnet_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="socket_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -493,12 +515,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_11_telnet" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_10_tcp/socket_server" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_11_telnet/simple_telnet_client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_10_tcp/socket_server/socket_server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -507,7 +529,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="syslog_server_to_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="socket_server_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -515,12 +537,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_9_syslog/syslog" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_10_tcp/socket_server_json" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_9_syslog/syslog/syslog_server_to_file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_server_json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -531,11 +553,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.practice_syslog_show" />
-        <item itemvalue="Python.practice_syslog_server_to_db" />
-        <item itemvalue="Python.syslog_server_to_file" />
-        <item itemvalue="Python.simple_telnet_client" />
-        <item itemvalue="Python.netmiko_telnet_ssh" />
+        <item itemvalue="Python.socket_client_json" />
+        <item itemvalue="Python.socket_server_json" />
+        <item itemvalue="Python.socket_client_from_input" />
+        <item itemvalue="Python.socket_client_from_list" />
+        <item itemvalue="Python.socket_server" />
       </list>
     </recent_temporary>
   </component>
@@ -552,7 +574,7 @@
       <workItem from="1584941869274" duration="2881000" />
       <workItem from="1584944840444" duration="38197000" />
       <workItem from="1585097734407" duration="28475000" />
-      <workItem from="1585904757159" duration="4503000" />
+      <workItem from="1585904757159" duration="5798000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1584942008728</created>
@@ -834,22 +856,35 @@
       <option name="project" value="LOCAL" />
       <updated>1585125621448</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="2020.4.4上课前优化代码!">
+      <created>1585959382945</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1585959382945</updated>
+    </task>
+    <task id="LOCAL-00042" summary="2020.4.4上课前优化代码!">
+      <created>1585960087484</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1585960087484</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74056000" />
+    <option name="totallyTimeSpent" value="75351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1717" height="856" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23536512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23536512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.50277007" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16343491" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -907,7 +942,8 @@
     <MESSAGE value="pyshark" />
     <MESSAGE value="netflow" />
     <MESSAGE value="scapy traffic analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="scapy traffic analysis" />
+    <MESSAGE value="2020.4.4上课前优化代码!" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.4.4上课前优化代码!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -938,8 +974,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_network$pyshark_4_analysis.coverage" NAME="pyshark_4_analysis Coverage Results" MODIFIED="1585123475373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$ntp_client_raw.coverage" NAME="ntp_client_raw Coverage Results" MODIFIED="1585104331227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_8_ntp" />
-    <SUITE FILE_PATH="coverage/python_network$socket_client_from_input.coverage" NAME="socket_client_from_input Coverage Results" MODIFIED="1585106920093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
     <SUITE FILE_PATH="coverage/python_network$practice_2_get_md5_config.coverage" NAME="practice_2_get_md5_config Coverage Results" MODIFIED="1585118502705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
+    <SUITE FILE_PATH="coverage/python_network$socket_client_from_input.coverage" NAME="socket_client_from_input Coverage Results" MODIFIED="1585960042805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
     <SUITE FILE_PATH="coverage/python_network$simple_ssh_client.coverage" NAME="simple_ssh_client Coverage Results" MODIFIED="1585116775185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh" />
     <SUITE FILE_PATH="coverage/python_network$pyshark_2_capture.coverage" NAME="pyshark_2_capture Coverage Results" MODIFIED="1585123078176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$scapy_5_tcp_rest.coverage" NAME="scapy_5_tcp_rest Coverage Results" MODIFIED="1585125296167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
@@ -965,10 +1001,10 @@
     <SUITE FILE_PATH="coverage/python_network$get_ip_netifaces.coverage" NAME="get_ip_netifaces Coverage Results" MODIFIED="1584946314808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$ping_scan.coverage" NAME="ping_scan Coverage Results" MODIFIED="1585049997979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$tftp_client.coverage" NAME="tftp_client Coverage Results" MODIFIED="1585056460309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_5_tftp" />
-    <SUITE FILE_PATH="coverage/python_network$socket_server_json.coverage" NAME="socket_server_json Coverage Results" MODIFIED="1585108272671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server_json" />
+    <SUITE FILE_PATH="coverage/python_network$socket_server_json.coverage" NAME="socket_server_json Coverage Results" MODIFIED="1585960224134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server_json" />
     <SUITE FILE_PATH="coverage/python_network$get_ip.coverage" NAME="get_ip Coverage Results" MODIFIED="1584946231337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/python_network$socket_client_from_list.coverage" NAME="socket_client_from_list Coverage Results" MODIFIED="1585106912921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
     <SUITE FILE_PATH="coverage/python_network$socket_client_pickle.coverage" NAME="socket_client_pickle Coverage Results" MODIFIED="1585108314381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server_pickle" />
+    <SUITE FILE_PATH="coverage/python_network$socket_client_from_list.coverage" NAME="socket_client_from_list Coverage Results" MODIFIED="1585959974555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
     <SUITE FILE_PATH="coverage/python_network$ping_one.coverage" NAME="ping_one Coverage Results" MODIFIED="1585048919689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$snmpv2_getnext.coverage" NAME="snmpv2_getnext Coverage Results" MODIFIED="1585140487226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v2" />
     <SUITE FILE_PATH="coverage/python_network$ipv6_tools.coverage" NAME="ipv6_tools Coverage Results" MODIFIED="1584968300952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
@@ -1020,10 +1056,10 @@
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_2_get_group_users.coverage" NAME="vip_ldap3_2_get_group_users Coverage Results" MODIFIED="1585120634396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$pyshark_5_1_tcpstream_maxid.coverage" NAME="pyshark_5_1_tcpstream_maxid Coverage Results" MODIFIED="1585123517310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$syslog_client.coverage" NAME="syslog_client Coverage Results" MODIFIED="1585105725617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_9_syslog/syslog" />
-    <SUITE FILE_PATH="coverage/python_network$socket_server.coverage" NAME="socket_server Coverage Results" MODIFIED="1585106901541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
+    <SUITE FILE_PATH="coverage/python_network$socket_server.coverage" NAME="socket_server Coverage Results" MODIFIED="1585959971015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
     <SUITE FILE_PATH="coverage/python_network$arp_request.coverage" NAME="arp_request Coverage Results" MODIFIED="1584970006408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
     <SUITE FILE_PATH="coverage/python_network$netmiko_telnet_ssh.coverage" NAME="netmiko_telnet_ssh Coverage Results" MODIFIED="1585907015183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_11_telnet" />
-    <SUITE FILE_PATH="coverage/python_network$socket_client_json.coverage" NAME="socket_client_json Coverage Results" MODIFIED="1585108282521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server_json" />
+    <SUITE FILE_PATH="coverage/python_network$socket_client_json.coverage" NAME="socket_client_json Coverage Results" MODIFIED="1585960273094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server_json" />
     <SUITE FILE_PATH="coverage/python_network$ipv6_tools_kamene.coverage" NAME="ipv6_tools_kamene Coverage Results" MODIFIED="1584968969115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$scapy_6_telnet_monitor.coverage" NAME="scapy_6_telnet_monitor Coverage Results" MODIFIED="1585125537269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$dhcp_discover.coverage" NAME="dhcp_discover Coverage Results" MODIFIED="1585045523953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_6_dhcp" />
@@ -1048,60 +1084,6 @@
     <SUITE FILE_PATH="coverage/python_network$get_ifname.coverage" NAME="get_ifname Coverage Results" MODIFIED="1584946018315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/net_16_ldap/vip_ldap3_7_change_group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#184#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_16_ldap/vip_ldap3_8_changepassword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#184#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/-404999371/-337502517/pyshark/packet/layer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_0_pcap_dir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_2_capture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding>
-            <element signature="e#437#451#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_1_display.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_3_options.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1428,20 +1410,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_show.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        <state relative-caret-position="190">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
           <folding>
             <element signature="e#185#199#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py">
+    <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server/socket_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        <state relative-caret-position="617">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding>
+            <element signature="e#186#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server/socket_client_from_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server/socket_client_from_input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server_pickle/socket_client_pickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#186#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server_pickle/socket_server_pickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_client_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="46" column="42" lean-forward="true" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+          <folding>
+            <element signature="e#186#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_10_tcp/socket_server_json/socket_server_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#186#197#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

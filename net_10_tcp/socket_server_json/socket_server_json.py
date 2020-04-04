@@ -35,6 +35,7 @@ def server_json(ip, port):
             print(obj)  # 打印obj，当然也可以选择写入文件或者数据库
             connection.send(json.dumps(obj).encode())  # 返回确认信息
         else:
+            # 注意: 此处while + else的用法
             while len(recieved_message_fragment) == 1024:  # 等于1024表示还有后续数据!
                 recieved_message = recieved_message + recieved_message_fragment  # 把接收到信息分片重组装
                 recieved_message_fragment = connection.recv(1024)  # 继续接收后续的1024的数据
