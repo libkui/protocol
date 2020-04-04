@@ -27,6 +27,8 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
     msg["To"] = to_mail  # 收件人
     msg["Date"] = date  # 发件日期
 
+    # # 邮件正文为Text类型, 使用MIMEText添加, 参数描述了文本类型为HTML, 编码为utf-8
+    # MIME类型介绍 https://docs.python.org/2/library/email.mime.html
     part = MIMEText(main_body, 'html', 'utf-8')
     msg.attach(part)  # 添加正文
     if images:

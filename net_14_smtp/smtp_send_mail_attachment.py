@@ -27,6 +27,8 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
     msg["To"] = to_mail  # 收件人
     msg["Date"] = date  # 发件日期
 
+    # 邮件正文为Text类型, 使用MIMEText添加
+    # MIME类型介绍 https://docs.python.org/2/library/email.mime.html
     part = MIMEText(main_body)
     msg.attach(part)  # 添加正文
 
@@ -58,5 +60,5 @@ if __name__ == '__main__':
                         '3348326959@qq.com',
                         '3348326959@qq.com;collinsctk@qytang.com',
                         '附件测试_主题',
-                        '附件测试_正文',
+                        '附件测试_正文\r\n行1\r\n行2',
                         ['Logo.jpg'])
