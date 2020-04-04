@@ -11,8 +11,10 @@ from ftplib import FTP
 import re
 import optparse
 import os
+from tools.decorator_time import print_run_time
 
 
+@print_run_time()
 def ftp_find(hostname, username, password, start_dir='/', file_type='.py', verbose=True):
     if verbose:
         print('查找整个FTP中的特定文件(递归查询)，并且返回清单！')

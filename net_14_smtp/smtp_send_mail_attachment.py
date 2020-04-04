@@ -13,10 +13,12 @@ import email.utils
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
+from tools.decorator_time import print_run_time
 
 attachment_dir = './attachment_dir/'
 
 
+@print_run_time()
 def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj, main_body, files=None):
     # 使用SSL加密SMTP发送邮件, 此函数发送的邮件有主题,有正文,还可以发送附件
     tos = to_mail.split(';')  # 把多个邮件接受者通过';'分开
