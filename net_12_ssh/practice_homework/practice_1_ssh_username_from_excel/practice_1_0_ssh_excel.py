@@ -6,8 +6,8 @@
 # 教主技术进化论拓展你的技术新边疆
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
-from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_1_parser_excel_return_dict import excel_parser_return_dict
-from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_1_excel_write_openpyxl import excel_write
+from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_parser_excel_return_dict import excel_parser_return_dict
+from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_write_excel_openpyxl import excel_write
 from net_12_ssh.ssh_sftp.ssh_client_multi_cmd import ssh_client_multi_cmd
 from net_12_ssh.ssh_sftp.ssh_client_one_cmd import ssh_client_one_cmd
 import re

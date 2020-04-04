@@ -23,18 +23,18 @@ def excel_parser_return_dict(file='test.xlsx', sheel_name='Sheet1'):
             cell_location = 0
             for cell in row:
                 if cell_location == 0:  # 读取第一列的用户名
-                    tmp_user = cell.value
+                    username = cell.value
                     cell_location += 1
                 elif cell_location == 1:  # 读取第二列的密码
-                    tmp_pass = cell.value
+                    password = cell.value
                     cell_location += 1
                 elif cell_location == 2:  # 读取第三列的级别
-                    tmp_priv = cell.value
+                    privilege = cell.value
                     cell_location += 1
-            excel_dict[tmp_user] = tmp_pass, tmp_priv  # 写入字典
+            excel_dict[username] = password, privilege  # 写入字典
         row_location += 1
     return excel_dict  # 返回字典
 
 
 if __name__ == "__main__":
-    print(excel_parser_return_dict('Practice_1_Read_Accounts.xlsx'))
+    print(excel_parser_return_dict('./excel_file/read_accounts.xlsx'))

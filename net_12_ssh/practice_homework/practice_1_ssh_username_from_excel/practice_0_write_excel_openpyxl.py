@@ -13,7 +13,7 @@ from openpyxl import load_workbook
 dict_excel = {'test123': ('cisco123', 15), 'test456': ('cisco456', 1), 'test789': ('cisco789', 1)}
 
 
-def excel_write(file='write_pyxl.xlsx', sheel_name='Sheet1', write_dict=dict_excel):
+def excel_write(file='./excel_file/write_pyxl.xlsx', sheel_name='Sheet1', write_dict=dict_excel):
     wb = Workbook()  # 创建xlsx
     ws = wb.create_sheet()  # 创建sheet
     ws.title = sheel_name  # 命名sheet
@@ -29,7 +29,7 @@ def excel_write(file='write_pyxl.xlsx', sheel_name='Sheet1', write_dict=dict_exc
         ws[user_locatin] = x  # 写入用户
         ws[pass_locatin] = y[0]  # 写入密码
         ws[priv_locatin] = y[1]  # 写入级别
-        row_location += 1
+        row_location += 1  # 行号加1
     wb.save(file)  # 保存xlsx文件
 
 
