@@ -55,6 +55,7 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
         print(data)
         syslog_info_dict = {'device_ip': self.client_address[0]}
         try:
+            # <187>83: *Apr  4 00:03:12.969: %LINK-3-UPDOWN: Interface GigabitEthernet2, changed state to up
             syslog_info = re.match(r'^<(\d*)>(\d*): \*(.*): %(\w+)-(\d)-(\w+): (.*)', str(data)).groups()
             # print(syslog_info[0]) 提取为整数 例如 185
             # 185 二进制为 1011 1001
@@ -70,6 +71,9 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
             syslog_info_dict['description'] = syslog_info[5]
             syslog_info_dict['text'] = syslog_info[6]
         except AttributeError:
+            # 有些日志会缺失%SYS-5-CONFIG_I, 造成第一个正则表达式无法匹配 , 也无法提取severity_level
+            # 下面的icmp的debug就是示例
+            # <191>91: *Apr  4 00:12:29.616: ICMP: echo reply rcvd, src 10.1.1.80, dst 10.1.1.253, topology BASE, dscp 0 topoid 0
             syslog_info = re.match(r'^<(\d*)>(\d*): \*(.*): (\w+): (.*)', str(data)).groups()
             print(syslog_info[0])
             syslog_info_dict['facility'] = (int(syslog_info[0]) >> 3)

@@ -14,9 +14,10 @@ import re
 log_file = './log_dir/pysyslog.log'
 
 # 配置logging.info, 记录文件到本地
+# 日志模块的详细介绍
 logging.basicConfig(level=logging.INFO,
-                    format='%(message)s',
-                    datefmt='',
+                    format='%(asctime)s - %(message)s',
+                    datefmt='%Y/%m/%d %H:%M:%S',
                     filename=log_file,  # log文件
                     filemode='a')  # 追加模式
 
@@ -30,7 +31,7 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
         # elif re.match('.*changed state to up.*', data):
         #     print( "%s : " % self.client_address[0], str(data))
         print("%s : " % self.client_address[0], str(data))  # 打印syslog信息
-        logging.info(str(data))  # 把信息logging到本地, logging level为INFO
+        logging.info(f"source_ip: {self.client_address[0]} - message: {str(data)}")  # 把信息logging到本地, logging level为INFO
 
 
 if __name__ == "__main__":
