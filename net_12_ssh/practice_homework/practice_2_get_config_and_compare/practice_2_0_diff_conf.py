@@ -7,22 +7,22 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 
-from difflib import *
+from difflib import Differ
 
 
 def diff_file(file1, file2):
     txt1 = open(file1, 'r').readlines()
     txt2 = open(file2, 'r').readlines()
     result = Differ().compare(txt1, txt2)
-    return_result = '\r\n'.join(list(result))
+    return_result = '\n'.join(list(result))
     return return_result
 
 
 def diff_txt(txt1, txt2):
-    txt1_list = txt1.split('\r\n')
-    txt2_list = txt2.split('\r\n')
+    txt1_list = txt1.split('\n')
+    txt2_list = txt2.split('\n')
     result = Differ().compare(txt1_list, txt2_list)
-    return_result = '\r\n'.join(list(result))
+    return_result = '\n'.join(list(result))
     return return_result
 
 
