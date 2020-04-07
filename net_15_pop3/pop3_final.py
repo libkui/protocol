@@ -42,7 +42,10 @@ def qyt_rec_mail(mailserver, mailuser, mailpasswd, save_file=False, delete_email
         msg_count, msg_bytes = server.stat()  # 查询邮件数量与字节数
         print('There are', msg_count, 'mail message in', msg_bytes, 'bytes')  # 打印邮件数量与字节数
         # There are 2 mail message in 153385 bytes
-        print(server.list())  # 打印邮件清单
+        server_list_result = server.list()
+        print(server_list_result)  # 打印邮件清单
+
+        msg_count = len(server_list_result[1])
         # (b'+OK', [b'1 76634', b'2 76751'], 18)
 
         for email_no in range(msg_count):  # 逐个读取邮件range(10) = 0 - 9
