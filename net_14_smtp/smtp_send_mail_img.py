@@ -82,7 +82,7 @@ if __name__ == '__main__':
         td_str += f'<tr><td>{x}</td><td>{y}</td><td>{(y/total)*100:.1f}</td></tr>'
 
     main_body_txt = f"""
-    <img src="./word_pdf/src_img/logo.png" height="400" width="auto"/><br>
+    <img src="cid:logo"><br>
     <h3>乾颐堂Python强化班Syslog分析</h3>
     <p>下面是最近一个小时的Syslog的数据统计! 显示排前三的Syslog严重级别与数量</p><br>
         <table class="table table-bordered">
@@ -110,7 +110,7 @@ if __name__ == '__main__':
                         '3348326959@qq.com;collinsctk@qytang.com',
                         '乾颐堂Python强化班Syslog分析',
                         main_body_txt,
-                        ['syslog.png'])
+                        ['./word_pdf/src_img/logo.png', 'syslog.png'])
     import os
     os.remove('syslog.png')
 
