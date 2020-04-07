@@ -54,14 +54,14 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    # qyt_smtp_attachment('smtp.qq.com',
-    #                     '3348326959@qq.com',
-    #                     'dmyymagcazklcjie',
-    #                     '3348326959@qq.com',
-    #                     '3348326959@qq.com;collinsctk@qytang.com',
-    #                     '附件测试_主题',
-    #                     '附件测试_正文\r\n行1\r\n行2',
-    #                     ['./attachment_dir/Logo.jpg'])
+    qyt_smtp_attachment('smtp.qq.com',
+                        '3348326959@qq.com',
+                        'dmyymagcazklcjie',
+                        '3348326959@qq.com',
+                        '3348326959@qq.com;collinsctk@qytang.com',
+                        '附件测试_主题',
+                        '附件测试_正文\r\n行1\r\n行2',
+                        ['./attachment_dir/Logo.jpg'])
 
     from net_14_smtp.word_pdf.create_word_for_syslog import create_word_for_syslog
     from docx2pdf import convert

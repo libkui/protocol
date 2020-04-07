@@ -63,14 +63,14 @@ if __name__ == '__main__':
     </p>
     <p>
     """
-    # qyt_smtp_attachment('smtp.qq.com',
-    #                     '3348326959@qq.com',
-    #                     'dmyymagcazklcjie',
-    #                     '3348326959@qq.com',
-    #                     '3348326959@qq.com;collinsctk@qytang.com',
-    #                     '图片测试',
-    #                     main_body_txt,
-    #                     ['./attachment_dir/Logo.jpg'])
+    qyt_smtp_attachment('smtp.qq.com',
+                        '3348326959@qq.com',
+                        'dmyymagcazklcjie',
+                        '3348326959@qq.com',
+                        '3348326959@qq.com;collinsctk@qytang.com',
+                        '图片测试',
+                        main_body_txt,
+                        ['./attachment_dir/Logo.jpg'])
 
     from net_14_smtp.modules.syslog_bing import syslog_bing
 
