@@ -8,7 +8,7 @@
 from ldap3 import Connection, MODIFY_REPLACE
 from net_16_ldap.vip_ldap3_0_login_info import server, ad_admin_username, ad_admin_password
 from net_16_ldap.vip_ldap3_1_get_user_info import get_user_info
-import pinyin
+from net_16_ldap.vip_ldap3_0_get_pinyin_name import get_pinyin_name
 from random import randint, choice
 import string
 from datetime import timedelta, datetime
@@ -30,7 +30,7 @@ def add_ad_user(xingming, phone, qq, mail, group='qytanggroup', random_pass=Fals
     hanzi = xingming
 
     try:
-        xingming = pinyin.get(xingming, format='strip')
+        xingming = get_pinyin_name(xingming)
     except Exception:
         pass
 
@@ -90,4 +90,5 @@ def add_ad_user(xingming, phone, qq, mail, group='qytanggroup', random_pass=Fals
 
 
 if __name__ == '__main__':
-    print(add_ad_user('秦柯', '13297055555', '2350512555', '2350512555@qq.com', 'qytanggroup'))
+    # print(random_password())
+    print(add_ad_user('秦柯', '13297055555', '2350512555', '2350512555@qq.com', 'qytanggroup', random_pass=True))

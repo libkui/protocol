@@ -25,5 +25,5 @@ def delete_user(username):
 
 if __name__ == '__main__':
     from net_16_ldap.vip_ldap3_2_get_group_users import get_group_users
-    delete_user('qyt-qinke')
+    delete_user('qyt-qink')
     print(get_group_users('qytanggroup'))

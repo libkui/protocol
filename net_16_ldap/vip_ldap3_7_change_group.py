@@ -23,8 +23,8 @@ def add_user_to_group(username, groupname):
 
 
 if __name__ == '__main__':
-    remove_user_from_group('qyt-qinke', 'qytanggroup')
-    print(get_user_info('qyt-qinke').get('memberOf'))
+    remove_user_from_group('qyt-qink', 'qytanggroup')
+    print(get_user_info('qyt-qink').get('memberOf'))
 
-    add_user_to_group('qyt-qinke', 'qytanggroup')
-    print(get_user_info('qyt-qinke').get('memberOf'))
+    add_user_to_group('qyt-qink', 'qytanggroup')
+    print(get_user_info('qyt-qink').get('memberOf'))

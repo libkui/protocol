@@ -54,8 +54,8 @@ def get_user_self_info(username, password):
 
 if __name__ == '__main__':
     # 可以查詢用戶
-    print(get_user_info('qyt-qinke'))
-    print(get_user_self_info('qyt-qinke', 'Cisc0123'))
+    print(get_user_info('qyt-qink'))
+    print(get_user_self_info('qyt-qink', 'Cisc0123'))
     # 可以查詢組
     # print(get_user_info('vipgroup'))
     # userAccountControl

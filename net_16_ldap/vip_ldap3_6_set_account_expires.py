@@ -36,9 +36,9 @@ def set_user_accountexpires(username, datetimeobj):
 
 
 if __name__ == '__main__':
-    set_accountexpires('qyt-qinke', days=10)
-    print(get_user_info('qyt-qinke'))
+    set_accountexpires('qyt-qink', days=10)
+    print(get_user_info('qyt-qink'))
     from dateutil.parser import parse
     # 這個時間的時區與系統匹配
-    print(set_user_accountexpires('qyt-qinke', parse('2019-10-1')))
-    print(get_user_info('qyt-qinke'))
+    print(set_user_accountexpires('qyt-qink', parse('2019-10-1')))
+    print(get_user_info('qyt-qink'))

@@ -22,4 +22,4 @@ def change_user_password(username, newpass=''):
 
 
 if __name__ == '__main__':
-    print(change_user_password('qyt-qinke'))
+    print(change_user_password('qyt-qink'))
