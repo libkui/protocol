@@ -15,8 +15,6 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from tools.decorator_time import print_run_time
 
-attachment_dir = './attachment_dir/'
-
 
 @print_run_time()
 def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj, main_body, files=None):
@@ -38,7 +36,7 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
         for file in files:  # 逐个读取文件,并添加到附件
             # MIMEXXX决定了什么类型 MIMEApplication为二进制文件
             # 添加二进制文件
-            part = MIMEApplication(open(attachment_dir + file, 'rb').read())
+            part = MIMEApplication(open(file, 'rb').read())
             # 添加头部信息, 说明此文件为附件,并且添加文件名
             part.add_header('Content-Disposition', 'attachment', filename=file)
             # 把这个部分内容添加到MIMEMultipart()中
@@ -63,4 +61,15 @@ if __name__ == '__main__':
                         '3348326959@qq.com;collinsctk@qytang.com',
                         '附件测试_主题',
                         '附件测试_正文\r\n行1\r\n行2',
-                        ['Logo.jpg'])
+                        ['./attachment_dir/Logo.jpg'])
+
+    # from net_14_smtp.word_pdf.create_word_for_syslog import create_word_for_syslog
+    # create_word_for_syslog("../net_9_syslog/practice_homework/syslog.sqlite", './word_pdf/src_img/logo.png', './word_pdf/saved_word/syslog-docx.docx')
+    # qyt_smtp_attachment('smtp.qq.com',
+    #                     '3348326959@qq.com',
+    #                     'dmyymagcazklcjie',
+    #                     '3348326959@qq.com',
+    #                     '3348326959@qq.com;collinsctk@qytang.com',
+    #                     'Syslog分析报告',
+    #                     '详情请看附件',
+    #                     ['./word_pdf/saved_word/syslog-docx.docx'])
