@@ -44,7 +44,7 @@ def create_word_full(student_data, img_counters, img_protocols, save_word_name):
     # 段前距离5磅
 
     p2 = document.add_paragraph()
-    run2 = p2.add_run('报名日期：%s' % (today))
+    run2 = p2.add_run('报名日期：%s' % (today, ))
     run2.font.name = '仿宋_GB2312'
     run2._element.rPr.rFonts.set(qn('w:eastAsia'), u'仿宋_GB2312')
     run2.font.size = Pt(12)
@@ -56,6 +56,7 @@ def create_word_full(student_data, img_counters, img_protocols, save_word_name):
     # table.cell.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
     # table.font.name = u'隶书'
     # table._element.rPr.rFonts.set(qn('w:eastAsia'), u'隶书')
+
     # 创建表格
     table.cell(0, 0).text = '姓名'
     table.cell(0, 1).text = student_data['姓名']
@@ -92,7 +93,6 @@ def create_word_full(student_data, img_counters, img_protocols, save_word_name):
     table.cell(3, 1).merge(table.cell(3, 3))  # 合并单元格
     table.cell(5, 1).merge(table.cell(5, 3))  # 合并单元格
     table.cell(2, 1).merge(table.cell(2, 3))  # 合并单元格
-
 
     document.add_page_break()  # 添加分页符
     p3 = document.add_paragraph()
