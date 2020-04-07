@@ -50,15 +50,19 @@ def create_word_for_syslog(db_name, add_img, save_word_name):
     run2.font.name = '仿宋_GB2312'
     run2._element.rPr.rFonts.set(qn('w:eastAsia'), u'仿宋_GB2312')
     run2.font.size = Pt(10)
-    table = document.add_table(rows=4, cols=2, style='Light Grid Accent 2')
+    table = document.add_table(rows=4, cols=3, style='Light Grid Accent 2')
 
     table.cell(0, 0).text = '严重级别'
     table.cell(0, 1).text = '数量'
+    table.cell(0, 2).text = '百分比'
+
+    total = sum([y for x, y in syslog_result])
 
     i = 1
     for x, y in syslog_result[:3]:
         table.cell(i, 0).text = x
         table.cell(i, 1).text = str(int(y))
+        table.cell(i, 2).text = f'{(y/total)*100:.1f}'
         i += 1
     p3 = document.add_paragraph()
     run3 = p3.add_run('\r\n下面是最近一个小时的Syslog的数据统计饼状图分析!')

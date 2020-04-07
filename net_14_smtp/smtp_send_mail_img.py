@@ -14,8 +14,6 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from email.mime.image import MIMEImage
 
-attachment_dir = './attachment_dir/'
-
 
 def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj, main_body, images=None):
     # 使用SSL加密SMTP发送邮件, 此函数发送的邮件有主题,有正文,还可以发送附件
@@ -33,7 +31,7 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
     msg.attach(part)  # 添加正文
     if images:
         for img in images:
-            fp = open(attachment_dir + img, 'rb')
+            fp = open(img, 'rb')
             # MIMEXXX决定了什么类型 MIMEImage为图片文件
             # 添加图片
             images_mime_part = MIMEImage(fp.read())
@@ -56,11 +54,51 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     # 注意cid:Logo 对应头部里边的Content-ID的名称
-    main_body_txt = """
-    <h3>图片测试</h3>
-    <p>这是乾颐堂公司LOGO图片。</p>
+    # main_body_txt = """
+    # <h3>图片测试</h3>
+    # <p>这是乾颐堂公司LOGO图片。</p>
+    # <p>
+    # <br><img src="cid:Logo"></br>
+    # </p>
+    # <p>
+    # """
+    # qyt_smtp_attachment('smtp.qq.com',
+    #                     '3348326959@qq.com',
+    #                     'dmyymagcazklcjie',
+    #                     '3348326959@qq.com',
+    #                     '3348326959@qq.com;collinsctk@qytang.com',
+    #                     '图片测试',
+    #                     main_body_txt,
+    #                     ['./attachment_dir/Logo.jpg'])
+
+    from net_14_smtp.modules.syslog_bing import syslog_bing
+
+    syslog_result = syslog_bing("../net_9_syslog/practice_homework/syslog.sqlite", 'syslog.png')
+
+    td_str = ''
+    total = sum([y for x, y in syslog_result])
+    for x, y in syslog_result:
+        td_str += f'<tr><td>{x}</td><td>{y}</td><td>{(y/total)*100:.1f}</td></tr>'
+
+    main_body_txt = f"""
+    <img src="./word_pdf/src_img/logo.png" height="400" width="auto"/><br>
+    <h3>乾颐堂Python强化班Syslog分析</h3>
+    <p>下面是最近一个小时的Syslog的数据统计! 显示排前三的Syslog严重级别与数量</p><br>
+        <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                      <th class="text-center">严重级别</th>
+                      <th class="text-center">数量</th>
+                      <th class="text-center">百分比</th>
+                    </tr>  
+                </thead>
+                <tbody class="text-center">
+                    {td_str}
+                </tbody>
+    </table>
+    <p>下面是最近一个小时的Syslog的数据统计饼状图分析!</p>
     <p>
-    <br><img src="cid:Logo"></br> 
+    <br><img src="cid:syslog"></br> 
     </p>
     <p>
     """
@@ -69,6 +107,9 @@ if __name__ == '__main__':
                         'dmyymagcazklcjie',
                         '3348326959@qq.com',
                         '3348326959@qq.com;collinsctk@qytang.com',
-                        '图片测试',
+                        '乾颐堂Python强化班Syslog分析',
                         main_body_txt,
-                        ['Logo.jpg'])
+                        ['syslog.png'])
+    import os
+    os.remove('syslog.png')
+
