@@ -7,7 +7,7 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 
-import re
+import os
 import smtplib
 import email.utils
 from email.mime.multipart import MIMEMultipart
@@ -38,7 +38,7 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
             # 添加二进制文件
             part = MIMEApplication(open(file, 'rb').read())
             # 添加头部信息, 说明此文件为附件,并且添加文件名
-            part.add_header('Content-Disposition', 'attachment', filename=file)
+            part.add_header('Content-Disposition', 'attachment', filename=os.path.basename(file))
             # 把这个部分内容添加到MIMEMultipart()中
             msg.attach(part)
 

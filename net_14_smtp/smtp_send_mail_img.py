@@ -13,6 +13,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from email.mime.image import MIMEImage
+import os
 
 
 def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj, main_body, images=None):
@@ -37,7 +38,7 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
             images_mime_part = MIMEImage(fp.read())
             fp.close()
             # 添加头部! Content-ID的名字会在HTML中调用!
-            images_mime_part.add_header('Content-ID', img.split('.')[0])  # 这个部分就是cid: xxx的名字!
+            images_mime_part.add_header('Content-ID', os.path.basename(img).split('.')[0])  # 这个部分就是cid: xxx的名字!
             # 把这个部分内容添加到MIMEMultipart()中
             msg.attach(images_mime_part)
 
@@ -54,14 +55,14 @@ def qyt_smtp_attachment(mailserver, username, password, from_mail, to_mail, subj
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     # 注意cid:Logo 对应头部里边的Content-ID的名称
-    # main_body_txt = """
-    # <h3>图片测试</h3>
-    # <p>这是乾颐堂公司LOGO图片。</p>
-    # <p>
-    # <br><img src="cid:Logo"></br>
-    # </p>
-    # <p>
-    # """
+    main_body_txt = """
+    <h3>图片测试</h3>
+    <p>这是乾颐堂公司LOGO图片。</p>
+    <p>
+    <br><img src="cid:Logo"></br>
+    </p>
+    <p>
+    """
     # qyt_smtp_attachment('smtp.qq.com',
     #                     '3348326959@qq.com',
     #                     'dmyymagcazklcjie',
@@ -90,7 +91,7 @@ if __name__ == '__main__':
                       <th class="text-center">严重级别</th>
                       <th class="text-center">数量</th>
                       <th class="text-center">百分比</th>
-                    </tr>  
+                    </tr>
                 </thead>
                 <tbody class="text-center">
                     {td_str}
@@ -98,7 +99,7 @@ if __name__ == '__main__':
     </table>
     <p>下面是最近一个小时的Syslog的数据统计饼状图分析!</p>
     <p>
-    <br><img src="cid:syslog"></br> 
+    <br><img src="cid:syslog"></br>
     </p>
     <p>
     """
