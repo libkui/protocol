@@ -14,7 +14,7 @@ import re
 from net_17_traffic_analysis.scapy_traffic_analysis.scapy_0_pcap_dir import pcap_dir
 
 
-def find_pcap_dos(pcap_filename):
+def find_pcap_syn_dos(pcap_filename):
     # 本代码的主要任务: 对会话(源,目,目的端口)统计会话数量,用于判断DoS攻击
     pkts_file = rdpcap(pcap_filename)  # 使用scapy的rdpcap函数打开pcap文件
     pkt_list = pkts_file.res  # 提取每一个包到清单pkt_list
@@ -36,7 +36,7 @@ def find_pcap_dos(pcap_filename):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    dos_result = find_pcap_dos(pcap_dir + "dos.pcap")
+    dos_result = find_pcap_syn_dos(pcap_dir + "dos.pcap")
     # for conn, num in dos_result.items():  # 提取字典内容并且打印
     #     if num > 5:  # 连接数超过3的被打印出来
     #         print('DOS正在进行中，源为: ' + conn[0] + '目的为: ' + conn[1] + ' 目的端口为: ' + str(conn[2]) + ' 次数为: ' + str(num))
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     conn_list = []
     num_list = []
     for connection, num in dos_result.items():  # 提取字典内容并且打印
-        if num > 5:
+        if num > 5:  # 只提取连接数大于5的信息
             conn_list.append(str(connection))
             num_list.append(num)
 
@@ -53,8 +53,8 @@ if __name__ == '__main__':
 
     # ##########################添加注释###################################
     plt.rcParams['font.sans-serif'] = ['SimHei']  # 设置中文
-    plt.title('DoS Analysis')  # 主题
-    plt.xlabel('count')  # X轴注释
-    plt.ylabel('Connection')  # Y轴注释
+    plt.title('SYN DoS分析')  # 主题
+    plt.xlabel('数量')  # X轴注释
+    plt.ylabel('连接')  # Y轴注释
     # ##########################添加注释###################################
     plt.show()

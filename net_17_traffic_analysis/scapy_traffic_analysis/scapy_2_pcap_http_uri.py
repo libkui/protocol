@@ -47,15 +47,18 @@ if __name__ == '__main__':
     result = find_pcap_uri(pcap_dir + "dos.pcap", r'sina\.com\.cn')
 
     # 对找到数据包进行展示,打印Host, URI , User_Agent
+    i = 1
     for http_info in result:
-        print('====================================================================')
+        print('=' * 30 + str(i) + '=' * 30)
         print(b'Host: ' + http_info[0])
         print(b'URI: ' + http_info[1])
         print(b'User_Agent: ' + http_info[2])
+        i += 1
 
     # 展示所有host, 使用集合技术, 去除重复部分
     host_list = []
     for http_info in result:
         host_list.append(http_info[0])
+    print('=' * 62)
     print(host_list)
     print([i.decode() for i in list(set(host_list))])  # 使用集合技术,找到不重复的Host
