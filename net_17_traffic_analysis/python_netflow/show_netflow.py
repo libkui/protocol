@@ -7,6 +7,7 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 import sqlite3
+import datetime
 from matplotlib import pyplot as plt
 from net_17_traffic_analysis.python_netflow.collector_v9_process_module import db_dir
 # 协议名称映射表
@@ -25,8 +26,10 @@ protocol_map = {'6/22': 'SSH',
 conn = sqlite3.connect(db_dir + 'netflow.sqlite')
 cursor = conn.cursor()
 
+one_hour_before = datetime.datetime.now() - datetime.timedelta(hours=1)
 # 找到唯一的目的端口和协议
-cursor.execute("select 目的端口,协议 from netflowdb group by 目的端口,协议")
+cursor.execute("select 目的端口,协议 from netflowdb group by 目的端口,协议 and 记录时间 > ?",
+               (one_hour_before, ))
 yourresults = cursor.fetchall()
 
 application_list = []
@@ -39,7 +42,9 @@ protocol_list = []
 protocol_bytes = []
 for x in application_list:
     # 提取应用(协议,目的端口)的入向字节数
-    cursor.execute("select 入向字节数 from netflowdb where 协议='%s' and 目的端口='%s'" % (x[1], x[0]))
+    # 过滤近期一个小时的数据
+    cursor.execute("select 入向字节数 from netflowdb where 协议=? and 目的端口=? and 记录时间 > ?",
+                   (x[1], x[0], one_hour_before))
     yourresults = cursor.fetchall()
     bytes_sum = 0
     # 把每一个会话的字节数加起来

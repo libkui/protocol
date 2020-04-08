@@ -9,6 +9,7 @@
 import struct
 import os
 import sqlite3
+from datetime import datetime
 
 db_dir = './db_dir/'
 
@@ -165,7 +166,7 @@ def createdb():
     cursor = conn.cursor()
 
     # 执行创建表的任务
-    cursor.execute("create table netflowdb (源地址 varchar(40), 目的地址 varchar(40), 协议 int, 源端口 int, 目的端口 int, 入接口ID int, 入向字节数 int)")
+    cursor.execute("create table netflowdb (源地址 varchar(40), 目的地址 varchar(40), 协议 int, 源端口 int, 目的端口 int, 入接口ID int, 入向字节数 int, 记录时间 timestamp)")
 
     conn.commit()
 
@@ -179,13 +180,14 @@ def netflowdb(netflow_dict):
     cursor = conn.cursor()
 
     # 读取Python字典数据，并逐条写入SQLite数据库
-    cursor.execute("insert into netflowdb values ('%s', '%s', %d, %d, %d, %d, %d)" % (netflow_dict['IPV4_SRC_ADDR'],
-                                                                                      netflow_dict['IPV4_DST_ADDR'],
-                                                                                      netflow_dict['PROTOCOL'],
-                                                                                      netflow_dict['L4_SRC_PORT'],
-                                                                                      netflow_dict['L4_DST_PORT'],
-                                                                                      netflow_dict['INPUT_INTERFACE_ID'],
-                                                                                      netflow_dict['IN_BYTES']))
+    cursor.execute("insert into netflowdb values (?, ?, ?, ?, ?, ?, ?, ?)", (netflow_dict['IPV4_SRC_ADDR'],
+                                                                             netflow_dict['IPV4_DST_ADDR'],
+                                                                             netflow_dict['PROTOCOL'],
+                                                                             netflow_dict['L4_SRC_PORT'],
+                                                                             netflow_dict['L4_DST_PORT'],
+                                                                             netflow_dict['INPUT_INTERFACE_ID'],
+                                                                             netflow_dict['IN_BYTES'],
+                                                                             datetime.now()))
     # 提交数据
     conn.commit()
 
@@ -224,6 +226,9 @@ class DataFlowSet:
             #  destination 10.1.1.80
             #  transport udp 9999
             #  template data timeout 30  # 设置超时为30秒
+
+            # 注意: 整个Monitor(接口配置)一个template, 而不是每一个flow
+            # FlowSet ID = 0 时! 传输template
             print(f'未找到模板ID:{self.template_id}! 建议重新应用Netflow的配置! 或者等待"template data timeout"')
             return
         # v9 DataFlowSet长度必须被4字节整除,如果不够4字节边界,需要填充数据,下面在计算填充数据长度
