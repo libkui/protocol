@@ -48,6 +48,16 @@ if __name__ == '__main__':
         if num > 5:  # 只提取连接数大于5的信息
             conn_list.append(str(connection))
             num_list.append(num)
+    conn_num_list = sorted(zip(conn_list, num_list), key=lambda x: x[1])
+    # [((src, dst, dport),  40), ((src, dst, dport),  36) ....]
+    conn_list = []
+    num_list = []
+    for c, n in conn_num_list:
+        conn_list.append(c)
+        num_list.append(n)
+
+    print(conn_list)
+    print(num_list)
 
     plt.barh(conn_list, num_list, height=0.5)
 
