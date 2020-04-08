@@ -10,6 +10,7 @@ flow record Qytang-Record
 flow exporter Netflow-Exporter
  destination 10.1.1.80
  transport udp 9999
+ template data timeout 30
 !
 flow monitor Monitor1
  exporter Netflow-Exporter

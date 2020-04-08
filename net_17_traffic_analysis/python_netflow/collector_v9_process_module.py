@@ -218,8 +218,14 @@ class DataFlowSet:
         # 略过已经分析的DataFlowSet头部
         offset = 4
         # 提取传入templates中,对应的模板(通过模板ID)
-        template = templates[self.template_id]
-
+        template = templates.get(self.template_id)
+        if not template:
+            # flow exporter Netflow-Exporter
+            #  destination 10.1.1.80
+            #  transport udp 9999
+            #  template data timeout 30  # 设置超时为30秒
+            print(f'未找到模板ID:{self.template_id}! 建议重新应用Netflow的配置! 或者等待"template data timeout"')
+            return
         # v9 DataFlowSet长度必须被4字节整除,如果不够4字节边界,需要填充数据,下面在计算填充数据长度
         padding_size = 4 - (self.length % 4)  # 4 Byte
 
@@ -292,7 +298,7 @@ class TemplateField:
         self.field_type = field_type  # integer
         self.field_length = field_length  # bytes
 
-    def __repr__(self): # 格式化打印类时的显示字符串
+    def __repr__(self):  # 格式化打印类时的显示字符串
         return "<TemplateField type {}:{}, length {}>".format(
             self.field_type, field_types[self.field_type], self.field_length)
 
@@ -306,7 +312,7 @@ class TemplateRecord:
         self.field_count = field_count
         self.fields = fields
 
-    def __repr__(self): # 格式化打印类时的显示字符串
+    def __repr__(self):  # 格式化打印类时的显示字符串
         return "<TemplateRecord {} with {} fields: {}>".format(
             self.template_id, self.field_count,
             ' '.join([field_types[field.field_type] for field in self.fields]))
@@ -359,7 +365,7 @@ class TemplateFlowSet:
             # 分析下一个模板,略过最后一个分析的字段
             offset += 4
 
-    def __repr__(self): # 格式化打印类时的显示字符串
+    def __repr__(self):  # 格式化打印类时的显示字符串
         return "<TemplateFlowSet with id {} of length {} containing templates: {}>"\
             .format(self.flowset_id, self.length, self.templates.keys())
 

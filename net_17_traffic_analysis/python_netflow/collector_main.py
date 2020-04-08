@@ -9,7 +9,8 @@
 import logging
 import sys
 import socketserver
-from net_17_traffic_analysis.python_netflow.collector_v9_module import ExportPacket, createdb
+from datetime import datetime
+from net_17_traffic_analysis.python_netflow.collector_v9_process_module import ExportPacket, createdb
 
 logging.getLogger().setLevel(logging.INFO)
 ch = logging.StreamHandler(sys.stdout)
@@ -34,13 +35,13 @@ class SoftflowUDPHandler(socketserver.BaseRequestHandler):
     def handle(self):
         data = self.request[0]
         host = self.client_address[0]
-        s = "Received data from {}, length {}".format(host, len(data))
+        s = f"Received data from {host}, length {len(data)}, datetime {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         logging.debug(s)
         # 使用类ExportPacket处理数据,并返回实例export,这是整个处理的开始!
         export = ExportPacket(data, self.TEMPLATES)
         # 把实例export(类ExportPacket)中的属性templates更新到类SoftflowUDPHandler的属性templates,用于保存模板数据
         self.TEMPLATES.update(export.templates)
-        s = "Processed ExportPacket with {} flows.".format(export.header.count)
+        s = f"Processed ExportPacket with {export.header.count} flows."
         logging.debug(s)
 
 
