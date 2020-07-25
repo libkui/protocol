@@ -13,8 +13,10 @@ logging.getLogger("kamene.runtime").setLevel(logging.ERROR)
 import ipaddress
 from multiprocessing.pool import ThreadPool
 from net_1_arp.arp_request import arp_request
+from net_1_arp.time_decorator import run_time
 
 
+@run_time()
 def scapy_arp_scan(network, ifname):
     net = ipaddress.ip_network(network)  # 产生网络对象
     ip_list = [str(ip_add) for ip_add in net]  # 把网络中的IP放入ip_list
@@ -31,11 +33,6 @@ def scapy_arp_scan(network, ifname):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    import time
-
-    t1 = time.time()
-    print('活动IP地址如下:')
     for ip, mac in scapy_arp_scan("10.1.1.0/24", 'ens33').items():
         print('ip地址:'+ip+'是活动的,他的MAC地址是:'+mac)
-    t2 = time.time()
-    print('本次扫描时间: %.2f' % (t2 - t1))  # 计算并且打印扫描时间
+
