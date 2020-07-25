@@ -15,7 +15,7 @@ pp = pprint.PrettyPrinter(indent=4)
 def get_mac_address(ifname):
     if platform.system() == "Linux":
         # pp.pprint(netifaces.ifaddresses(ifname))
-        # 所有地址信息 2 为IPv4, 10 为IPv6, 17 为以太网
+        # 所有地址信息 2 为IPv4(AF_INET), 10 为IPv6(AF_INET6), 17 为以太网(AF_LINK)
         # {   2: [   {   'addr': '10.1.1.80',
         #                'broadcast': '10.1.1.255',
         #                'netmask': '255.255.255.0'}],
@@ -43,5 +43,8 @@ def get_mac_address(ifname):
 
 
 if __name__ == '__main__':
-    print(get_mac_address("Net1"))
-    print(get_mac_address("ens33"))
+    import platform
+    if platform.system() == "Linux":
+        print(get_mac_address('ens33'))
+    elif platform.system() == "Windows":
+        print(get_mac_address('Net1'))

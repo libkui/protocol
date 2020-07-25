@@ -12,4 +12,9 @@ def get_ifname(ifname):
 
 
 if __name__ == "__main__":
-    print(get_ifname("Net1"))
+    import platform
+    if platform.system() == "Linux":
+        print(get_ifname('ens33'))
+    elif platform.system() == "Windows":
+        print(get_ifname('Net1'))
+

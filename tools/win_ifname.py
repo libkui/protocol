@@ -32,4 +32,7 @@ def win_from_name_get_id(ifname):
 
 if __name__ == "__main__":
     # print(ni.interfaces())  # 尝试在Linux和Windows下打印, 感受区别
-    print(win_from_name_get_id("Net1"))
+    # 此代码只能在WIN下运行
+    import platform
+    if platform.system() == "Windows":
+        print(win_from_name_get_id("Net1"))
