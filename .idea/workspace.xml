@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="排序!">
-      <change afterPath="$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/net_12_ssh/ssh_sftp/testfsm_template_(show ip interface brief).template" afterDir="false" />
+    <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,17 +124,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_netmiko.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="81" />
+            <state relative-caret-position="950">
+              <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="114">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
@@ -143,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/testfsm_template_(show ip interface brief).template">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="107" selection-start-line="1" selection-start-column="107" selection-end-line="1" selection-end-column="107" />
+            <state relative-caret-position="114">
+              <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -541,14 +540,7 @@
       <workItem from="1585097734407" duration="28475000" />
       <workItem from="1585904757159" duration="43101000" />
       <workItem from="1586235608575" duration="38063000" />
-      <workItem from="1595657857692" duration="3383000" />
-    </task>
-    <task id="LOCAL-00027" summary="修改名称">
-      <created>1585104233857</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1585104233857</updated>
+      <workItem from="1595657857692" duration="4260000" />
     </task>
     <task id="LOCAL-00028" summary="修改名称">
       <created>1585104411902</created>
@@ -886,21 +878,28 @@
       <option name="project" value="LOCAL" />
       <updated>1586348399417</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="netmiko + testfsm">
+      <created>1595661494707</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1595661494707</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154100000" />
+    <option name="totallyTimeSpent" value="154977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1414" height="860" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1536189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1536189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926144" visible="true" weight="0.27134988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926144" visible="true" weight="0.24104683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -940,7 +939,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改名称" />
     <MESSAGE value="pyshark" />
     <MESSAGE value="netflow" />
     <MESSAGE value="scapy traffic analysis" />
@@ -965,7 +963,8 @@
     <MESSAGE value="修改格式!" />
     <MESSAGE value="注释!" />
     <MESSAGE value="排序!" />
-    <option name="LAST_COMMIT_MESSAGE" value="排序!" />
+    <MESSAGE value="netmiko + testfsm" />
+    <option name="LAST_COMMIT_MESSAGE" value="netmiko + testfsm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1502,25 +1501,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_netmiko.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="950">
+          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/testfsm_template_(show ip interface brief).template">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="107" selection-start-line="1" selection-start-column="107" selection-end-line="1" selection-end-column="107" />
+        <state relative-caret-position="114">
+          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
