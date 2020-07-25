@@ -14,8 +14,10 @@ from multiprocessing.pool import ThreadPool
 from net_2_icmp.ping_one import scapy_ping_one
 from kamene.all import *
 from tools.sort_ip import sort_ip
+from net_1_arp.time_decorator import run_time
 
 
+@run_time()
 def scapy_ping_scan(network):
     net = ipaddress.ip_network(network)
     ip_list = [str(ip_add) for ip_add in net]  # 把网络(net)中的IP放入ip_list
@@ -43,11 +45,6 @@ def scapy_ping_scan(network):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    import time
-
-    t1 = time.time()
-    print('活动IP地址如下:')
     for ip in scapy_ping_scan("10.1.1.0/24"):
         print(str(ip))
-    t2 = time.time()
-    print('本次扫描时间: %.2f' % (t2 - t1))  # 计算并且打印扫描时间
+

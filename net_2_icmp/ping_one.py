@@ -11,10 +11,8 @@ import logging
 
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)
 from kamene.all import *
-from net_1_arp.time_decorator import run_time
 
 
-@run_time()
 def scapy_ping_one(host):
     packet = IP(dst=host) / ICMP() / b'Welcome to qytang'  # 构造Ping数据包
     ping = sr1(packet, timeout=1, verbose=False)  # 获取响应信息，超时为2秒，关闭详细信息

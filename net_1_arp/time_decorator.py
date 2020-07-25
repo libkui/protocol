@@ -20,7 +20,7 @@ def run_time():
             t1 = time.time()
             func_result = func(*args, **kwargs)
             t2 = time.time()
-            print('本次扫描时间: %.2f' % (t2 - t1))  # 计算并且打印扫描时间
+            print('本次操作时间: %.2f' % (t2 - t1))  # 计算并且打印扫描时间
             return func_result  # 返回函数
 
         return print_run_time  # 返回函数 + 写入返回内容到文件
