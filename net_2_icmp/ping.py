@@ -65,4 +65,4 @@ def qyt_ping(dst):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    qyt_ping('8.8.8.8')
+    qyt_ping('61.135.169.121')
