@@ -27,7 +27,7 @@ requested_option_6 = 33  # Static Routes
 requested_option_7 = 150  # TFTP Server address
 requested_option_8 = 43  # Vendor Specific Information
 
-bytes_requested_options = struct.pack("8B",
+bytes_requested_options = struct.pack("8B",  # 8个一个字节整数
                                       requested_option_1,
                                       requested_option_2,
                                       requested_option_3,
