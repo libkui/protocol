@@ -1,8 +1,9 @@
 import netifaces as ni
-import winreg as wr
+# import winreg as wr
 
 
 def get_connection_name_from_guid(iface_guids):
+    wr = __import__('winreg', globals(), locals(), ['wr'])
     # 接口名字和Windows唯一ID的清单
     iface_dict = {}
     # 打开"HKEY_LOCAL_MACHINE"
