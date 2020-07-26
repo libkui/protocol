@@ -3,6 +3,8 @@ import netifaces as ni
 
 
 def get_connection_name_from_guid(iface_guids):
+    # 下面这种导入方式等价于import winreg as wr
+    # 此导入方式支持传入动态的导入内容(列表)
     wr = __import__('winreg', globals(), locals(), ['wr'])
     # 接口名字和Windows唯一ID的清单
     iface_dict = {}
