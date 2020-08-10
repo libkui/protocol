@@ -19,6 +19,11 @@ f = open('testfsm_template_(show ip interface brief).template')
 # 如果使用非捕获括号，则 {1,2} 会应用于整个 'foo' 单词。
 # https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
 
+# Value INTER (\D+\d+((/\d+)+(\.\d+)?)?)
+# \D+ 首位不能为数字 \d+ 紧接着是数字 ((/\d+)+(\.\d+)?)? 后续可能有/或者.的子接口
+# Value IPADD (\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)
+# \b匹配字符边界 第一位可能25x 2[0-4]x 1xx ....
+
 template = TextFSM(f)
 show_vlan_dict = template.ParseText(raw_result)
 pprint(show_vlan_dict)
