@@ -31,7 +31,7 @@ if __name__ == '__main__':
     devices_cmd_list = [[d, 'show ip interface brief'] for d in devices_list]
     # 多参数使用*device来传
 
-    # 携程部分
+    # 协程部分
     start_time = datetime.now()
     tasks = [gevent.spawn(netmiko_show, *device) for device in devices_cmd_list]
     all_result = gevent.joinall(tasks)
