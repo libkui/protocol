@@ -15,7 +15,10 @@ def get_group_users(group_name):
     users_list = []
     try:
         # 连接服务器
-        c = Connection(server, auto_bind=True, user="qytang\\"+ad_admin_username, password=ad_admin_password)
+        c = Connection(server,
+                       auto_bind=True,
+                       user="qytang\\"+ad_admin_username,
+                       password=ad_admin_password)
         c.search(search_base=get_user_info(group_name).get('dn'),
                  search_filter='(|(objectCategory=group)(objectCategory=user))',
                  search_scope='SUBTREE',

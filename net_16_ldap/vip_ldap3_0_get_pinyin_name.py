@@ -24,3 +24,4 @@ if __name__ == '__main__':
     print(get_pinyin_name('黄磊'))
     print(get_pinyin_name('collinsctk'))
     print(get_pinyin_name('Run Ruu'))
+

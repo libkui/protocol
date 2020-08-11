@@ -15,7 +15,17 @@ def get_user_info(username):
         # 连接服务器
         c = Connection(server, auto_bind=True, user="qytang\\"+ad_admin_username, password=ad_admin_password)
         # 提取域qytang.com, 用户的memberOf,sn和department信息
-        c.search(search_base='dc=qytang,dc=com', search_filter='(&(samAccountName=' + username + '))', attributes=['memberOf', 'sn', 'department', 'createTimeStamp', 'accountExpires', 'userAccountControl', 'objectClass', 'pwdLastSet'], paged_size=5)
+        c.search(search_base='dc=qytang,dc=com',
+                 search_filter='(&(samAccountName=' + username + '))',
+                 attributes=['memberOf',
+                             'sn',
+                             'department',
+                             'createTimeStamp',
+                             'accountExpires',
+                             'userAccountControl',
+                             'objectClass',
+                             'pwdLastSet'],
+                 paged_size=5)
         # 返回获取的memberOf,sn和department信息
         return {'dn': c.response[0]['dn'],
                 'memberOf': c.response[0]['attributes']['memberOf'],
@@ -36,7 +46,17 @@ def get_user_self_info(username, password):
         # 连接服务器
         c = Connection(server, auto_bind=True, user="qytang\\"+username, password=password)
         # 提取域qytang.com, 用户的memberOf,sn和department信息
-        c.search(search_base='dc=qytang,dc=com', search_filter='(&(samAccountName=' + username + '))', attributes=['memberOf', 'sn', 'department', 'createTimeStamp', 'accountExpires', 'userAccountControl', 'objectClass', 'pwdLastSet'], paged_size=5)
+        c.search(search_base='dc=qytang,dc=com',
+                 search_filter='(&(samAccountName=' + username + '))',
+                 attributes=['memberOf',
+                             'sn',
+                             'department',
+                             'createTimeStamp',
+                             'accountExpires',
+                             'userAccountControl',
+                             'objectClass',
+                             'pwdLastSet'],
+                 paged_size=5)
         # 返回获取的memberOf,sn和department信息
         return {'dn': c.response[0]['dn'],
                 'memberOf': c.response[0]['attributes']['memberOf'],
@@ -54,8 +74,9 @@ def get_user_self_info(username, password):
 
 if __name__ == '__main__':
     # 可以查詢用戶
-    print(get_user_info('qyt-qink'))
-    print(get_user_self_info('qyt-qink', 'Cisc0123'))
+    from pprint import pprint
+    pprint(get_user_info('qyt-qink'))
+    pprint(get_user_self_info('qyt-qink', 'Cisc0123'))
     # 可以查詢組
     # print(get_user_info('vipgroup'))
     # userAccountControl

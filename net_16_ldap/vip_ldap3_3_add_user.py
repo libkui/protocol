@@ -91,4 +91,9 @@ def add_ad_user(xingming, phone, qq, mail, group='qytanggroup', random_pass=Fals
 
 if __name__ == '__main__':
     # print(random_password())
-    print(add_ad_user('秦柯', '13297055555', '2350512555', '2350512555@qq.com', 'qytanggroup', random_pass=True))
+    print(add_ad_user('秦柯',
+                      '13297055555',
+                      '2350512555',
+                      '2350512555@qq.com',
+                      'qytanggroup',
+                      random_pass=False))
