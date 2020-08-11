@@ -24,6 +24,7 @@ CSR1 = {
 
 # ">" 下的exec命令
 net_connect = Netmiko(**CSR1)  # ** 表示使用字典映射的方式来传参数
+# Netmiko(host='10.1.1.253', username='admin', password='Cisc0123', device_type='cisco_ios_telnet', secret='Cisc0123')
 print(net_connect.send_command("show ip interface brief"))
 
 # "#" 下的exec命令

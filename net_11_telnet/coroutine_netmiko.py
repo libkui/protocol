@@ -29,6 +29,7 @@ if __name__ == '__main__':
     devices_list = ['10.1.1.253', '10.1.1.252', '10.1.1.251', '10.1.1.250', '10.1.1.249']
     # 把ip和cmd放到一个列表, 便于后续使用*device来传多参数
     devices_cmd_list = [[d, 'show ip interface brief'] for d in devices_list]
+    # device_cmd = [['10.1.1.253', 'show ip interface brief'], ['10.1.1.252', 'show ip interface brief'], ]
     # 多参数使用*device来传
 
     # 协程部分
