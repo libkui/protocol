@@ -65,7 +65,9 @@ if __name__ == '__main__':
 
     from net_14_smtp.word_pdf.create_word_for_syslog import create_word_for_syslog
     from docx2pdf import convert
-    create_word_for_syslog("../net_9_syslog/practice_homework/syslog.sqlite", './word_pdf/src_img/logo.png', './word_pdf/saved_word/syslog-docx.docx')
+    create_word_for_syslog("../net_9_syslog/practice_homework/syslog.sqlite",
+                           './word_pdf/src_img/logo.png',
+                           './word_pdf/saved_word/syslog-docx.docx')
     convert('./word_pdf/saved_word/syslog-docx.docx', './word_pdf/saved_pdf/syslog-pdf.pdf')
     qyt_smtp_attachment('smtp.qq.com',
                         '3348326959@qq.com',
@@ -75,3 +77,4 @@ if __name__ == '__main__':
                         'Syslog分析报告',
                         '详情请看附件',
                         ['./word_pdf/saved_word/syslog-docx.docx', './word_pdf/saved_pdf/syslog-pdf.pdf'])
+
