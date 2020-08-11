@@ -44,9 +44,8 @@ def qyt_rec_mail(mailserver, mailuser, mailpasswd, save_file=False, delete_email
         # There are 2 mail message in 153385 bytes
         server_list_result = server.list()
         print(server_list_result)  # 打印邮件清单
-
-        msg_count = len(server_list_result[1])
         # (b'+OK', [b'1 76634', b'2 76751'], 18)
+        msg_count = len(server_list_result[1])
 
         for email_no in range(msg_count):  # 逐个读取邮件range(10) = 0 - 9
             hdr, message, octets = server.retr(email_no + 1)  # 读取邮件
@@ -130,10 +129,10 @@ def qyt_rec_mail(mailserver, mailuser, mailpasswd, save_file=False, delete_email
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     # print(decode_subject_base64('=?utf-8?b?6ZmE5Lu25rWL6K+VX+S4u+mimA==?='))
+    from pprint import pprint
     i = 1
     for x in qyt_rec_mail('pop.qq.com', '3348326959@qq.com', 'dmyymagcazklcjie', save_file=True, delete_email=True):
         print('='*50, '第', i, '封信', '='*50)
-        for key, value in x.items():
-            print(key, '==>', value)
+        pprint(x)
         i += 1
 
