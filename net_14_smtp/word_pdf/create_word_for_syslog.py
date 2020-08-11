@@ -38,7 +38,7 @@ def create_word_for_syslog(db_name, add_img, save_word_name):
     run1.font.size = Pt(20)
     # 设置加粗
     run1.font.bold = True
-    # 段后距离5磅
+    # 段后距离1磅
     p1.space_after = Pt(1)
     # 段前距离5磅
     p1.space_before = Pt(5)
