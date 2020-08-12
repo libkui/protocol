@@ -17,6 +17,7 @@
 # 不能保存分析后的数据包到PCAP
 
 import pyshark
+import re
 from net_17_traffic_analysis.pyshark_traffic_analysis.pyshark_0_pcap_dir import pcap_data_dir
 pkt_list = []
 
@@ -28,14 +29,12 @@ url_dict = {}
 def print_highest_layer(pkt):
     # 本代码的主要任务: 对HTTP流量进行分析,找到特定host的请求数量
     try:
-        host_list = pkt.http.host.split('.')
-        if len(host_list[-1]) == 2:  # 如果最后一段只有两位,例如'cn','us'!我们就取后三个部分,例如sina.com.cn
-            host = host_list[-3] + '.' + host_list[-2] + '.' + host_list[-1]
-        elif len(host_list[-1]) == 3:  # 如果最后一段只有三位,例如'com','net'!我们就取后两个部分,例如sina.com
-            host = host_list[-2] + '.' + host_list[-1]
-        else:
-            pass
+        # 正则表达式匹配域名
+        # https://blog.walterlv.com/post/match-web-url-using-regex.html
 
+        re_result = re.match(r"(^(?=^.{3,255}$)[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+$)", pkt.http.host)
+        if re_result:
+            host = re_result.groups()[0]
         # 字典数据结构如下
         # 键为method和host, 值为数量
         counts = url_dict.get((pkt.http.request_method, host), 0)
@@ -59,6 +58,10 @@ if __name__ == '__main__':
         url.append(x[1])
         hits.append(y)
 
+    conn_num_list_top_5 = sorted(zip(url, hits), key=lambda x: x[1])[-5:]
+
+    url = [a[0] for a in conn_num_list_top_5]
+    hits = [a[1] for a in conn_num_list_top_5]
     plt.barh(url, hits, height=0.5)
 
     # ##########################添加注释###################################
