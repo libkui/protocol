@@ -44,6 +44,9 @@ def tcp_reset(src_ip, dst_ip, dst_port, ifname, src_port=None):
     # 本代码主要任务: 搜索匹配过滤条件的数据包,然后使用tcp_monitor_callback方法进行重置会话处理
     global global_if
     global_if = scapy_iface(ifname)
+    # sniff() uses Berkeley Packet Filter (BPF) syntax (the same one as tcpdump)
+    # https://biot.com/capstats/bpf.html
+    # https://blog.csdn.net/qwertyupoiuytr/article/details/54670477
     if src_port is None:
         match = "src host " + src_ip + " and dst host " + dst_ip + " and dst port " + dst_port
     else:
