@@ -132,9 +132,11 @@ def mac_to_eui64(mac, prefix):
 
     # high2 使用移位">> 32"得到0050,
     # 00:50:56:ab:4d:19
-    #      |---32位---->[埋到土里边消失了]
-    # 使用"& 0xffff"确认只有4个16进制数,
+    #             00:50
+    #            |-16位->[埋到土里边消失了]
+    # 使用"& 0xffff"确认只要4个16进制数,
     # 使用"^ 0x200"异或转换第七位,得到0250
+
     # 异或算法
     # >>> 0 ^ 1
     # 1
@@ -147,18 +149,23 @@ def mac_to_eui64(mac, prefix):
     # 换位后为0x 0250
     # 打印high2应该为592, 正好是0x0250的十进制数
     high2 = mac_value >> 32 & 0xffff ^ 0x0200  # 0x2 = 0b00000010
-    # 00:50:56:ab:4d:19
-    #         |--24位-->[埋到土里边消失了]
+
     # high1 使用移位">> 24"得到005056,
     # 使用"& 0xff"得到最后两个16进制数,56
     # high1 = 0x 56
-    high1 = mac_value >> 24 & 0xff
     # 00:50:56:ab:4d:19
-    #            |-16位->[埋到土里边消失了]
+    #          00:50:56
+    #         |--24位-->[埋到土里边消失了]
+    high1 = mac_value >> 24 & 0xff
+
     # low1 使用移位">> 16"得到005056ab,
     # 使用"& 0xff"得到最后两个16进制数,ab
     # low1 = 0x ab
+    # 00:50:56:ab:4d:19
+    #       00:50:56:ab
+    #      |---32位---->[埋到土里边消失了]
     low1 = mac_value >> 16 & 0xff
+
     # low2 使用"& 0xffff"得到最后4个16进制数,4d19
     # low2 = 0x 4d19
     low2 = mac_value & 0xffff
@@ -174,6 +181,6 @@ def mac_to_eui64(mac, prefix):
 
 if __name__ == '__main__':
     print(full_ipv6('2001::f107:94ac:2717:a736'))
-    print(mac_to_eui64(mac='06:b2:4a:00:00:9f', prefix='2001:db8:100::/64'))
+    print(mac_to_eui64(mac='00:50:56:ab:4d:19', prefix='2001:db8:100::/64'))
     print(mac_to_ipv6_linklocal('00:50:56:ab:4d:19'))
     print(solicited_node_multicast_address('2001::f107:94ac:2717:a736'))
