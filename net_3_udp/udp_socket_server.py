@@ -10,7 +10,7 @@ from tools.get_ip_netifaces import get_ip_address
 import socket
 import sys
 
-address = ("10.1.1.100", 6666)
+address = ("0.0.0.0", 6666)
 # 创建UDP套接字Socket, AF_INET为IPv4, SOCK_DGRAM为Datagram就是UDP
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 # 套接字绑定到地址,元组(host, port)
