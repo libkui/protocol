@@ -1,0 +1,4 @@
+node.name: qytang_es
+cluster.name: "qytang_es_cluster"
+network.host: 0.0.0.0
+

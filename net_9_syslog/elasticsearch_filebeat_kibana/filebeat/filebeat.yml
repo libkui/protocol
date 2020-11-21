@@ -1,0 +1,17 @@
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
+processors:
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+
+output.elasticsearch:
+  hosts: '${ELASTICSEARCH_HOSTS:elasticsearch:9200}'
+  index: "qytang-ios-%{+yyyy.MM.dd}"
+
+setup.kibana.host: "http://kibana:5601"
+setup.template.name: "qytang-ios"
+setup.template.pattern: "qytang-ios-*"
+setup.ilm.enabled: false

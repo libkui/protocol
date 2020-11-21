@@ -1,0 +1,41 @@
+version: '3'
+services:
+  elasticsearch:
+    build: ./elasticsearch/
+    environment:
+      - discovery.type=single-node
+    privileged: true
+    networks:
+      - qyt_net
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    restart: always
+  kibana:
+    build: ./kibana/
+    privileged: true
+    networks:
+      - qyt_net
+    ports:
+      - "5601:5601"
+    depends_on:
+      - "elasticsearch"
+    restart: always
+  filebeat:
+    build: ./filebeat/
+    environment:
+      - output.elasticsearch.hosts=["elasticsearch:9200"]
+      - setup.kibana.host=kibana:5601
+    privileged: true
+    networks:
+      - qyt_net
+    ports:
+      - "514:9002/udp"
+    depends_on:
+      - "elasticsearch"
+      - "kibana"
+    restart: always
+
+networks:
+  qyt_net:
+    driver: bridge
