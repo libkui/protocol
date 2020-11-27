@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_1_pcap_syn_dos.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_1_pcap_syn_dos.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,15 +55,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_attachment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_img.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,11 +126,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="121">
               <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_1_pcap_syn_dos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -199,7 +199,6 @@
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow/netflow_show.py" />
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_2_capture.py" />
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow/netflow_config/netflow_config.txt" />
-        <option value="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_1_pcap_syn_dos.py" />
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_2_pcap_http_uri.py" />
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_1_display.py" />
         <option value="$PROJECT_DIR$/net_12_ssh/ssh_sftp/testfsm_template_(show ip interface brief).template" />
@@ -231,6 +230,7 @@
         <option value="$PROJECT_DIR$/net_14_smtp/word_pdf/create_word_for_syslog.py" />
         <option value="$PROJECT_DIR$/net_14_smtp/smtp_send_mail_img.py" />
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py" />
+        <option value="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_1_pcap_syn_dos.py" />
       </list>
     </option>
   </component>
@@ -499,29 +499,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pyshark_6_uri">
-    <configuration name="pyshark_2_capture" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_network" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_2_capture.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.scapy_1_pcap_syn_dos">
     <configuration name="pyshark_3_options" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -610,13 +588,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="scapy_1_pcap_syn_dos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_network" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_1_pcap_syn_dos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scapy_1_pcap_syn_dos" />
         <item itemvalue="Python.pyshark_6_uri" />
         <item itemvalue="Python.pyshark_5_2_tcpstream_get_tcp_stream" />
         <item itemvalue="Python.pyshark_4_analysis" />
         <item itemvalue="Python.pyshark_3_options" />
-        <item itemvalue="Python.pyshark_2_capture" />
       </list>
     </recent_temporary>
   </component>
@@ -637,14 +637,7 @@
       <workItem from="1586235608575" duration="38063000" />
       <workItem from="1595657857692" duration="19000000" />
       <workItem from="1605944540494" duration="2503000" />
-      <workItem from="1605947693822" duration="8017000" />
-    </task>
-    <task id="LOCAL-00053" summary="添加netmiko!">
-      <created>1585990048984</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1585990048984</updated>
+      <workItem from="1605947693822" duration="8530000" />
     </task>
     <task id="LOCAL-00054" summary="计算时间! 更多地址!">
       <created>1585990091978</created>
@@ -982,17 +975,24 @@
       <option name="project" value="LOCAL" />
       <updated>1606441885752</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="优化代码!">
+      <created>1606443427019</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1606443427019</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180237000" />
+    <option name="totallyTimeSpent" value="180750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1442" height="834" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24602026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13675833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1015,7 +1015,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.3293944" />
-      <window_info active="true" anchor="right" id="SciView" order="4" visible="true" weight="0.15340087" />
+      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.15340087" />
       <window_info anchor="right" id="Database" order="5" weight="0.3293944" />
     </layout>
   </component>
@@ -1037,7 +1037,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="word处理!" />
     <MESSAGE value="pdf转换!" />
     <MESSAGE value="解决腾讯邮箱 显示邮件数量的bug!" />
     <MESSAGE value="附件名称问题" />
@@ -1062,7 +1061,8 @@
     <MESSAGE value="efk" />
     <MESSAGE value="修改注释" />
     <MESSAGE value="修改注释!" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改注释!" />
+    <MESSAGE value="优化代码!" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化代码!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,8 +1186,8 @@
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_6_set_account_expires.coverage" NAME="vip_ldap3_6_set_account_expires Coverage Results" MODIFIED="1586266074689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_1_get_user_info.coverage" NAME="vip_ldap3_1_get_user_info Coverage Results" MODIFIED="1586265304581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$ssh_client_one_cmd.coverage" NAME="ssh_client_one_cmd Coverage Results" MODIFIED="1585987487200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
-    <SUITE FILE_PATH="coverage/python_network$scapy_1_pcap_syn_dos.coverage" NAME="scapy_1_pcap_syn_dos Coverage Results" MODIFIED="1586346977679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$scapy_7_telnet_rst.coverage" NAME="scapy_7_telnet_rst Coverage Results" MODIFIED="1586348167320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
+    <SUITE FILE_PATH="coverage/python_network$scapy_1_pcap_syn_dos.coverage" NAME="scapy_1_pcap_syn_dos Coverage Results" MODIFIED="1606443918118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$pyshark_5_2_tcpstream_get_tcp_stream.coverage" NAME="pyshark_5_2_tcpstream_get_tcp_stream Coverage Results" MODIFIED="1606442731303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$snmpv3_get.coverage" NAME="snmpv3_get Coverage Results" MODIFIED="1585142296470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v3" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_5_disable_enable.coverage" NAME="vip_ldap3_5_disable_enable Coverage Results" MODIFIED="1586265959005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
@@ -1235,13 +1235,6 @@
     <SUITE FILE_PATH="coverage/python_network$create_word_full.coverage" NAME="create_word_full Coverage Results" MODIFIED="1586259861752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_14_smtp/word_pdf" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/net_3_udp/socket_raw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net_4_dns/scapy_dns_query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -1558,6 +1551,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_1_pcap_syn_dos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
         </state>
       </provider>
     </entry>

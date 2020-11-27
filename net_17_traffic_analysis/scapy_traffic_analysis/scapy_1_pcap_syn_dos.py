@@ -42,18 +42,14 @@ if __name__ == '__main__':
     #         print('DOS正在进行中，源为: ' + conn[0] + '目的为: ' + conn[1] + ' 目的端口为: ' + str(conn[2]) + ' 次数为: ' + str(num))
 
     from matplotlib import pyplot as plt
-    conn_list = []
-    num_list = []
-    for connection, num in dos_result.items():  # 提取字典内容并且打印
-        if num > 5:  # 只提取连接数大于5的信息
-            conn_list.append(str(connection))
-            num_list.append(num)
-    conn_num_list = sorted(zip(conn_list, num_list), key=lambda x: x[1])
-    # [((src, dst, dport),  40), ((src, dst, dport),  36) ....]
+
+    # 提取数量大于5的连接
+    conn_num_list = sorted([[conn, num] for conn, num in dos_result.items() if num > 5], key=lambda x: x[1])
+
     conn_list = []
     num_list = []
     for c, n in conn_num_list:
-        conn_list.append(c)
+        conn_list.append(str(c))
         num_list.append(n)
 
     print(conn_list)
