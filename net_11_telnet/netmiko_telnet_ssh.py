@@ -12,7 +12,6 @@ from netmiko import Netmiko
 CSR1 = {
         'host': '10.1.1.253',
         'username': 'admin',
-        # netmiko.ssh_exception.NetmikoAuthenticationException: Authentication failure: unable to connect cisco_ios 10.1.1.253:22
         'password': 'Cisc0123',
         'device_type': 'cisco_ios_telnet',  # Telnet
         # 'device_type': 'cisco_ios',  # SSH
@@ -21,6 +20,7 @@ CSR1 = {
 
 # 支持的device_types
 # https://github.com/ktbyers/netmiko/blob/master/netmiko/ssh_dispatcher.py
+# 主要是CLASS_MAPPER_BASE部分
 
 # ">" 下的exec命令
 net_connect = Netmiko(**CSR1)  # ** 表示使用字典映射的方式来传参数
