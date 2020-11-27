@@ -63,6 +63,7 @@ if __name__ == '__main__':
                         '附件测试_正文\r\n行1\r\n行2',
                         ['./attachment_dir/Logo.jpg'])
 
+    # 下面代码由于涉及到MS Office所以需要在Windows下运行
     from net_14_smtp.word_pdf.create_word_for_syslog import create_word_for_syslog
     from docx2pdf import convert
     create_word_for_syslog("../net_9_syslog/practice_homework/syslog.sqlite",

@@ -77,6 +77,7 @@ if __name__ == '__main__':
     syslog_result = syslog_bing("../net_9_syslog/practice_homework/syslog.sqlite", 'syslog.png')
 
     td_str = ''
+    # x为级别名字(例如:ALERT), y为数量
     total = sum([y for x, y in syslog_result])
     for x, y in syslog_result:
         td_str += f'<tr><td>{x}</td><td>{y}</td><td>{(y/total)*100:.1f}</td></tr>'
@@ -85,7 +86,7 @@ if __name__ == '__main__':
     <img src="cid:logo"><br>
     <h3>乾颐堂Python强化班Syslog分析</h3>
     <p>下面是最近一个小时的Syslog的数据统计! 显示排前三的Syslog严重级别与数量</p><br>
-        <table class="table table-bordered">
+        <table border="1" cellspacing="0">
                 <thead class="thead-dark">
                     <tr>
                       <th class="text-center">严重级别</th>

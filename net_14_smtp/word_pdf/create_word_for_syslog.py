@@ -1,5 +1,6 @@
 import time
 
+# 安装python-docx
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH  # 加粗
 from docx.shared import Pt  # 磅数
