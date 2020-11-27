@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="influxdb">
-      <change afterPath="$PROJECT_DIR$/net_7_snmp/grafana/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="544d3259-3674-4556-af3a-32a9c78280b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_9_syslog/efk" beforeDir="false" afterPath="$PROJECT_DIR$/net_9_syslog/efk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,47 +56,90 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/efk/filebeat/filebeat.yml">
+        <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_attachment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="176">
+              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_img.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_15_pop3/pop3_final.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="e#186#199#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_1_display.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_2_capture.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_3_options.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_4_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_5_1_tcpstream_maxid.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_5_2_tcpstream_get_tcp_stream.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/net_7_snmp/grafana/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_server_to_db.py">
+        <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1064">
-              <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/practice_homework/practice_syslog_show.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/efk/docker-compose.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net_9_syslog/efk/filebeat/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            <state relative-caret-position="121">
+              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -139,17 +180,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_multi_cmd.py" />
-        <option value="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel/practice_1_0_ssh_excel.py" />
-        <option value="$PROJECT_DIR$/net_14_smtp/word_pdf/create_word.py" />
         <option value="$PROJECT_DIR$/net_14_smtp/modules/mat_bing.py" />
         <option value="$PROJECT_DIR$/net_14_smtp/modules/syslog_bing.py" />
         <option value="$PROJECT_DIR$/net_15_pop3/pop3_final.py" />
         <option value="$PROJECT_DIR$/net_16_ldap/vip_ldap3_0_login_info.py" />
-        <option value="$PROJECT_DIR$/net_14_smtp/word_pdf/create_word_for_syslog.py" />
         <option value="$PROJECT_DIR$/net_14_smtp/word_pdf/create_word_full.py" />
-        <option value="$PROJECT_DIR$/net_14_smtp/smtp_send_mail_attachment.py" />
-        <option value="$PROJECT_DIR$/net_14_smtp/smtp_send_mail_img.py" />
         <option value="$PROJECT_DIR$/net_16_ldap/vip_ldap3_0_get_pinyin_name.py" />
         <option value="$PROJECT_DIR$/net_16_ldap/vip_ldap3_1_get_user_info.py" />
         <option value="$PROJECT_DIR$/net_16_ldap/vip_ldap3_4_remove_user.py" />
@@ -167,7 +202,6 @@
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_1_pcap_syn_dos.py" />
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis/scapy_2_pcap_http_uri.py" />
         <option value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_1_display.py" />
-        <option value="$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_netmiko.py" />
         <option value="$PROJECT_DIR$/net_12_ssh/ssh_sftp/testfsm_template_(show ip interface brief).template" />
         <option value="$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py" />
         <option value="$PROJECT_DIR$/tools/scapy_iface.py" />
@@ -190,6 +224,13 @@
         <option value="$PROJECT_DIR$/net_9_syslog/efk/filebeat/Dockerfile" />
         <option value="$PROJECT_DIR$/net_9_syslog/efk/elasticsearch/Dockerfile" />
         <option value="$PROJECT_DIR$/net_9_syslog/efk/filebeat/filebeat.yml" />
+        <option value="$PROJECT_DIR$/net_11_telnet/netmiko_telnet_ssh.py" />
+        <option value="$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_netmiko.py" />
+        <option value="$PROJECT_DIR$/net_12_ssh/ssh_sftp/qyt_devnet_ssh.py" />
+        <option value="$PROJECT_DIR$/net_14_smtp/smtp_send_mail_attachment.py" />
+        <option value="$PROJECT_DIR$/net_14_smtp/word_pdf/create_word_for_syslog.py" />
+        <option value="$PROJECT_DIR$/net_14_smtp/smtp_send_mail_img.py" />
+        <option value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py" />
       </list>
     </option>
   </component>
@@ -260,7 +301,13 @@
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_network" type="462c0819:PsiDirectoryNode" />
               <item name="net_7_snmp" type="462c0819:PsiDirectoryNode" />
-              <item name="grafana" type="462c0819:PsiDirectoryNode" />
+              <item name="influxdb_grafana" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_7_snmp" type="462c0819:PsiDirectoryNode" />
+              <item name="snmp_v2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
@@ -271,13 +318,18 @@
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_network" type="462c0819:PsiDirectoryNode" />
               <item name="net_9_syslog" type="462c0819:PsiDirectoryNode" />
-              <item name="efk" type="462c0819:PsiDirectoryNode" />
+              <item name="elasticsearch_filebeat_kibana" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_network" type="462c0819:PsiDirectoryNode" />
               <item name="net_9_syslog" type="462c0819:PsiDirectoryNode" />
-              <item name="practice_homework" type="462c0819:PsiDirectoryNode" />
+              <item name="syslog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_11_telnet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
@@ -293,7 +345,39 @@
             <path>
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_12_ssh" type="462c0819:PsiDirectoryNode" />
+              <item name="ssh_sftp" type="462c0819:PsiDirectoryNode" />
+              <item name="file_dir" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_13_ftp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
               <item name="net_14_smtp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_14_smtp" type="462c0819:PsiDirectoryNode" />
+              <item name="word_pdf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_14_smtp" type="462c0819:PsiDirectoryNode" />
+              <item name="word_pdf" type="462c0819:PsiDirectoryNode" />
+              <item name="saved_pdf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_network" type="462c0819:PsiDirectoryNode" />
+              <item name="net_14_smtp" type="462c0819:PsiDirectoryNode" />
+              <item name="word_pdf" type="462c0819:PsiDirectoryNode" />
+              <item name="saved_word" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_network" type="b2602c69:ProjectViewProjectNode" />
@@ -383,23 +467,24 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/net_2_icmp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/net_9_syslog/elasticsearch_filebeat_kibana" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_9_syslog\elasticsearch_filebeat_kibana" />
+      <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_2_icmp" />
+      <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_1_arp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_14_smtp\word_pdf\src_img" />
       <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_14_smtp\不推荐使用(备份)" />
       <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_17_traffic_analysis\scapy_traffic_analysis\pcap_dir" />
       <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_17_traffic_analysis\python_netflow\netflow_config" />
       <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_17_traffic_analysis\python_netflow" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_2_icmp" />
-      <recent name="C:\Users\Administrator\PycharmProjects\python_network\net_1_arp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -414,8 +499,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.win_ifname">
-    <configuration name="arp_request" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.pyshark_6_uri">
+    <configuration name="pyshark_2_capture" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -423,12 +508,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_1_arp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_1_arp/arp_request.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_2_capture.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -437,7 +522,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="icmpv6_rs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pyshark_3_options" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -445,12 +530,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_2_icmp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_2_icmp/icmpv6_rs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_3_options.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -459,7 +544,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="udp_socket_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pyshark_4_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -467,12 +552,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_3_udp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_3_udp/udp_socket_client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_4_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -481,7 +566,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="udp_socket_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pyshark_5_2_tcpstream_get_tcp_stream" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -489,12 +574,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_3_udp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_3_udp/udp_socket_server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_5_2_tcpstream_get_tcp_stream.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -503,7 +588,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="win_ifname" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pyshark_6_uri" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -511,12 +596,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/win_ifname.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -527,11 +612,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.win_ifname" />
-        <item itemvalue="Python.arp_request" />
-        <item itemvalue="Python.udp_socket_client" />
-        <item itemvalue="Python.udp_socket_server" />
-        <item itemvalue="Python.icmpv6_rs" />
+        <item itemvalue="Python.pyshark_6_uri" />
+        <item itemvalue="Python.pyshark_5_2_tcpstream_get_tcp_stream" />
+        <item itemvalue="Python.pyshark_4_analysis" />
+        <item itemvalue="Python.pyshark_3_options" />
+        <item itemvalue="Python.pyshark_2_capture" />
       </list>
     </recent_temporary>
   </component>
@@ -552,70 +637,7 @@
       <workItem from="1586235608575" duration="38063000" />
       <workItem from="1595657857692" duration="19000000" />
       <workItem from="1605944540494" duration="2503000" />
-      <workItem from="1605947693822" duration="852000" />
-    </task>
-    <task id="LOCAL-00044" summary="2020.4.4上课前优化代码!">
-      <created>1585961099224</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1585961099224</updated>
-    </task>
-    <task id="LOCAL-00045" summary="2020.4.4上课前优化代码!">
-      <created>1585962860276</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1585962860276</updated>
-    </task>
-    <task id="LOCAL-00046" summary="2020.4.4上课前优化代码!">
-      <created>1585965616515</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1585965616515</updated>
-    </task>
-    <task id="LOCAL-00047" summary="2020.4.4上课前优化代码!">
-      <created>1585966031034</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1585966031034</updated>
-    </task>
-    <task id="LOCAL-00048" summary="2020.4.4上课前优化代码!">
-      <created>1585966513325</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1585966513325</updated>
-    </task>
-    <task id="LOCAL-00049" summary="2020.4.4上课前优化代码!">
-      <created>1585967217294</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1585967217294</updated>
-    </task>
-    <task id="LOCAL-00050" summary="2020.4.4上课前优化代码!">
-      <created>1585967540368</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1585967540368</updated>
-    </task>
-    <task id="LOCAL-00051" summary="添加装饰器!">
-      <created>1585969972675</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1585969972675</updated>
-    </task>
-    <task id="LOCAL-00052" summary="切换到netmiko!">
-      <created>1585989960437</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1585989960438</updated>
+      <workItem from="1605947693822" duration="8017000" />
     </task>
     <task id="LOCAL-00053" summary="添加netmiko!">
       <created>1585990048984</created>
@@ -897,28 +919,92 @@
       <option name="project" value="LOCAL" />
       <updated>1605948307810</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="influxdb">
+      <created>1605948564050</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1605948564050</updated>
+    </task>
+    <task id="LOCAL-00094" summary="influxdb">
+      <created>1605948605870</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1605948605870</updated>
+    </task>
+    <task id="LOCAL-00095" summary="influxdb">
+      <created>1605948695987</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1605948695987</updated>
+    </task>
+    <task id="LOCAL-00096" summary="efk">
+      <created>1605948772810</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1605948772810</updated>
+    </task>
+    <task id="LOCAL-00097" summary="efk">
+      <created>1605948808505</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1605948808505</updated>
+    </task>
+    <task id="LOCAL-00098" summary="efk">
+      <created>1605948861335</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1605948861335</updated>
+    </task>
+    <task id="LOCAL-00099" summary="修改注释">
+      <created>1606437470022</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1606437470022</updated>
+    </task>
+    <task id="LOCAL-00100" summary="修改注释">
+      <created>1606437837749</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1606437837749</updated>
+    </task>
+    <task id="LOCAL-00101" summary="修改注释!">
+      <created>1606441885752</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1606441885752</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173072000" />
+    <option name="totallyTimeSpent" value="180237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1442" height="834" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24602026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24602026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.10743801" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926144" visible="true" weight="0.1046832" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926144" visible="true" weight="0.3014286" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23278236" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.6855956" />
-      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.22142857" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.22142857" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" sideWeight="0.50073856" side_tool="true" weight="0.6556474" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -929,7 +1015,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.3293944" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.60856724" />
+      <window_info active="true" anchor="right" id="SciView" order="4" visible="true" weight="0.15340087" />
       <window_info anchor="right" id="Database" order="5" weight="0.3293944" />
     </layout>
   </component>
@@ -951,7 +1037,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加config_cred" />
     <MESSAGE value="word处理!" />
     <MESSAGE value="pdf转换!" />
     <MESSAGE value="解决腾讯邮箱 显示邮件数量的bug!" />
@@ -969,14 +1054,15 @@
     <MESSAGE value="添加判断系统的代码" />
     <MESSAGE value="修改link local注释!" />
     <MESSAGE value="调优代码! 让win和linux都能直接运行!" />
-    <MESSAGE value="修改注释!" />
     <MESSAGE value="使用装饰器!" />
     <MESSAGE value="修改ping地址!百度地址" />
     <MESSAGE value="扫码使用装饰器!" />
     <MESSAGE value="注释!" />
-    <MESSAGE value="efk" />
     <MESSAGE value="influxdb" />
-    <option name="LAST_COMMIT_MESSAGE" value="influxdb" />
+    <MESSAGE value="efk" />
+    <MESSAGE value="修改注释" />
+    <MESSAGE value="修改注释!" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改注释!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1015,17 +1101,17 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_network$pyshark_4_analysis.coverage" NAME="pyshark_4_analysis Coverage Results" MODIFIED="1586350073905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
+    <SUITE FILE_PATH="coverage/python_network$pyshark_4_analysis.coverage" NAME="pyshark_4_analysis Coverage Results" MODIFIED="1606442592556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$practice_2_2_compare_config.coverage" NAME="practice_2_2_compare_config Coverage Results" MODIFIED="1585989892093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
     <SUITE FILE_PATH="coverage/python_network$ntp_client_raw.coverage" NAME="ntp_client_raw Coverage Results" MODIFIED="1585104331227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_8_ntp" />
     <SUITE FILE_PATH="coverage/python_network$practice_2_get_md5_config.coverage" NAME="practice_2_get_md5_config Coverage Results" MODIFIED="1585964788699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
     <SUITE FILE_PATH="coverage/python_network$socket_client_from_input.coverage" NAME="socket_client_from_input Coverage Results" MODIFIED="1585984109663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
     <SUITE FILE_PATH="coverage/python_network$simple_ssh_client.coverage" NAME="simple_ssh_client Coverage Results" MODIFIED="1585116775185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh" />
     <SUITE FILE_PATH="coverage/python_network$netflow_collector_main.coverage" NAME="netflow_collector_main Coverage Results" MODIFIED="1586307456046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow" />
-    <SUITE FILE_PATH="coverage/python_network$pyshark_2_capture.coverage" NAME="pyshark_2_capture Coverage Results" MODIFIED="1586349811281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
+    <SUITE FILE_PATH="coverage/python_network$pyshark_2_capture.coverage" NAME="pyshark_2_capture Coverage Results" MODIFIED="1606442491505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$scapy_5_tcp_rest.coverage" NAME="scapy_5_tcp_rest Coverage Results" MODIFIED="1586347685651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$practice_syslog_server_to_db.coverage" NAME="practice_syslog_server_to_db Coverage Results" MODIFIED="1586220275921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_9_syslog/practice_homework" />
-    <SUITE FILE_PATH="coverage/python_network$pyshark_6_uri.coverage" NAME="pyshark_6_uri Coverage Results" MODIFIED="1586350438432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
+    <SUITE FILE_PATH="coverage/python_network$pyshark_6_uri.coverage" NAME="pyshark_6_uri Coverage Results" MODIFIED="1606443175026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$ftp_put.coverage" NAME="ftp_put Coverage Results" MODIFIED="1585991582064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_7_change_group.coverage" NAME="vip_ldap3_7_change_group Coverage Results" MODIFIED="1586266149550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$scapy_iface.coverage" NAME="scapy_iface Coverage Results" MODIFIED="1595668265477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
@@ -1035,7 +1121,7 @@
     <SUITE FILE_PATH="coverage/python_network$practice_2_0_diff_conf.coverage" NAME="practice_2_0_diff_conf Coverage Results" MODIFIED="1585988163383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_0_get_pinyin_name.coverage" NAME="vip_ldap3_0_get_pinyin_name Coverage Results" MODIFIED="1586264691304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$pingv6.coverage" NAME="pingv6 Coverage Results" MODIFIED="1585051659395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
-    <SUITE FILE_PATH="coverage/python_network$ssh_netmiko_textfsm.coverage" NAME="ssh_netmiko_textfsm Coverage Results" MODIFIED="1595660871696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
+    <SUITE FILE_PATH="coverage/python_network$ssh_netmiko_textfsm.coverage" NAME="ssh_netmiko_textfsm Coverage Results" MODIFIED="1606437930953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
     <SUITE FILE_PATH="coverage/python_network$snmpv3_getbulk.coverage" NAME="snmpv3_getbulk Coverage Results" MODIFIED="1585142440908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v3" />
     <SUITE FILE_PATH="coverage/python_network$arp_scan_coroutine.coverage" NAME="arp_scan_coroutine Coverage Results" MODIFIED="1584944188735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
     <SUITE FILE_PATH="coverage/python_network$SOCKET_Client_FROM_LIST.coverage" NAME="SOCKET_Client_FROM_LIST Coverage Results" MODIFIED="1585106200364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp" />
@@ -1053,21 +1139,22 @@
     <SUITE FILE_PATH="coverage/python_network$get_ip.coverage" NAME="get_ip Coverage Results" MODIFIED="1584946231337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$socket_client_from_list.coverage" NAME="socket_client_from_list Coverage Results" MODIFIED="1585984096193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
     <SUITE FILE_PATH="coverage/python_network$socket_client_pickle.coverage" NAME="socket_client_pickle Coverage Results" MODIFIED="1585984455598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server_pickle" />
+    <SUITE FILE_PATH="coverage/python_network$qyt_devnet_ssh.coverage" NAME="qyt_devnet_ssh Coverage Results" MODIFIED="1606439211910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
     <SUITE FILE_PATH="coverage/python_network$ping_one.coverage" NAME="ping_one Coverage Results" MODIFIED="1595677592302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$snmpv2_getnext.coverage" NAME="snmpv2_getnext Coverage Results" MODIFIED="1585140487226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v2" />
     <SUITE FILE_PATH="coverage/python_network$ipv6_tools.coverage" NAME="ipv6_tools Coverage Results" MODIFIED="1595673148594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/python_network$pop3_final.coverage" NAME="pop3_final Coverage Results" MODIFIED="1586263527467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_15_pop3" />
+    <SUITE FILE_PATH="coverage/python_network$pop3_final.coverage" NAME="pop3_final Coverage Results" MODIFIED="1606442020947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_15_pop3" />
     <SUITE FILE_PATH="coverage/python_network$smtp_send_mail_header_only.coverage" NAME="smtp_send_mail_header_only Coverage Results" MODIFIED="1585119721313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_14_smtp" />
     <SUITE FILE_PATH="coverage/python_network$snmpv2_trap.coverage" NAME="snmpv2_trap Coverage Results" MODIFIED="1585141712402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v2" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_0_login_info.coverage" NAME="vip_ldap3_0_login_info Coverage Results" MODIFIED="1585967495806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$snmpv3_trap.coverage" NAME="snmpv3_trap Coverage Results" MODIFIED="1585142456221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v3" />
     <SUITE FILE_PATH="coverage/python_network$practice_get_info_writedb.coverage" NAME="practice_get_info_writedb Coverage Results" MODIFIED="1585143098168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/practice_homework" />
     <SUITE FILE_PATH="coverage/python_network$icmpv6_na.coverage" NAME="icmpv6_na Coverage Results" MODIFIED="1595678668181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
-    <SUITE FILE_PATH="coverage/python_network$pyshark_1_display.coverage" NAME="pyshark_1_display Coverage Results" MODIFIED="1586349625972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$arp_spoof.coverage" NAME="arp_spoof Coverage Results" MODIFIED="1595675506799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
+    <SUITE FILE_PATH="coverage/python_network$pyshark_1_display.coverage" NAME="pyshark_1_display Coverage Results" MODIFIED="1606442314084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$snmpv3_set.coverage" NAME="snmpv3_set Coverage Results" MODIFIED="1585142357705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v3" />
     <SUITE FILE_PATH="coverage/python_network$ftp_get.coverage" NAME="ftp_get Coverage Results" MODIFIED="1585991519278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
-    <SUITE FILE_PATH="coverage/python_network$ssh_client_netmiko.coverage" NAME="ssh_client_netmiko Coverage Results" MODIFIED="1595658167843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
+    <SUITE FILE_PATH="coverage/python_network$ssh_client_netmiko.coverage" NAME="ssh_client_netmiko Coverage Results" MODIFIED="1606437799854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
     <SUITE FILE_PATH="coverage/python_network$collector_main.coverage" NAME="collector_main Coverage Results" MODIFIED="1586306260072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow" />
     <SUITE FILE_PATH="coverage/python_network$win_ifname.coverage" NAME="win_ifname Coverage Results" MODIFIED="1595725133686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$practice_1_0_ssh_excel.coverage" NAME="practice_1_0_ssh_excel Coverage Results" MODIFIED="1585991145814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel" />
@@ -1075,7 +1162,7 @@
     <SUITE FILE_PATH="coverage/python_network$scapy_1_pcap_dos.coverage" NAME="scapy_1_pcap_dos Coverage Results" MODIFIED="1585124767514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$sftp_client.coverage" NAME="sftp_client Coverage Results" MODIFIED="1585988025926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
     <SUITE FILE_PATH="coverage/python_network$show_netflow.coverage" NAME="show_netflow Coverage Results" MODIFIED="1586307334745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow" />
-    <SUITE FILE_PATH="coverage/python_network$ftp_find.coverage" NAME="ftp_find Coverage Results" MODIFIED="1585992119043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
+    <SUITE FILE_PATH="coverage/python_network$ftp_find.coverage" NAME="ftp_find Coverage Results" MODIFIED="1606439691442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_13_ftp" />
     <SUITE FILE_PATH="coverage/python_network$netflow_1_collector_main.coverage" NAME="netflow_1_collector_main Coverage Results" MODIFIED="1586345304314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow" />
     <SUITE FILE_PATH="coverage/python_network$ipv6_solicited_node_multicast_address.coverage" NAME="ipv6_solicited_node_multicast_address Coverage Results" MODIFIED="1584946476627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$pcap_http.coverage" NAME="pcap_http Coverage Results" MODIFIED="1585124960848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
@@ -1101,23 +1188,23 @@
     <SUITE FILE_PATH="coverage/python_network$ssh_client_one_cmd.coverage" NAME="ssh_client_one_cmd Coverage Results" MODIFIED="1585987487200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/ssh_sftp" />
     <SUITE FILE_PATH="coverage/python_network$scapy_1_pcap_syn_dos.coverage" NAME="scapy_1_pcap_syn_dos Coverage Results" MODIFIED="1586346977679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$scapy_7_telnet_rst.coverage" NAME="scapy_7_telnet_rst Coverage Results" MODIFIED="1586348167320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
-    <SUITE FILE_PATH="coverage/python_network$pyshark_5_2_tcpstream_get_tcp_stream.coverage" NAME="pyshark_5_2_tcpstream_get_tcp_stream Coverage Results" MODIFIED="1586350380473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
+    <SUITE FILE_PATH="coverage/python_network$pyshark_5_2_tcpstream_get_tcp_stream.coverage" NAME="pyshark_5_2_tcpstream_get_tcp_stream Coverage Results" MODIFIED="1606442731303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$snmpv3_get.coverage" NAME="snmpv3_get Coverage Results" MODIFIED="1585142296470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v3" />
-    <SUITE FILE_PATH="coverage/python_network$snmpv2_get.coverage" NAME="snmpv2_get Coverage Results" MODIFIED="1585139286232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v2" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_5_disable_enable.coverage" NAME="vip_ldap3_5_disable_enable Coverage Results" MODIFIED="1586265959005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
+    <SUITE FILE_PATH="coverage/python_network$snmpv2_get.coverage" NAME="snmpv2_get Coverage Results" MODIFIED="1606438952976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v2" />
     <SUITE FILE_PATH="coverage/python_network$syslog_server_to_file__1_.coverage" NAME="syslog_server_to_file (1) Coverage Results" MODIFIED="1585105678550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_9_syslog/syslog" />
     <SUITE FILE_PATH="coverage/python_network$scapy_2_pcap_http_uri.coverage" NAME="scapy_2_pcap_http_uri Coverage Results" MODIFIED="1586347276590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$practice_0_write_excel_openpyxl.coverage" NAME="practice_0_write_excel_openpyxl Coverage Results" MODIFIED="1585965966811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel" />
     <SUITE FILE_PATH="coverage/python_network$main.coverage" NAME="main Coverage Results" MODIFIED="1585124092149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow" />
-    <SUITE FILE_PATH="coverage/python_network$coroutine_netmiko.coverage" NAME="coroutine_netmiko Coverage Results" MODIFIED="1585989205708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_11_telnet" />
+    <SUITE FILE_PATH="coverage/python_network$coroutine_netmiko.coverage" NAME="coroutine_netmiko Coverage Results" MODIFIED="1606437568433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_11_telnet" />
     <SUITE FILE_PATH="coverage/python_network$vip_ldap3_2_get_group_users.coverage" NAME="vip_ldap3_2_get_group_users Coverage Results" MODIFIED="1586265674791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_16_ldap" />
     <SUITE FILE_PATH="coverage/python_network$pyshark_5_1_tcpstream_maxid.coverage" NAME="pyshark_5_1_tcpstream_maxid Coverage Results" MODIFIED="1586350250951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$syslog_client.coverage" NAME="syslog_client Coverage Results" MODIFIED="1585982909498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_9_syslog/syslog" />
     <SUITE FILE_PATH="coverage/python_network$socket_server.coverage" NAME="socket_server Coverage Results" MODIFIED="1585984044761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server" />
     <SUITE FILE_PATH="coverage/python_network$practice_2_1_get_md5_config.coverage" NAME="practice_2_1_get_md5_config Coverage Results" MODIFIED="1585989825433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
     <SUITE FILE_PATH="coverage/python_network$arp_request.coverage" NAME="arp_request Coverage Results" MODIFIED="1595723727817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_1_arp" />
-    <SUITE FILE_PATH="coverage/python_network$netmiko_telnet_ssh.coverage" NAME="netmiko_telnet_ssh Coverage Results" MODIFIED="1585986390125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_11_telnet" />
     <SUITE FILE_PATH="coverage/python_network$netflow_2_show.coverage" NAME="netflow_2_show Coverage Results" MODIFIED="1586345829101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/python_netflow" />
+    <SUITE FILE_PATH="coverage/python_network$netmiko_telnet_ssh.coverage" NAME="netmiko_telnet_ssh Coverage Results" MODIFIED="1606437299115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_11_telnet" />
     <SUITE FILE_PATH="coverage/python_network$socket_client_json.coverage" NAME="socket_client_json Coverage Results" MODIFIED="1585984199438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp/socket_server_json" />
     <SUITE FILE_PATH="coverage/python_network$ipv6_tools_kamene.coverage" NAME="ipv6_tools_kamene Coverage Results" MODIFIED="1595673302612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$scapy_6_telnet_monitor.coverage" NAME="scapy_6_telnet_monitor Coverage Results" MODIFIED="1586348257889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/scapy_traffic_analysis" />
@@ -1129,8 +1216,8 @@
     <SUITE FILE_PATH="coverage/python_network$get_mac_netifaces.coverage" NAME="get_mac_netifaces Coverage Results" MODIFIED="1595669016535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$checksum.coverage" NAME="checksum Coverage Results" MODIFIED="1584945977322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$SOCKET_Client_FROM_INPUT.coverage" NAME="SOCKET_Client_FROM_INPUT Coverage Results" MODIFIED="1585106215184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_10_tcp" />
-    <SUITE FILE_PATH="coverage/python_network$smtp_send_mail_attachment.coverage" NAME="smtp_send_mail_attachment Coverage Results" MODIFIED="1586263502526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_14_smtp" />
-    <SUITE FILE_PATH="coverage/python_network$pyshark_3_options.coverage" NAME="pyshark_3_options Coverage Results" MODIFIED="1586350026146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
+    <SUITE FILE_PATH="coverage/python_network$smtp_send_mail_attachment.coverage" NAME="smtp_send_mail_attachment Coverage Results" MODIFIED="1606440407050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_14_smtp" />
+    <SUITE FILE_PATH="coverage/python_network$pyshark_3_options.coverage" NAME="pyshark_3_options Coverage Results" MODIFIED="1606442568245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis" />
     <SUITE FILE_PATH="coverage/python_network$snmpv2_getbulk.coverage" NAME="snmpv2_getbulk Coverage Results" MODIFIED="1585142410666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v2" />
     <SUITE FILE_PATH="coverage/python_network$practice_0_parser_excel_return_dict.coverage" NAME="practice_0_parser_excel_return_dict Coverage Results" MODIFIED="1585990485173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_1_ssh_username_from_excel" />
     <SUITE FILE_PATH="coverage/python_network$practice_2_diff_conf.coverage" NAME="practice_2_diff_conf Coverage Results" MODIFIED="1585118271801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
@@ -1138,7 +1225,7 @@
     <SUITE FILE_PATH="coverage/python_network$random_mac.coverage" NAME="random_mac Coverage Results" MODIFIED="1584945828605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/python_network$practice_2_0_2_compare_config.coverage" NAME="practice_2_0_2_compare_config Coverage Results" MODIFIED="1585963053142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_12_ssh/practice_homework/practice_2_get_config_and_compare" />
     <SUITE FILE_PATH="coverage/python_network$snmpv2_set.coverage" NAME="snmpv2_set Coverage Results" MODIFIED="1585139903916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp/snmp_v2" />
-    <SUITE FILE_PATH="coverage/python_network$smtp_send_mail_img.coverage" NAME="smtp_send_mail_img Coverage Results" MODIFIED="1586261183203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_14_smtp" />
+    <SUITE FILE_PATH="coverage/python_network$smtp_send_mail_img.coverage" NAME="smtp_send_mail_img Coverage Results" MODIFIED="1606441684489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_14_smtp" />
     <SUITE FILE_PATH="coverage/python_network$GET.coverage" NAME="GET Coverage Results" MODIFIED="1585098758807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_7_snmp" />
     <SUITE FILE_PATH="coverage/python_network$ping_scan_coroutine.coverage" NAME="ping_scan_coroutine Coverage Results" MODIFIED="1595677474664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_2_icmp" />
     <SUITE FILE_PATH="coverage/python_network$create_word_for_syslog.coverage" NAME="create_word_for_syslog Coverage Results" MODIFIED="1586227863808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_14_smtp/word_pdf" />
@@ -1148,195 +1235,6 @@
     <SUITE FILE_PATH="coverage/python_network$create_word_full.coverage" NAME="create_word_full Coverage Results" MODIFIED="1586259861752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net_14_smtp/word_pdf" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_5_2_tcpstream_get_tcp_stream.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding>
-            <element signature="e#437#451#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_2_capture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#437#451#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_netmiko.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/testfsm_template_(show ip interface brief).template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/scapy_iface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/get_ifname.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/get_mac_netifaces.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/sort_ip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-274" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/ipv6_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="134" column="7" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_1_arp/arp_scan_thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_1_arp/arp_spoof.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/ping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_1_arp/time_decorator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#230#257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/ping_scan_coroutine.py" />
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/ping_scan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/ipv6_tools_kamene.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_ns.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_na.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_rs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/icmpv6_ra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/ping_one.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_2_icmp/pingv6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_3_udp/udp_socket_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net_3_udp/udp_socket_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#185#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net_3_udp/socket_raw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1483,8 +1381,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net_7_snmp/grafana/__init__.py">
+    <entry file="file://$PROJECT_DIR$/net_7_snmp/influxdb_grafana/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_9_syslog/elasticsearch_filebeat_kibana/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_11_telnet/simple_telnet_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_11_telnet/netmiko_telnet_ssh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_11_telnet/coroutine_netmiko.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_7_snmp/snmp_v2/snmpv2_get.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/qyt_devnet_ssh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_one_cmd.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_netmiko_textfsm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/testfsm_template_(show ip interface brief).template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/ssh_client_netmiko.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="50" column="94" selection-start-line="50" selection-start-column="94" selection-end-line="50" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_12_ssh/ssh_sftp/sftp_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_13_ftp/ftp_find.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_13_ftp/ftp_get.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_13_ftp/ftp_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_13_ftp/ftp_put.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_14_smtp/word_pdf/create_word_for_syslog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_attachment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_14_smtp/smtp_send_mail_img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_15_pop3/pop3_final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#186#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_1_display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_2_capture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_3_options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_4_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_5_1_tcpstream_maxid.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_5_2_tcpstream_get_tcp_stream.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net_17_traffic_analysis/pyshark_traffic_analysis/pyshark_6_uri.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

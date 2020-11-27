@@ -52,15 +52,11 @@ if __name__ == '__main__':
     # 使用matplot进行图形化展示
     import matplotlib.pyplot as plt
 
-    url = []
-    hits = []
-    for x, y in url_dict.items():
-        url.append(x[1])
-        hits.append(y)
+    # 字典的格式 url_dict[(pkt.http.request_method, host)] = counts
+    # 取前五的url
+    conn_num_list_top_5 = sorted(url_dict.items(), key=lambda x: x[1])[-5:]
 
-    conn_num_list_top_5 = sorted(zip(url, hits), key=lambda x: x[1])[-5:]
-
-    url = [a[0] for a in conn_num_list_top_5]
+    url = [a[0][1] for a in conn_num_list_top_5]
     hits = [a[1] for a in conn_num_list_top_5]
     plt.barh(url, hits, height=0.5)
 
