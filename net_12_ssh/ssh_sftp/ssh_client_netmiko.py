@@ -48,4 +48,4 @@ if __name__ == '__main__':
                        'router-id 1.1.1.1',
                        'network 1.1.1.1 0.0.0.0 a 0']
 
-    print(netmiko_config_cred('10.1.1.253', 'admin', 'Cisc0123', config_commands, verbose=False))
+    print(netmiko_config_cred('10.1.1.253', 'admin', 'Cisc0123', config_commands, verbose=True))
