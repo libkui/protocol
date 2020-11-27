@@ -37,9 +37,6 @@ def find_pcap_syn_dos(pcap_filename):
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     dos_result = find_pcap_syn_dos(pcap_dir + "dos.pcap")
-    # for conn, num in dos_result.items():  # 提取字典内容并且打印
-    #     if num > 5:  # 连接数超过3的被打印出来
-    #         print('DOS正在进行中，源为: ' + conn[0] + '目的为: ' + conn[1] + ' 目的端口为: ' + str(conn[2]) + ' 次数为: ' + str(num))
 
     from matplotlib import pyplot as plt
 
