@@ -11,7 +11,7 @@ from socket import *
 from datetime import datetime
 
 # 配置本地服务器IP地址
-myHost = '10.1.1.100'
+myHost = '0.0.0.0'
 # 配置本地服务器端口号
 myPort = 6666
 
