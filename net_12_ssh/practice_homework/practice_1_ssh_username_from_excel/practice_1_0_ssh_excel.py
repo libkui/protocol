@@ -18,7 +18,7 @@ def excel_user_to_ios(ip, username, password, excelfile):
     # 读取excel信息，返回字典！
     user_list = excel_parser_return_list(excelfile)
     # 产生配置命令
-    cmds = ['configure terminal']
+    cmds = []
     for user_dict in user_list:
         cmd = f"username {user_dict.get('username')} " \
               f"privilege {user_dict.get('privilege')} " \
@@ -55,5 +55,5 @@ def excel_ios_user_to_excel(ip, username, password, excelfile):
 
 
 if __name__ == '__main__':
-    # excel_user_to_ios('10.1.1.253', 'admin', 'Cisc0123', './excel_file/read_accounts.xlsx')
-    excel_ios_user_to_excel('10.1.1.253', 'admin', 'Cisc0123', './excel_file/write_iosuser_new.xlsx')
+    excel_user_to_ios('10.1.1.253', 'admin', 'Cisc0123', './excel_file/read_accounts.xlsx')
+    # excel_ios_user_to_excel('10.1.1.253', 'admin', 'Cisc0123', './excel_file/write_iosuser_new.xlsx')
