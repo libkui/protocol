@@ -45,36 +45,36 @@ def snmpv2_getbulk(ip, community, oid, count=25, port=161):
 if __name__ == "__main__":
     # 使用Linux解释器 & WIN解释器
     # 虽然count=25,但是脚本会自动过滤只显示主ID内的内容
-    # print(snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.2", count=25, port=161))
-    # for x, y in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.2", count=25, port=161):
-    #     print(x, y)
+    print(snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.2", count=25, port=161))
+    for x, y in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.2", count=25, port=161):
+        print(x, y)
     # 接口速率
-    # print(snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.5", port=161))
+    print(snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.5", port=161))
 
     # 进接口字节数
-    # print(snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.10", port=161))
+    print(snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.10", port=161))
 
     # 出接口字节数
-    # print(snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.16", port=161))
+    print(snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.16", port=161))
 
     # -------------------------------------------------------------------------------
 
-    name_list = [x[1] for x in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.2", count=25, port=161)]
+    # name_list = [x[1] for x in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.2", count=25, port=161)]
     # print(name_list)
 
-    speed_list = [x[1] for x in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.5", count=25, port=161)]
+    # speed_list = [x[1] for x in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.5", count=25, port=161)]
     # print(speed_list)
 
-    in_bytes_list = [x[1] for x in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.10", count=25, port=161)]
+    # in_bytes_list = [x[1] for x in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.10", count=25, port=161)]
     # print(in_bytes_list)
 
-    out_bytes_list = [x[1] for x in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.16", count=25, port=161)]
+    # out_bytes_list = [x[1] for x in snmpv2_getbulk("10.1.1.253", "tcpipro", "1.3.6.1.2.1.2.2.1.16", count=25, port=161)]
     # print(out_bytes_list)
 
-    final_list = []
-    for x in zip(name_list, speed_list, in_bytes_list, out_bytes_list):
-        final_list.append({'name': x[0], 'speed': x[1], 'in_bytes': x[2], 'out_bytes': x[3]})
-
-    from pprint import pprint
-    pprint(final_list, indent=4)
+    # final_list = []
+    # for x in zip(name_list, speed_list, in_bytes_list, out_bytes_list):
+    #     final_list.append({'name': x[0], 'speed': x[1], 'in_bytes': x[2], 'out_bytes': x[3]})
+    #
+    # from pprint import pprint
+    # pprint(final_list, indent=4)
 
