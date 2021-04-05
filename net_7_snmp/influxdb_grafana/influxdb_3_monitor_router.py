@@ -3,8 +3,8 @@ from net_7_snmp.snmp_v2.snmpv2_getbulk import snmpv2_getbulk
 import time
 import datetime
 from influxdb import InfluxDBClient
-from net_7_snmp.qyt_influxdb.influxdb_1_connect import influx_host, router_ip, snmp_community
-router_ip = '10.1.1.252'
+from influxdb_1_connect import influx_host, router_ip, snmp_community
+
 client = InfluxDBClient(influx_host, 8086, 'qytdbuser', 'Cisc0123', 'qytdb')
 # client.query("drop measurement router_monitor")  # 删除表
 # client.query("drop measurement if_monitor")  # 删除表

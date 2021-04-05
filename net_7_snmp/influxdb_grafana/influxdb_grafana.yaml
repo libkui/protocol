@@ -32,6 +32,7 @@ services:
     restart: always
   qyt-grafana:
 #    image: "grafana/grafana"
+    user: root
     image: "harbor.qytang.com/public/grafana"
     volumes:
       - /data/grafana:/var/lib/grafana
