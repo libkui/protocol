@@ -3,6 +3,7 @@ services:
   qyt-influx:
 #    image: "influxdb"
     image: "harbor.qytang.com/public/influxdb"
+    user: root
     environment:
       - INFLUXDB_DB=qytdb
       - INFLUXDB_ADMIN_USER=admin
@@ -20,6 +21,7 @@ services:
   qyt-chronograf:
 #    image: "chronograf"
     image: "harbor.qytang.com/public/chronograf"
+    user: root
     volumes:
       - /data/chronograf:/var/lib/chronograf
     networks:
@@ -32,8 +34,8 @@ services:
     restart: always
   qyt-grafana:
 #    image: "grafana/grafana"
-    user: root
     image: "harbor.qytang.com/public/grafana"
+    user: root
     volumes:
       - /data/grafana:/var/lib/grafana
     networks:

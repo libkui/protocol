@@ -16,7 +16,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": 2,
-  "iteration": 1605918748263,
+  "iteration": 1617587171153,
   "links": [],
   "panels": [
     {
@@ -160,7 +160,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -203,7 +203,6 @@
       "steppedLine": false,
       "targets": [
         {
-          "alias": "[[tag_device_ip]]",
           "groupBy": [
             {
               "params": [
@@ -289,7 +288,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -347,10 +346,9 @@
               "type": "fill"
             }
           ],
-          "hide": false,
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT DERIVATIVE(mean(\"out_bytes\"),1s) * 8 FROM \"qytdb\".\"qytdb_rp_policy\".\"if_monitor\" WHERE $timeFilter GROUP BY time($interval), \"device_ip\", \"interface_name\" fill(none)",
+          "query": "SELECT DERIVATIVE(mean(\"out_bytes\"),1s) * 8 FROM \"if_monitor\" WHERE $timeFilter GROUP BY time($interval), \"device_ip\", \"interface_name\" fill(none)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -386,10 +384,9 @@
               "type": "fill"
             }
           ],
-          "hide": false,
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT DERIVATIVE(mean(\"in_bytes\"),1s) * 8 FROM \"qytdb\".\"qytdb_rp_policy\".\"if_monitor\" WHERE $timeFilter GROUP BY time($interval), \"device_ip\", \"interface_name\" fill(none)",
+          "query": "SELECT DERIVATIVE(mean(\"in_bytes\"),1s) * 8 FROM \"if_monitor\" WHERE $timeFilter GROUP BY time($interval), \"device_ip\", \"interface_name\" fill(none)",
           "rawQuery": true,
           "refId": "B",
           "resultFormat": "time_series",
@@ -551,5 +548,5 @@
   "timezone": "",
   "title": "QYT-influxDB",
   "uid": "y4-huYoMksdf",
-  "version": 5
+  "version": 3
 }
