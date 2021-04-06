@@ -32,6 +32,10 @@ class Syslog:
     # 如果使用send就需要给LEVEL
     def send(self, message, level):
         # Send a syslog message to remote host using UDP.
+        # 185 二进制为 1011 1001
+        # 前5位为facility  >> 3 获取前5位
+        # 后3位为severity_level  & 0b111 获取后3位
+        # level + self.facility * 8 [乘以8的原因就在于后三位为severity_level]
         data = "<%d>%s" % (level + self.facility * 8, message)
         self.socket.sendto(data.encode(), (self.host, self.port))
 
@@ -51,6 +55,6 @@ class Syslog:
 
 if __name__ == "__main__":
     # 使用Linux解释器 & WIN解释器
-    log = Syslog("10.1.1.80")
+    log = Syslog("10.1.1.100")
     log.send("qytang syslog test", Level.NOTICE)
     log.notice("qytang syslog test")
