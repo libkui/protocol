@@ -61,7 +61,7 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
             # 185 二进制为 1011 1001
             # 前5位为facility  >> 3 获取前5位
             # 后3位为severity_level  & 0b111 获取后3位
-            syslog_info_dict['facility'] = (int(syslog_info[0]) >> 3)
+            syslog_info_dict['facility'] = int(syslog_info[0]) >> 3
             syslog_info_dict['facility_name'] = facility_dict[int(syslog_info[0]) >> 3]
             syslog_info_dict['logid'] = int(syslog_info[1])
             syslog_info_dict['time'] = parser.parse(syslog_info[2])
@@ -76,7 +76,7 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
             # <191>91: *Apr  4 00:12:29.616: ICMP: echo reply rcvd, src 10.1.1.80, dst 10.1.1.253, topology BASE, dscp 0 topoid 0
             syslog_info = re.match(r'^<(\d*)>(\d*): \*(.*): (\w+): (.*)', str(data)).groups()
             print(syslog_info[0])
-            syslog_info_dict['facility'] = (int(syslog_info[0]) >> 3)
+            syslog_info_dict['facility'] = int(syslog_info[0]) >> 3
             syslog_info_dict['facility_name'] = facility_dict[int(syslog_info[0]) >> 3]
             syslog_info_dict['logid'] = int(syslog_info[1])
             syslog_info_dict['time'] = parser.parse(syslog_info[2])
@@ -85,7 +85,7 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
             # 185 二进制为 1011 1001
             # 前5位为facility  >> 3 获取前5位
             # 后3位为severity_level  & 0b111 获取后3位
-            syslog_info_dict['severity_level'] = (int(syslog_info[0]) & 0b111)
+            syslog_info_dict['severity_level'] = int(syslog_info[0]) & 0b111
             syslog_info_dict['severity_level_name'] = severity_level_dict[(int(syslog_info[0]) & 0b111)]
             syslog_info_dict['description'] = 'N/A'
             syslog_info_dict['text'] = syslog_info[4]
