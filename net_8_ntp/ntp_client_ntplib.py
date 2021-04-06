@@ -14,7 +14,7 @@ import datetime
 def ntp_client(ntp_server):
     c = ntplib.NTPClient()
     response = c.request(ntp_server, version=3)
-    # print(response.tx_time) # 1596243472.7740922 为timestamp
+    # print(response.tx_time)  # 1596243472.7740922 为timestamp
     return datetime.datetime.fromtimestamp(response.tx_time)
 
 
