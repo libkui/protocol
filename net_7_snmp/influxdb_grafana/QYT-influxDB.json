@@ -15,8 +15,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 2,
-  "iteration": 1617587171153,
+  "id": 1,
+  "iteration": 1617630978444,
   "links": [],
   "panels": [
     {
@@ -92,7 +92,7 @@
           "orderByTime": "ASC",
           "policy": "default",
           "query": "SELECT mean(\"cpu_usage\") FROM \"router_monitor\" WHERE $timeFilter GROUP BY time($interval), \"device_ip\" fill(none)",
-          "rawQuery": true,
+          "rawQuery": false,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -203,6 +203,7 @@
       "steppedLine": false,
       "targets": [
         {
+          "alias": "[[tag_device_ip]]",
           "groupBy": [
             {
               "params": [
@@ -548,5 +549,5 @@
   "timezone": "",
   "title": "QYT-influxDB",
   "uid": "y4-huYoMksdf",
-  "version": 3
+  "version": 4
 }
