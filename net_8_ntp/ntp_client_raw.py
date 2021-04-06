@@ -9,7 +9,7 @@
 
 import socket
 import struct
-import time
+import datetime
 time_1970 = 2208988800
 
 
@@ -23,12 +23,11 @@ def ntp_client(ntp_server):
     # s = struct.unpack('!12I', data)  # 48个字节，12个四字节
     # print (s)
     t = struct.unpack('!12I', data)[10]  # 倒数第二个为时间
-    print(t)
     t -= time_1970  # Linux 自己的系統時間，由 1970/01/01 開始記錄的時間參數
-    print(t)
-    print('\tTime=%s' % time.ctime(t))
+
+    return datetime.datetime.fromtimestamp(t)
 
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
-    ntp_client("0.uk.pool.ntp.org")
+    print(ntp_client("0.uk.pool.ntp.org"))

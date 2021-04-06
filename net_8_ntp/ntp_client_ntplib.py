@@ -8,7 +8,6 @@
 
 
 import ntplib
-from time import ctime
 import datetime
 
 
