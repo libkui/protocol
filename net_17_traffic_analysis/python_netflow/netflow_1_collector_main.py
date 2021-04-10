@@ -47,7 +47,7 @@ class SoftflowUDPHandler(socketserver.BaseRequestHandler):
 
 if __name__ == "__main__":
     createdb()
-    server = SoftflowUDPHandler.get_server('0.0.0.0', 9999)
+    server = SoftflowUDPHandler.get_server('0.0.0.0', 2055)
 
     logging.getLogger().setLevel(logging.DEBUG)
 
