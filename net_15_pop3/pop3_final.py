@@ -11,23 +11,26 @@ import poplib
 import re
 import email
 import base64
+from email.header import decode_header, make_header
 
 attachment_dir = './attachment_dir/'
 
 
 def decode_subject_base64(need_decode_str):
-    # 解码如下内容
-    # =?utf-8?b?6ZmE5Lu25rWL6K+VX+S4u+mimA==?=
-    #   utf-8   6ZmE5Lu25rWL6K+VX+S4u+mimA== (转码后为:附件测试_主题)
-    try:
-        re_result = re.match(r'=\?(.*)\?\w\?(.*)\?=', need_decode_str).groups()
-        # re_result[0] 为编码方式
-        middle = re_result[1]  # 提取base64的内容 6ZmE5Lu25rWL6K+VX+S4u+mimA==
-        decoded = base64.b64decode(middle)  # 对内容进行base64解码
-        decoded_str = decoded.decode(re_result[0])  # 再对base64解码后内容,进行utf-8解码,转换为中文内容
-    except Exception:
-        decoded_str = need_decode_str
-    return decoded_str
+    # # 解码如下内容
+    # # =?utf-8?b?6ZmE5Lu25rWL6K+VX+S4u+mimA==?=
+    # #   utf-8   6ZmE5Lu25rWL6K+VX+S4u+mimA== (转码后为:附件测试_主题)
+    # try:
+    #     re_result = re.match(r'=\?(.*)\?\w\?(.*)\?=', need_decode_str).groups()
+    #     # re_result[0] 为编码方式
+    #     middle = re_result[1]  # 提取base64的内容 6ZmE5Lu25rWL6K+VX+S4u+mimA==
+    #     decoded = base64.b64decode(middle)  # 对内容进行base64解码
+    #     decoded_str = decoded.decode(re_result[0])  # 再对base64解码后内容,进行utf-8解码,转换为中文内容
+    # except Exception:
+    #     decoded_str = need_decode_str
+    # return decoded_str
+
+    return str(make_header(decode_header(need_decode_str)))
 
 
 def qyt_rec_mail(mailserver, mailuser, mailpasswd, save_file=False, delete_email=False):
