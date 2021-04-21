@@ -1,8 +1,8 @@
 version: '3'
 services:
   qyt-influx:
-#    image: "influxdb"
-    image: "harbor.qytang.com/public/influxdb"
+    image: "influxdb:1.8.5"
+    # image: "harbor.qytang.com/public/influxdb"
     user: root
     environment:
       - INFLUXDB_DB=qytdb
@@ -19,8 +19,8 @@ services:
       - "8086:8086"
     restart: always
   qyt-chronograf:
-#    image: "chronograf"
-    image: "harbor.qytang.com/public/chronograf"
+    image: "chronograf"
+    # image: "harbor.qytang.com/public/chronograf"
     user: root
     volumes:
       - /data/chronograf:/var/lib/chronograf
@@ -33,8 +33,8 @@ services:
       - "qyt-influx"
     restart: always
   qyt-grafana:
-#    image: "grafana/grafana"
-    image: "harbor.qytang.com/public/grafana"
+    image: "grafana/grafana"
+    # image: "harbor.qytang.com/public/grafana"
     user: root
     volumes:
       - /data/grafana:/var/lib/grafana
