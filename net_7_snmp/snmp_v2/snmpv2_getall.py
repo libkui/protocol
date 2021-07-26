@@ -1,5 +1,5 @@
-from snmpv2_getbulk import snmpv2_getbulk
-from snmpv2_get import snmpv2_get
+from net_7_snmp.snmp_v2.snmpv2_getbulk import snmpv2_getbulk
+from net_7_snmp.snmp_v2.snmpv2_get import snmpv2_get
 
 
 def snmpv2_getall(ip, community, count=25, port=161):
