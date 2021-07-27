@@ -11,7 +11,7 @@ print(raw_result)
 # GigabitEthernet2       20.1.1.1        YES manual up                    up
 # GigabitEthernet3       30.1.1.253      YES manual administratively down down
 # """
-f = open('testfsm_template_(show ip interface brief).template')
+
 
 # 模板正则表达式 ?: 的介绍
 # 匹配 'x' 但是不记住匹配项。这种括号叫作非捕获括号，使得你能够定义与正则表达式运算符一起使用的子表达式。
@@ -24,6 +24,7 @@ f = open('testfsm_template_(show ip interface brief).template')
 # Value IPADD (\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)
 # \b匹配字符边界 第一位可能25x 2[0-4]x 1xx ....
 
-template = TextFSM(f)
-show_vlan_dict = template.ParseText(raw_result)
-pprint(show_vlan_dict)
+with open('testfsm_template_(show ip interface brief).template') as f:
+    template = TextFSM(f)
+    show_vlan_dict = template.ParseText(raw_result)
+    pprint(show_vlan_dict)
