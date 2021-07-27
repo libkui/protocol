@@ -6,17 +6,18 @@
 # 教主技术进化论拓展你的技术新边疆
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
-from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_parser_excel_return_dict import excel_parser_return_dict
 from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_parser_excel_return_dict import excel_parser_return_list
-from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_write_excel_openpyxl import excel_write
+from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_pandas_parser_excel import excel_parser_return_list as pandas_excel_parser_return_list
+
 from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_write_excel_openpyxl import excel_write_list
+from net_12_ssh.practice_homework.practice_1_ssh_username_from_excel.practice_0_pandas_write_excel import excel_write_list as pandas_excel_write_list
 from net_12_ssh.ssh_sftp.ssh_client_netmiko import netmiko_show_cred, netmiko_config_cred
 import re
 
 
 def excel_user_to_ios(ip, username, password, excelfile):
     # 读取excel信息，返回字典！
-    user_list = excel_parser_return_list(excelfile)
+    user_list = pandas_excel_parser_return_list(excelfile)
     # 产生配置命令
     cmds = []
     for user_dict in user_list:
@@ -51,9 +52,9 @@ def excel_ios_user_to_excel(ip, username, password, excelfile):
                               })
     # 把字典的用户名，密码和级别信息，写入Excel
     # sheel_name为IP地址
-    excel_write_list(file=excelfile, sheel_name=ip, write_list=user_list)
+    pandas_excel_write_list(file=excelfile, sheel_name=ip, write_list=user_list)
 
 
 if __name__ == '__main__':
-    excel_user_to_ios('10.1.1.253', 'admin', 'Cisc0123', './excel_file/read_accounts.xlsx')
-    # excel_ios_user_to_excel('10.1.1.253', 'admin', 'Cisc0123', './excel_file/write_iosuser_new.xlsx')
+    # excel_user_to_ios('10.1.1.253', 'admin', 'Cisc0123', './excel_file/read_accounts.xlsx')
+    excel_ios_user_to_excel('10.1.1.253', 'admin', 'Cisc0123', './excel_file/write_iosuser_new.xlsx')
