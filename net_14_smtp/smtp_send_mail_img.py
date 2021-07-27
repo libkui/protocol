@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     from net_14_smtp.modules.syslog_bing import syslog_bing
 
-    syslog_result = syslog_bing("../net_9_syslog/practice_homework/syslog.sqlite", 'syslog.png')
+    syslog_result = syslog_bing("../net_9_syslog/syslog_write_db/syslog.sqlite", 'syslog.png')
 
     td_str = ''
     # x为级别名字(例如:ALERT), y为数量

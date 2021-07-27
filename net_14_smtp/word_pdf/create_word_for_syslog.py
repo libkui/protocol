@@ -92,6 +92,6 @@ def create_word_for_syslog(db_name, add_img, save_word_name):
 
 
 if __name__ == '__main__':
-    create_word_for_syslog("../../net_9_syslog/practice_homework/syslog.sqlite", './src_img/logo.png', './saved_word/syslog-docx.docx')
+    create_word_for_syslog("../../net_9_syslog/syslog_write_db/syslog.sqlite", './src_img/logo.png', './saved_word/syslog-docx.docx')
 
 

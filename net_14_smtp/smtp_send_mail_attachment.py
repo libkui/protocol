@@ -66,7 +66,7 @@ if __name__ == '__main__':
     # 下面代码由于涉及到MS Office所以需要在Windows下运行
     from net_14_smtp.word_pdf.create_word_for_syslog import create_word_for_syslog
     from docx2pdf import convert
-    create_word_for_syslog("../net_9_syslog/practice_homework/syslog.sqlite",
+    create_word_for_syslog("../net_9_syslog/syslog_write_db/syslog.sqlite",
                            './word_pdf/src_img/logo.png',
                            './word_pdf/saved_word/syslog-docx.docx')
     convert('./word_pdf/saved_word/syslog-docx.docx', './word_pdf/saved_pdf/syslog-pdf.pdf')

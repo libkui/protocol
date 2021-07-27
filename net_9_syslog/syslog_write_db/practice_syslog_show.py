@@ -9,7 +9,7 @@
 import sqlite3
 from dateutil import parser
 from matplotlib import pyplot as plt
-from net_9_syslog.practice_homework.practice_syslog_server_to_db import severity_level_dict
+from net_9_syslog.syslog_write_db.practice_syslog_server_to_db import severity_level_dict
 
 
 def syslog_show(dbname):
