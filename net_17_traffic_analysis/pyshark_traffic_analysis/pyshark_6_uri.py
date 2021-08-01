@@ -32,7 +32,8 @@ def print_highest_layer(pkt):
         # 正则表达式匹配域名
         # https://blog.walterlv.com/post/match-web-url-using-regex.html
 
-        re_result = re.match(r"(^(?=^.{3,255}$)[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+$)", pkt.http.host)
+        re_result = re.match(r"(^(?=^.{3,255}$)[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(?:\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+$)",
+                             pkt.http.host)
         if re_result:
             host = re_result.groups()[0]
         # 字典数据结构如下
@@ -66,5 +67,5 @@ if __name__ == '__main__':
     plt.xlabel('访问数量')  # X轴注释
     plt.ylabel('站点')  # Y轴注释
     # ##########################添加注释###################################
-
+    # 使用WIN来显示图
     plt.show()
