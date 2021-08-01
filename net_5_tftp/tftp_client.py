@@ -23,6 +23,5 @@ if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     # 正常安装有问题,需要把minimumTFTP.py文件放入如下的路径
     # /usr/local/lib/python3.6/site-packages/tools/minimumTFTP.py
-
-    # qyt_tftpclient('10.1.1.100', '.', 'testupload.txt', operation=1)
-    qyt_tftpclient('10.1.1.100', '.', 'testupload.txt', operation=2)
+    qyt_tftpclient('10.1.1.100', '.', 'testupload.txt', operation=1)
+    # qyt_tftpclient('10.1.1.100', '.', 'testupload.txt', operation=2)
