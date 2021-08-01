@@ -8,13 +8,10 @@
 
 
 import logging
+
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)
 import ipaddress
-import sys
-if sys.platform == "linux":
-    from multiprocessing.pool import Pool as ProcessPool
-elif sys.platform == "win32":
-    from multiprocessing.pool import ThreadPool
+from multiprocessing.pool import ThreadPool
 from net_1_arp.arp_request import arp_request
 from net_1_arp.time_decorator import run_time
 
@@ -23,11 +20,7 @@ from net_1_arp.time_decorator import run_time
 def scapy_arp_scan(network):
     net = ipaddress.ip_network(network)  # 产生网络对象
     ip_list = [str(ip_add) for ip_add in net]  # 把网络中的IP放入ip_list
-    if sys.platform == "linux":
-        pool = ProcessPool(processes=100)  # 创建多进程的进程池（并发为100）
-    elif sys.platform == "win32":
-        pool = ThreadPool(processes=100)  # 创建多进程的进程池（并发为100）
-    
+    pool = ThreadPool(processes=100)  # 创建多进程的进程池（并发为100）
     result = [pool.apply_async(arp_request, args=(i,)) for i in ip_list]  # 把线程放入result清单
     pool.close()  # 关闭pool，不再加入新的线程
     pool.join()  # 等待每一个线程结束

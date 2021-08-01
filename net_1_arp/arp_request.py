@@ -16,7 +16,7 @@ from tools.scapy_iface import scapy_iface  # 获取scapy iface的名字
 from tools.get_ifname import get_ifname  # 获取接口唯一ID
 
 
-def arp_request(ip_address, ifname='ens33'):
+def arp_request(ip_address):
     # 获取本机IP地址
     # localip = get_ip_address(ifname)
     # 获取本机MAC地址
@@ -29,7 +29,6 @@ def arp_request(ip_address, ifname='ens33'):
                              # hwdst='00:00:00:00:00:00',
                              # psrc=localip,
                              pdst=ip_address),
-                         # iface=scapy_iface(ifname),
                          timeout=1,
                          verbose=False)
         return ip_address, result_raw.getlayer(ARP).fields.get('hwsrc')

