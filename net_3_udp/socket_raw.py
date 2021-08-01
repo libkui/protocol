@@ -118,7 +118,7 @@ if __name__ == "__main__":
     # 创建原始套接字
     s = socket(AF_PACKET, SOCK_RAW)
     # 绑定到本地端口
-    s.bind(("ens33", 0))
+    s.bind(("ens160", 0))
 
     # 本次试验需要WIN作为服务器,Linux作为客户端连接
     dst_ip = "10.1.1.100"
@@ -131,7 +131,7 @@ if __name__ == "__main__":
     # 计算UDP总长度
     u_length = 8 + len(udp_data)
     # 产生以太网头部
-    ether_header = ether("00-50-56-AB-5C-02", "00:50:56:ab:25:08", "0800")
+    ether_header = ether("00-50-56-A1-FA-B1", "00:50:56:a1:6e:62", "0800")
     # 产生IP头部
     ip_header = ip(total_length=t_length, ip_flags_d=0, ip_flags_m=0, offset=0, ttl=128, protocol=17, src=src_ip,
                    dst=dst_ip)
