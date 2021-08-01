@@ -24,6 +24,8 @@ def netmiko_show_cred_use_genie(host, username, password, cmd, enable='Cisc0123'
 if __name__ == '__main__':
     # 设置环境变量
     # export NET_TEXTFSM=/ntc-templates_pyATS/templates/
+
+    # Linux环境
     from pprint import pprint
     parsed_result = netmiko_show_cred_use_genie('10.1.1.253',
                                                 'admin',
