@@ -15,6 +15,6 @@ def get_if_oid(ip, community, if_name):
 
 if __name__ == '__main__':
     no_shutdown_oid = get_if_oid('10.1.1.253', 'tcpipro', 'GigabitEthernet2')
+    print(no_shutdown_oid)
     from snmpv2_set import snmpv2_set
-
     snmpv2_set("10.1.1.253", "tcpiprw", no_shutdown_oid, 1, port=161)
