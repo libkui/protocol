@@ -17,6 +17,8 @@ protocol_map = {'6/22': 'SSH',
                 '17/138': 'UDP NETBIOS Datagram Service',
                 '17/5353': 'MDNS',
                 '17/53': 'DNS',
+                '17/514': 'Syslog',
+                '17/2055': 'Netflow',
                 '6/80': 'HTTP',
                 '1/0': 'ICMP',
                 '6/443': 'HTTPS',
@@ -52,6 +54,7 @@ for x in application_list:
         bytes_sum += dbinfo[0]
     protocol_port = str(x[1]) + '/' + str(x[0])
     # 把协议清单写入protocol_list
+    print(protocol_bytes)
     protocol_list.append(protocol_map.get(protocol_port, protocol_port))
     # 把协议对于的字节数,写入protocol_bytes
     protocol_bytes.append(bytes_sum)
