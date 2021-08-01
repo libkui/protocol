@@ -10,7 +10,7 @@ import dns.resolver
 
 
 def dnspython(domain, q_type="A"):
-    result = dns.resolver.query(domain, q_type)
+    result = dns.resolver.resolve(domain, q_type)
     return_result = []
     if q_type == "A" or q_type == "AAAA":
         # print(result.response.answer)
@@ -31,7 +31,7 @@ def dnspython(domain, q_type="A"):
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     print(dnspython("cisco.com", q_type="A"))
-    print(dnspython("cisco.com", q_type="AAAA"))
+    # print(dnspython("www.baidu.com", q_type="AAAA"))
     print(dnspython("www.cisco.com", q_type="CNAME"))
     print(dnspython("cisco.com", q_type="NS"))
     print(dnspython("cisco.com", q_type="MX"))
