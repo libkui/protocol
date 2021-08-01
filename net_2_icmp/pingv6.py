@@ -17,7 +17,7 @@ from kamene.all import *
 from tools.get_ip_netifaces import get_ipv6_address
 
 
-def scapy_pingv6_one(host, ifname):
+def scapy_pingv6_one(host):
     # 可以省略src=get_ipv6_address(ifname)来提高效率
     # packet = IPv6(src=get_ipv6_address(ifname), dst=host) / ICMPv6EchoRequest(data="Welcome to qytang!!!" * 10)  # 构造Ping数据包
 
@@ -37,4 +37,4 @@ def scapy_pingv6_one(host, ifname):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    print(scapy_pingv6_one('2001:1::253', 'ens33'))
+    print(scapy_pingv6_one('2001:1::253'))

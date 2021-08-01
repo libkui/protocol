@@ -39,7 +39,7 @@ def icmpv6_ra(ifname):
     # 提供MTU
     mtu = ICMPv6NDOptMTU(mtu=1500)
     # 提供前缀
-    prefix = ICMPv6NDOptPrefixInfo(prefix='2001:2::', prefixlen=64)
+    prefix = ICMPv6NDOptPrefixInfo(prefix='2001:3::', prefixlen=64)
     # 构建数据包
     packet = base / router_solicitation / src_ll_addr / mtu / prefix
 
@@ -56,4 +56,4 @@ def icmpv6_ra(ifname):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    icmpv6_ra("ens33")
+    icmpv6_ra("ens160")
