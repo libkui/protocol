@@ -2,7 +2,8 @@ version: '3'
 
 services:
   elastiflow-elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.1
+    image: harbor.qytang.com/public/elasticsearch:7.8.1
+#    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.1
     container_name: elastiflow-elasticsearch
     restart: 'no'
     ulimits:
@@ -39,7 +40,8 @@ services:
       action.destructive_requires_name: 'true'
 
   elastiflow-kibana:
-    image: docker.elastic.co/kibana/kibana:7.8.1
+    image: harbor.qytang.com/public/kibana:7.8.1
+#    image: docker.elastic.co/kibana/kibana:7.8.1
     container_name: elastiflow-kibana
     restart: 'no'
     depends_on:
@@ -62,7 +64,8 @@ services:
       LOGGING_QUIET: 'false'
 
   elastiflow-logstash:
-    image: robcowart/elastiflow-logstash:4.0.1
+    image: harbor.qytang.com/public/elastiflow-logstash:4.0.1
+#    image: robcowart/elastiflow-logstash:4.0.1
     container_name: elastiflow-logstash
     restart: 'no'
     depends_on:
