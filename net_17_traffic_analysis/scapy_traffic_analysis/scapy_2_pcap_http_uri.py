@@ -23,6 +23,7 @@ def find_pcap_uri(pcap_filename, host_regex):
     for packet in pkt_list:  # 分析每一个数据包
         try:
             if packet.getlayer(TCP).fields['dport'] == 80:  # 分析TCP目的端口为80的数据包
+                packet.show()
                 http_request = packet.getlayer(Raw).fields['load'].split()
                 # 空白和\r\n都会被split()分开
                 # packet.show() 'GET /?nameAccount=4008519651&uid=3102224384&cb=JSONP_CALLBACK_5_61 HTTP/1.1\r\nHost: hb.crm2.qq.com\r\nConnection: keep-alive\r\nAccept: */*\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36 Core/1.47.163.400 QQBrowser/9.3.7175.400\r\nReferer: http://edu.51cto.com/lecturer/index/user_id-9137368.html\r\nAccept-Encoding: gzip, deflate, sdch\r\nAccept-Language: zh-CN,zh;q=0.8\r\nCookie: cuid=7780981392; o_cookie=605658506; pgv_pvid=1509412600; RK=sSlPbf+CVr; ptcz=ce34b86a10a14784b025e777a361081e4e264d78d3e5fb1a793a8072659d499a; pt2gguin=o0605658506; uin=o0605658506; skey=@vk7UzceLE; qzone_check=605658506_1460939090\r\n\r\n'

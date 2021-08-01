@@ -60,4 +60,4 @@ def tcp_reset(src_ip, dst_ip, dst_port, ifname, src_port=None):
 
 if __name__ == "__main__":
     # 使用Linux解释器 & WIN解释器
-    tcp_reset('10.1.1.100', '10.1.1.253', '23', 'ens33')
+    tcp_reset('10.1.1.100', '10.1.1.253', '23', 'ens160')

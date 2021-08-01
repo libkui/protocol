@@ -70,4 +70,4 @@ def telnet_rst(user_filter, ifname):
 
 
 if __name__ == "__main__":
-    telnet_rst("tcp port 23 and ip host 10.1.1.253", "ens33")
+    telnet_rst("tcp port 23 and ip host 10.1.1.253", "ens160")
