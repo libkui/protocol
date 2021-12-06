@@ -9,11 +9,13 @@
 
 from netifaces import interfaces, ifaddresses, AF_INET, AF_INET6
 import platform
+from pprint import pprint
 
 
 def get_ip_address(ifname):
     if platform.system() == "Linux":
         try:
+            pprint(ifaddresses(ifname))
             return ifaddresses(ifname)[AF_INET][0]['addr']
         except ValueError:
             return None
