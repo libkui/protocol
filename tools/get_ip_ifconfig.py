@@ -61,5 +61,5 @@ def get_ip_address_ifconfig(iface):  # 定义获取网络地址的模块，传�
 
 
 if __name__ == "__main__":
-    for x, y in get_ip_address_ifconfig('ens33').items():
+    for x, y in get_ip_address_ifconfig('ens160').items():
         print(x, y)

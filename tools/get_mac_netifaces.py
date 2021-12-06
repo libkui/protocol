@@ -45,6 +45,6 @@ def get_mac_address(ifname):
 if __name__ == '__main__':
     import platform
     if platform.system() == "Linux":
-        print(get_mac_address('ens33'))
+        print(get_mac_address('ens160'))
     elif platform.system() == "Windows":
         print(get_mac_address('Net1'))

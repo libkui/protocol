@@ -32,4 +32,4 @@ def get_mac_address(iface):  # 定义获取MAC地址的模块，传入接口名�
 
 
 if __name__ == "__main__":
-    print(get_mac_address('ens33'))  # 只适用于Linux
+    print(get_mac_address('ens160'))  # 只适用于Linux

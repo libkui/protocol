@@ -21,4 +21,4 @@ def get_ip_address(ifname):
 
 
 if __name__ == "__main__":
-    print(get_ip_address('ens33'))
+    print(get_ip_address('ens160'))
