@@ -25,8 +25,8 @@ def def_config_id(dbname):
     for md5 in md5_list:
         cursor.execute("select id from router_config_md5 where md5 = ?", (md5,))  # 注意必须传元组
         yourresults = cursor.fetchall()
-        id_list.append(min([x[0] for x in yourresults]))
-    id_list = sorted(id_list)
+        id_list.append(min([x[0] for x in yourresults]))  # 找到多个ID, 把最小的放入列表
+    id_list = sorted(id_list)  # 列表排序
 
     # 找到ID与获取配置的时间
     id_time_list = []
