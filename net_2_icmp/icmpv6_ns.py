@@ -24,7 +24,7 @@ from tools.ipv6_tools_kamene import solicited_node_multicast_address
 
 
 def icmpv6_ns(host, ifname):  # 请求特定IPv6地址的MAC地址
-    ll_mac = get_mac_address(ifname)  # 获取本机接口MAC地址
+    # ll_mac = get_mac_address(ifname)  # 获取本机接口MAC地址
     # 构建icmpv6_ns数据包
 
     # -----------IPv6头部 - -----------
@@ -51,13 +51,14 @@ def icmpv6_ns(host, ifname):  # 请求特定IPv6地址的MAC地址
     # packet.show()
 
     # 发送数据包
-    result = sr1(packet, timeout=2, verbose=False)
+    result = sr1(packet, timeout=1, verbose=False, iface=ifname)
 
     # 提取返回的MAC地址
-    # result.show()
+    result.show()
     return result.getlayer("ICMPv6 Neighbor Discovery Option - Destination Link-Layer Address").fields['lladdr']
 
 
 if __name__ == '__main__':
     # Windows Linux均可使用
+    # 需要提前删除所有的容器, 否则会出问题
     print(icmpv6_ns("2001:1::253", 'ens160'))
