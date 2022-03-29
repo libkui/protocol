@@ -39,5 +39,5 @@ def arp_request(ip_address):
 
 if __name__ == "__main__":
     # Windows Linux均可使用
-    arp_result = arp_request('10.1.1.101')
+    arp_result = arp_request('10.1.1.254')
     print("IP地址:", arp_result[0], "MAC地址:", arp_result[1])
