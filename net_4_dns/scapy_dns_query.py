@@ -22,18 +22,20 @@ def dns_query(dns_name):
     # query_pkt.show()
     dns_result = sr1(query_pkt, verbose=False)
     dns_result.show()
-    layer = 1
+    layer = 0
 
     while True:  # 不太确定DNSRR到底有几组！！！
         try:
             # 如果an(DNS资源记录部分)的类型为1(A)
-            # print(dns_result.getlayer(DNS).fields['an'][layer].fields)
+            print(dns_result.getlayer(DNS).fields['an'][layer].fields)
             if dns_result.getlayer(DNS).fields['an'][layer].fields['type'] == 1:  # 找到A
                 # 获取ip地址信息,an(DNS资源记录部分)的rdata字段
                 dns_result_ip = dns_result.getlayer(DNS).fields['an'][layer].fields['rdata']
                 print('域名: %-18s 对应的IP地址: %s' % (dns_name, dns_result_ip))  # 找到IP地址并打印
+                break
             layer += 1
-        except Exception:  # 如果超出范围就跳出循环
+        except Exception as e:  # 如果超出范围就跳出循环
+            print(e)
             break
 
 

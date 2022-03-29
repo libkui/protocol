@@ -31,7 +31,6 @@ def dnspython(domain, q_type="A"):
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
     print(dnspython("cisco.com", q_type="A"))
-    # print(dnspython("www.baidu.com", q_type="AAAA"))
     print(dnspython("www.cisco.com", q_type="CNAME"))
     print(dnspython("cisco.com", q_type="NS"))
     print(dnspython("cisco.com", q_type="MX"))
