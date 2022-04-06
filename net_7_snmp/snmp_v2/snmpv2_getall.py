@@ -26,7 +26,8 @@ def snmpv2_getall(ip, community, count=25, port=161):
 
     if_list = []
     for name, speed, in_bytes, out_bytes in zip(name_list, speed_list, in_bytes_list, out_bytes_list):
-        if_list.append({'name': name, 'speed': speed, 'in_bytes': in_bytes, 'out_bytes': out_bytes})
+        if in_bytes or out_bytes:
+            if_list.append({'name': name, 'speed': speed, 'in_bytes': in_bytes, 'out_bytes': out_bytes})
 
     final_dict = {'ip': ip,
                   'cpu_usage': int(cpu_usage[1]),
@@ -34,7 +35,7 @@ def snmpv2_getall(ip, community, count=25, port=161):
                   'mem_free': int(mem_free[1]),
                   'if_list': if_list}
 
-    return  final_dict
+    return final_dict
 
 
 if __name__ == '__main__':
