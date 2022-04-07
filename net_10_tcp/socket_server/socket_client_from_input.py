@@ -21,7 +21,7 @@ sockobj.connect((myHost, myPort))
 
 while True:  # 一直执行循环直到break出现！
     msg = input("请输入回显信息(exit退出):")
-    if msg is "":
+    if msg == "":
         print("请输入正确信息!!!")
     elif msg != 'exit':
         sockobj.send(msg.encode())
