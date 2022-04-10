@@ -12,8 +12,6 @@ import os
 
 
 def create_word_for_syslog(db_name, add_img, save_word_name):
-    today = time.strftime("%Y{y}%m{m}%d{d}", time.localtime()).format(y='年', m='月', d='日')
-
     document = Document()
 
     # 设置文档的基础字体
