@@ -61,4 +61,4 @@ def icmpv6_ns(host, ifname):  # 请求特定IPv6地址的MAC地址
 if __name__ == '__main__':
     # Windows Linux均可使用
     # 需要提前删除所有的容器, 否则会出问题
-    print(icmpv6_ns("2001:1::253", 'ens160'))
+    print(icmpv6_ns("2001:1::253", 'ens192'))

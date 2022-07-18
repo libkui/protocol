@@ -56,4 +56,4 @@ def icmpv6_ra(ifname):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    icmpv6_ra("ens160")
+    icmpv6_ra("ens192")

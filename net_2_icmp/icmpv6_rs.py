@@ -61,4 +61,4 @@ def icmpv6_rs(ifname):
 
 if __name__ == '__main__':
     # Windows Linux均可使用
-    icmpv6_rs("ens160")
+    icmpv6_rs("ens192")
