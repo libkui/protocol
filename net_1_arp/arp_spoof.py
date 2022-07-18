@@ -67,4 +67,4 @@ def sigint_handler(signum, frame):  # 定义处理方法
 if __name__ == "__main__":
     # Windows Linux均可使用
     # 欺骗10.1.1.253 让它认为10.1.1.254的MAC地址为本地攻击者计算机的MAC
-    arp_spoof('10.1.1.253', '10.1.1.254', 'ens160')
+    arp_spoof('10.1.1.253', '10.1.1.254', 'ens192')
