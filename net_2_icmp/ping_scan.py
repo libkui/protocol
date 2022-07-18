@@ -32,7 +32,7 @@ def scapy_ping_scan(network):
     # 方案一
     # result = []
     # for i in ip_list:
-    #         result.append(pool.apply_async(scapy_ping_one,args=i))
+    #     result.append(pool.apply_async(scapy_ping_one, args=(i,)))
 
     # 方案二
     result = pool.map(scapy_ping_one, ip_list)  # 关联函数与参数，并且提取结果到result
@@ -42,6 +42,12 @@ def scapy_ping_scan(network):
 
     scan_list = []  # 扫描结果IP地址的清单
     # print(result)
+    # 方案一
+    # for scan_result in result:
+    #     ip_address, ok = scan_result.get()
+    #     if ok:  # 如果ok为True
+    #         scan_list.append(ip_address)  # 把IP地址放入scan_list清单里边
+    # 方案二
     for ip_address, ok in result:
         if ok:  # 如果ok为True
             scan_list.append(ip_address)  # 把IP地址放入scan_list清单里边
