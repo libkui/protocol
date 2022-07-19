@@ -28,7 +28,7 @@ def dhcp_monitor_control(pkt):
     print(pkt.getlayer(BOOTP).fields)
     try:
         if pkt.getlayer(DHCP).fields['options'][0][1] == 1:  # 发现并且打印DHCP Discover
-            print('发现DHCP Discover包，MAC地址为:', end='')
+            print('------发现DHCP Discover包，MAC地址为:', end='')
             mac_bytes = pkt.getlayer(BOOTP).fields['chaddr']  # 提取Discover中的Client Hardware Addr
             print(len(mac_bytes))
 
@@ -56,7 +56,7 @@ def dhcp_monitor_control(pkt):
             options['MAC'] = mac_addr
             options['client_id'] = change_mac_to_bytes(mac_addr)
             options['requested_addr'] = pkt.getlayer(BOOTP).fields['yiaddr']
-            print('发现DHCP OFFER包，请求者得到的IP为:' + pkt.getlayer(BOOTP).fields['yiaddr'])
+            print('------发现DHCP OFFER包，请求者得到的IP为:' + pkt.getlayer(BOOTP).fields['yiaddr'])
             print('OFFER包中发现如下Options:')
             for option in pkt.getlayer(DHCP).fields['options']:
                 if option == 'end':
@@ -70,7 +70,7 @@ def dhcp_monitor_control(pkt):
             pool.apply_async(dhcp_request_sendonly, args=(global_if, options, param_req_list))
 
         elif pkt.getlayer(DHCP).fields['options'][0][1] == 3:  # 发现并且打印DHCP Request
-            print('发现DHCP Request包，请求的IP为:' + pkt.getlayer(BOOTP).fields['yiaddr'])
+            print('------发现DHCP Request包，请求的IP为:' + pkt.getlayer(BOOTP).fields['yiaddr'])
             print('Request包中发现如下Options:')
             for option in pkt.getlayer(DHCP).fields['options']:
                 if option == 'end':
@@ -85,7 +85,7 @@ def dhcp_monitor_control(pkt):
                     # 打印其它所有选项,param_req_list保持原始字节形式打印
                     print('%-15s ==> %s' % (str(option[0]), str(option[1])))
         elif pkt.getlayer(DHCP).fields['options'][0][1] == 5:  # 发现并且打印DHCP ACK
-            print('发现DHCP ACK包，确认的IP为:' + pkt.getlayer(BOOTP).fields['yiaddr'])
+            print('----发现DHCP ACK包，确认的IP为:' + pkt.getlayer(BOOTP).fields['yiaddr'])
             print('ACK包中发现如下Options:')
             for option in pkt.getlayer(DHCP).fields['options']:
                 if option == 'end':
