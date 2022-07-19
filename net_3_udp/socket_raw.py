@@ -118,7 +118,7 @@ if __name__ == "__main__":
     # 创建原始套接字
     s = socket(AF_PACKET, SOCK_RAW)
     # 绑定到本地端口
-    s.bind(("ens160", 0))
+    s.bind(("ens192", 0))
 
     # 本次试验需要WIN作为服务器,Linux作为客户端连接
     dst_ip = "10.1.1.100"
