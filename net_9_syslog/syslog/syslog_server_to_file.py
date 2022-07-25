@@ -26,16 +26,15 @@ logging.basicConfig(level=logging.INFO,
 
 class SyslogUDPHandler(socketserver.BaseRequestHandler):
     def handle(self):
-        data = bytes.decode(self.request[0].strip())                                    # 读取数据
+        data = bytes.decode(self.request[0].strip())  # 读取数据
         # ============可以配置过滤器仅仅读取接口up/down信息===============
-        if re.match(r'.*%LINEPROTO-5-UPDOWN: Line protocol on Interface .*, changed state to down.*', data):
-            print("%s : " % self.client_address[0], str(data))
+        if re.match(r'.*%LINEPROTO-5-UPDOWN: Line protocol on Interface \S+, changed state to down.*', data):
             if_name = re.match(r'.*%LINEPROTO-5-UPDOWN: Line protocol on Interface (\S+), changed state to down.*', data).groups()[0]
             device_ip = self.client_address[0]
-            snmpv2_set(device_ip, 'tcpiprw', get_if_oid(device_ip, 'tcpiprw', if_name), 1)
-        # elif re.match('.*changed state to up.*', data):
-        #     print("%s : " % self.client_address[0], str(data))
-        # print("%s : " % self.client_address[0], str(data))                              # 打印syslog信息
+            community = "tcpiprw"
+            no_shutdown_oid = get_if_oid(device_ip, community, if_name)
+            snmpv2_set(device_ip, community, no_shutdown_oid, 1, port=161)
+
         logging.info(f"source_ip: {self.client_address[0]} - message: {str(data)}")     # 把信息logging到本地, logging level为INFO
 
 
