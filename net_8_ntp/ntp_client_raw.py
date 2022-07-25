@@ -30,4 +30,5 @@ def ntp_client(ntp_server):
 
 if __name__ == '__main__':
     # 使用Linux解释器 & WIN解释器
+    # # 试验台翻墙会影响代码执行
     print(ntp_client("0.uk.pool.ntp.org"))
