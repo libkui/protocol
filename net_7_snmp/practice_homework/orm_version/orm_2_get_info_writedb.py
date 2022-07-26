@@ -37,6 +37,6 @@ def get_info_writedb(ip, rocommunity, dbname, seconds):
 
 
 if __name__ == '__main__':
-    # get_info_writedb("10.1.1.253", "tcpipro", "deviceinfo.sqlite", 60)
+    get_info_writedb("10.1.1.253", "tcpipro", "deviceinfo.sqlite", 60)
     for i in session.query(RouterMonitor).all():
         print(i)
