@@ -10,8 +10,7 @@
 import logging
 import socketserver
 import re
-from net_7_snmp.snmp_v2.snmpv2_get_if_oid import get_if_oid
-from net_7_snmp.snmp_v2.snmpv2_set import snmpv2_set
+from net_7_snmp.snmp_v2.snmpv2_get_if_oid import shutdown_if
 
 log_file = './log_dir/pysyslog.log'
 
@@ -32,8 +31,7 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
             if_name = re.match(r'.*%LINEPROTO-5-UPDOWN: Line protocol on Interface (\S+), changed state to down.*', data).groups()[0]
             device_ip = self.client_address[0]
             community = "tcpiprw"
-            no_shutdown_oid = get_if_oid(device_ip, community, if_name)
-            snmpv2_set(device_ip, community, no_shutdown_oid, 1, port=161)
+            shutdown_if(device_ip, community, if_name, 1)
 
         logging.info(f"source_ip: {self.client_address[0]} - message: {str(data)}")     # 把信息logging到本地, logging level为INFO
 
