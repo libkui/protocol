@@ -16,24 +16,26 @@ def client_json(ip, port, obj):
     sockobj = socket(AF_INET, SOCK_STREAM)
     sockobj.connect((ip, port))
 
+    mss = 1460
+
     # 把obj转换为JSON字节字符串
     send_message = json.dumps(obj).encode()
-    # 读取1024字节长度数据, 准备发送数据分片
-    send_message_fragment = send_message[:1024]
+    # 读取mss字节长度数据, 准备发送数据分片
+    send_message_fragment = send_message[:mss]
     # 剩余部分数据
-    send_message = send_message[1024:]
+    send_message = send_message[mss:]
 
     while send_message_fragment:
         sockobj.send(send_message_fragment)  # 发送数据分片（如果分片的话）
-        send_message_fragment = send_message[:1024]  # 读取1024字节长度数据
-        send_message = send_message[1024:]  # 剩余部分数据
+        send_message_fragment = send_message[:mss]  # 读取mss字节长度数据
+        send_message = send_message[mss:]  # 剩余部分数据
 
     recieved_message = b''  # 预先定义接收信息变量
-    recieved_message_fragment = sockobj.recv(1024)  # 读取接收到的信息，写入到接收到信息分片
+    recieved_message_fragment = sockobj.recv(mss)  # 读取接收到的信息，写入到接收到信息分片
 
     while recieved_message_fragment:
         recieved_message = recieved_message + recieved_message_fragment  # 把所有接收到信息分片重组装
-        recieved_message_fragment = sockobj.recv(1024)
+        recieved_message_fragment = sockobj.recv(mss)
 
     print('收到确认数据:', json.loads(recieved_message.decode()))
     sockobj.close()

@@ -21,6 +21,8 @@ def server_json(ip, port):
     # 在拒绝连接前，操作系统可以挂起的最大连接数量，一般配置为5
     sockobj.listen(5)
 
+    mss = 1460
+
     while True:  # 一直接受请求，直到ctl+c终止程序
         # 接受TCP连接，并且返回（conn,address）的元组，conn为新的套接字对象，可以用来接收和发送数据，address是连接客户端的地址
         connection, address = sockobj.accept()
@@ -28,19 +30,19 @@ def server_json(ip, port):
         # 打印连接客户端的IP地址
         print('Server Connected by', address)
         recieved_message = b''  # 预先定义接收信息变量
-        recieved_message_fragment = connection.recv(1024)  # 读取接收到的信息，写入到接收到信息分片
-        if len(recieved_message_fragment) < 1024:  # 如果长度小于1024!表示客户发的数据小于1024!
+        recieved_message_fragment = connection.recv(mss)  # 读取接收到的信息，写入到接收到信息分片
+        if len(recieved_message_fragment) < mss:  # 如果长度小于mss!表示客户发的数据小于mss!
             recieved_message = recieved_message_fragment
             obj = json.loads(recieved_message.decode())  # 把接收到信息json.loads回正常的obj
             print(obj)  # 打印obj，当然也可以选择写入文件或者数据库
             connection.send(json.dumps(obj).encode())  # 返回确认信息
         else:
             # 注意: 此处while + else的用法
-            while len(recieved_message_fragment) == 1024:  # 等于1024表示还有后续数据!
+            while len(recieved_message_fragment) == mss:  # 等于mss表示还有后续数据!
                 recieved_message = recieved_message + recieved_message_fragment  # 把接收到信息分片重组装
-                recieved_message_fragment = connection.recv(1024)  # 继续接收后续的1024的数据
+                recieved_message_fragment = connection.recv(mss)  # 继续接收后续的mss的数据
             else:
-                recieved_message = recieved_message + recieved_message_fragment  # 如果数据小于1024!拼接最后数据
+                recieved_message = recieved_message + recieved_message_fragment  # 如果数据小于mss!拼接最后数据
             obj = json.loads(recieved_message.decode())  # 把接收到信息json.loads回正常的obj
             print(obj)  # 打印obj，当然也可以选择写入文件或者数据库
             connection.send(json.dumps(obj).encode())
