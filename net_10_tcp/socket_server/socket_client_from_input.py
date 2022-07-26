@@ -14,6 +14,8 @@ myHost = '10.1.1.80'
 # 连接的服务器端口号
 myPort = 6666
 
+mss = 1460
+
 # 创建TCP Socket, AF_INET为IPv4，SOCK_STREAM为TCP
 sockobj = socket(AF_INET, SOCK_STREAM)
 # 连接到套接字地址，地址为（host，port）的元组
@@ -25,7 +27,7 @@ while True:  # 一直执行循环直到break出现！
         print("请输入正确信息!!!")
     elif msg != 'exit':
         sockobj.send(msg.encode())
-        echo_msg = sockobj.recv(1024)
+        echo_msg = sockobj.recv(mss)
         print(echo_msg.decode())
     else:
         break
