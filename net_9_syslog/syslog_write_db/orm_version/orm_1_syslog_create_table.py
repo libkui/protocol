@@ -2,10 +2,17 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, Integer, DateTime
 import datetime
+import os
 
 tzutc_8 = datetime.timezone(datetime.timedelta(hours=8))  # 设置时区为东八区
 
-engine = create_engine('sqlite:///sqlalchemy_syslog_sqlite3.db?check_same_thread=False',
+db_file_name = 'sqlalchemy_syslog_sqlite3.db'
+
+# 如果希望删除老的数据就取消注释
+# if os.path.exists(db_file_name):
+#     os.remove(db_file_name)
+
+engine = create_engine(f'sqlite:///{db_file_name}?check_same_thread=False',
                        # echo=True
                        )
 
@@ -30,7 +37,7 @@ class Syslog(Base):
     def __repr__(self):
         return f"{self.__class__.__name__}(Router: {self.device_ip} " \
                f"| Datetime: {self.time} " \
-               f"| Severity Name: {self.severity_level_name})" 
+               f"| Severity Name: {self.severity_level_name})"
 
 
 if __name__ == '__main__':

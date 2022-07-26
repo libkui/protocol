@@ -91,19 +91,24 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
             syslog_info_dict['severity_level_name'] = severity_level_dict[(int(syslog_info[0]) & 0b111)]
             syslog_info_dict['description'] = 'N/A'
             syslog_info_dict['text'] = syslog_info[4]
+
         print(syslog_info_dict)
-        syslog_record = Syslog(
-            device_ip=syslog_info_dict.get('device_ip'),
-            time=syslog_info_dict.get('time'),
-            facility=syslog_info_dict.get('facility'),
-            facility_name=syslog_info_dict.get('facility_name'),
-            severity_level=syslog_info_dict.get('severity_level'),
-            severity_level_name=syslog_info_dict.get('severity_level_name'),
-            logid=syslog_info_dict.get('logid'),
-            log_source=syslog_info_dict.get('log_source'),
-            description=syslog_info_dict.get('description'),
-            text=syslog_info_dict.get('text')
-        )
+
+        # syslog_record = Syslog(
+        #     device_ip=syslog_info_dict.get('device_ip'),
+        #     time=syslog_info_dict.get('time'),
+        #     facility=syslog_info_dict.get('facility'),
+        #     facility_name=syslog_info_dict.get('facility_name'),
+        #     severity_level=syslog_info_dict.get('severity_level'),
+        #     severity_level_name=syslog_info_dict.get('severity_level_name'),
+        #     logid=syslog_info_dict.get('logid'),
+        #     log_source=syslog_info_dict.get('log_source'),
+        #     description=syslog_info_dict.get('description'),
+        #     text=syslog_info_dict.get('text')
+        # )
+
+        # 更加简洁的方案
+        syslog_record = Syslog(**syslog_info_dict)
         session.add(syslog_record)
         session.commit()
 
