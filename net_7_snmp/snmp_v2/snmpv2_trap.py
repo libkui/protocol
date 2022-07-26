@@ -126,4 +126,4 @@ def snmp_trap_receiver(ifname, port=162):
 
 if __name__ == "__main__":
     # 使用Linux解释器 & WIN解释器
-    snmp_trap_receiver("ens160")
+    snmp_trap_receiver("ens192")
