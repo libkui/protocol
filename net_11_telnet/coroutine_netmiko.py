@@ -26,7 +26,7 @@ if __name__ == '__main__':
     from gevent import monkey
     monkey.patch_all()
     # 设备清单
-    devices_list = ['10.1.1.253', '10.1.1.252']
+    devices_list = ['10.1.1.253', '10.1.1.252', '10.1.1.253', '10.1.1.252', '10.1.1.253', '10.1.1.252']
     # 把ip和cmd放到一个列表, 便于后续使用*device来传多参数
     devices_cmd_list = [[d, 'show run'] for d in devices_list]
     # devices_cmd_list = [['10.1.1.253', 'show ip interface brief'], ['10.1.1.252', 'show ip interface brief'], ]
@@ -41,7 +41,7 @@ if __name__ == '__main__':
             print('='*40 + s.get()[0] + '='*40)
             print(s.get()[1])
     end_time = datetime.now()
-    print((end_time - start_time).microseconds)
+    print((end_time - start_time).seconds)
 
     # 普通操作
     # start_time = datetime.now()
@@ -50,4 +50,4 @@ if __name__ == '__main__':
     #     print('=' * 40 + ip + '=' * 40)
     #     print(cmd_result)
     # end_time = datetime.now()
-    # print((end_time - start_time).microseconds)
+    # print((end_time - start_time).seconds)
