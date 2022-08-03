@@ -12,9 +12,9 @@ import pinyin
 # 解决了英文姓名空格和大写问题
 def get_pinyin_name(name):
     full_name = pinyin.get(name, format='strip', delimiter=' ')
-    # print(full_name.split())
+    print(full_name.split())
     shouzimu = pinyin.get_initial(name, delimiter=' ')
-    # print(''.join(shouzimu.split()))
+    print(''.join(shouzimu.split()))
     return (full_name.split()[0] + ''.join(shouzimu.split()[1:])).lower()
 
 
